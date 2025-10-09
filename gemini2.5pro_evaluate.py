@@ -318,18 +318,30 @@ def evaluate(
                 choice = raw_response
 
         # 标准化答案
-        if "A" in choice.upper():
-            predicted_answer = "A"
-        elif "B" in choice.upper():
-            predicted_answer = "B"
-        elif "C" in choice.upper():
-            predicted_answer = "C"
-        elif "D" in choice.upper():
-            predicted_answer = "D"
-        elif "E" in choice.upper():
-            predicted_answer = "E"
-        else:
-            predicted_answer = "WRONG"
+        predicted_answer = "WRONG"
+        if isinstance(choice, str):
+            if "A:" in choice:
+                predicted_answer = "A"
+            elif "B:" in choice:
+                predicted_answer = "B"
+            elif "C:" in choice:
+                predicted_answer = "C"
+            elif "D:" in choice:
+                predicted_answer = "D"
+            elif "E:" in choice:
+                predicted_answer = "E"
+
+        if predicted_answer == "WRONG":
+            if "A" in choice:
+                predicted_answer = "A"
+            elif "B" in choice:
+                predicted_answer = "B"
+            elif "C" in choice:
+                predicted_answer = "C"
+            elif "D" in choice:
+                predicted_answer = "D"
+            elif "E" in choice:
+                predicted_answer = "E"
 
         if predicted_answer == correct_answer:
             correct_counts[category] += 1
