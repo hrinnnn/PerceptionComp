@@ -1,2 +1,3 @@
 # PerceptionComp
-this is a benchmark for video understanding.
+This is a benchmark for video understanding.
+Made and published by the fans of Little Ma.
