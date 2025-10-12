@@ -1,7 +1,7 @@
 # all data
 
 
-##	 GLM4.5V
+###	 GLM4.5V
 
 accuracy :36.2%
 
@@ -21,7 +21,7 @@ sports               -> Accuracy:  33.33% (1/3 correct)
 2                    -> Accuracy:  37.50% (51/136 correct)
 
 
-## doubao seed 1.6
+### doubao seed 1.6
 
 accuracy:198/500  39.6%
 
@@ -41,11 +41,11 @@ sports               -> Accuracy:  66.67% (2/3 correct)
 1                    -> Accuracy:  43.72% (94/215 correct)
 2                    -> Accuracy:  36.03% (49/136 correct)
 
-## Qwen 2.5VL-7B
+### Qwen 2.5VL-7B
 accuracy: 25.4%
 
 --- Accuracy Report by Category ---
----------------------------------
+
 Outdoor tour         -> Accuracy:  24.55% (27/110 correct)
 Shopping             -> Accuracy:  40.00% (2/5 correct)
 Sports               -> Accuracy:  18.18% (2/11 correct)
@@ -55,12 +55,12 @@ shows                -> Accuracy:  33.33% (5/15 correct)
 sports               -> Accuracy:   0.00% (0/3 correct)
 
 --- Accuracy Report by Difficulty ---
------------------------------------
+
 0                    -> Accuracy:  24.32% (36/148 correct)
 1                    -> Accuracy:  26.98% (58/215 correct)
 2                    -> Accuracy:  22.06% (30/136 correct)
 
-## Qwen 2.5VL-72B
+### Qwen 2.5VL-72B
 
 accuracy: 24.04%
 
@@ -68,7 +68,7 @@ accuracy: 24.04%
 
 
 
-## gemini 2.5pro
+### gemini 2.5pro
 --- Accuracy Report by Category ---
 Outdoor tour         -> Accuracy:  35.45% (39/110 correct)
 Shopping             -> Accuracy:  80.00% (4/5 correct)
