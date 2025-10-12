@@ -1,3 +1,6 @@
+# all data
+
+
 ##	 GLM4.5V
 
 accuracy :36.2%
@@ -19,6 +22,7 @@ sports               -> Accuracy:  33.33% (1/3 correct)
 
 
 ## doubao seed 1.6
+
 accuracy:198/500  39.6%
 
 Accuracy Report by Category 
@@ -60,3 +64,23 @@ sports               -> Accuracy:   0.00% (0/3 correct)
 
 accuracy: 24.04%
 
+
+
+
+
+## gemini 2.5pro
+--- Accuracy Report by Category ---
+Outdoor tour         -> Accuracy:  35.45% (39/110 correct)
+Shopping             -> Accuracy:  80.00% (4/5 correct)
+Sports               -> Accuracy:  33.33% (4/12 correct)
+home tour            -> Accuracy:  47.30% (35/74 correct)
+outdoor tour         -> Accuracy:  49.82% (140/281 correct)
+shows                -> Accuracy:  46.67% (7/15 correct)
+sports               -> Accuracy:  33.33% (1/3 correct)
+
+
+--- Accuracy Report by Difficulty ---
+
+0                    -> Accuracy:  50.68% (75/148 correct)
+1                    -> Accuracy:  44.65% (96/215 correct)
+2                    -> Accuracy:  43.07% (59/137 correct)
