@@ -1,5 +1,7 @@
 # all data
 
+#### all tested models
+InternVL3,Qwen2.5VL-7B,Qwen2.5VL-72B,doubao-seed-1-6, Gemini2.5pro,gemini2.5flash, Gpt-5, Kimi-VL, GLM4.5V, Mimo-VL, Keye-VL-1.5,
 
 ###	 GLM4.5V
 
@@ -69,6 +71,8 @@ accuracy: 24.04%
 
 
 ### gemini 2.5pro
+accuracy: 46%
+
 --- Accuracy Report by Category ---
 Outdoor tour         -> Accuracy:  35.45% (39/110 correct)
 Shopping             -> Accuracy:  80.00% (4/5 correct)
@@ -84,3 +88,23 @@ sports               -> Accuracy:  33.33% (1/3 correct)
 0                    -> Accuracy:  50.68% (75/148 correct)
 1                    -> Accuracy:  44.65% (96/215 correct)
 2                    -> Accuracy:  43.07% (59/137 correct)
+
+
+### gemini 2.5 flash
+accuracy : 40.4%
+
+--- Accuracy Report by Category ---
+
+Outdoor tour         -> Accuracy:  24.55% (27/110 correct)
+Shopping             -> Accuracy:  80.00% (4/5 correct)
+Sports               -> Accuracy:  16.67% (2/12 correct)
+home tour            -> Accuracy:  45.95% (34/74 correct)
+outdoor tour         -> Accuracy:  45.20% (127/281 correct)
+shows                -> Accuracy:  46.67% (7/15 correct)
+sports               -> Accuracy:  33.33% (1/3 correct)
+
+--- Accuracy Report by Difficulty ---
+
+0                    -> Accuracy:  50.00% (74/148 correct)
+1                    -> Accuracy:  37.21% (80/215 correct)
+2                    -> Accuracy:  35.04% (48/137 correct)
