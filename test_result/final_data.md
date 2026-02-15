@@ -108,3 +108,21 @@ sports               -> Accuracy:  33.33% (1/3 correct)
 0                    -> Accuracy:  50.00% (74/148 correct)
 1                    -> Accuracy:  37.21% (80/215 correct)
 2                    -> Accuracy:  35.04% (48/137 correct)
+
+### gpt5
+accuracy: 28.6
+
+--- Accuracy Report by Category ---
+
+Outdoor tour         -> Accuracy:  23.64% (26/110 correct)
+Shopping             -> Accuracy:  40.00% (2/5 correct)
+Sports               -> Accuracy:  25.00% (3/12 correct)
+home tour            -> Accuracy:  35.14% (26/74 correct)
+outdoor tour         -> Accuracy:  27.76% (78/281 correct)
+shows                -> Accuracy:  46.67% (7/15 correct)
+sports               -> Accuracy:  33.33% (1/3 correct)
+
+
+0                    -> Accuracy:  28.38% (42/148 correct)
+1                    -> Accuracy:  32.56% (70/215 correct)
+2                    -> Accuracy:  22.63% (31/137 correct)
