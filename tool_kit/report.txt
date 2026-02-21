@@ -3,11 +3,125 @@ JSON文件处理报告
 ============================================================
 
 统计信息:
-  总项目数: 136
-  不同的video_id数量: 14
-  不同的category数量: 1
+  总项目数: 1357
+  不同的video_id数量: 133
+  不同的category数量: 7
 
 所有video_id:
+  - 480p_1
+  - 480p_2
+  - Basketball1
+  - Basketball2
+  - Chicago_1h14m-1h18m
+  - Chicago_1h18m-1h21m
+  - Chicago_1h21m-1h25m
+  - Chicago_1h44m-1h50m
+  - Chicago_2h34m-2h38m
+  - Chicago_2h38m-2h42m
+  - Chicago_2h42m-2h47m
+  - Dubai_12-14
+  - Dubai_14-16
+  - FPV_1
+  - FPV_2
+  - FPV_3
+  - FPV_4
+  - FPV_5
+  - FPV_6
+  - FPV_7
+  - FPV_8
+  - Football
+  - Hongkong_3-5
+  - Hongkong_5-7
+  - Hongkong_7-9
+  - London_2-4
+  - London_4-6
+  - London_6-8
+  - London_8-10
+  - Memphis_3h28m-3h32m
+  - Memphis_3h34m-3h38m30s
+  - Memphis_5h23m-5h28m
+  - Monaco_1h05m-1h12m
+  - Monaco_21m-25m
+  - NewYork_10-12
+  - NewYork_3-5
+  - NewYork_6-8
+  - NewYork_8-10
+  - Olympics Athletics
+  - Paris_2-4
+  - Paris_4-6
+  - Paris_6-8
+  - Parkour_0m35s-1m35s
+  - Poland_04m-11m
+  - Poland_3h14m30s-3h21m30s
+  - Poland_41m-47m
+  - RacedAcrossTheWorld _1h07m-1h14m
+  - Singapore_0-2
+  - Singapore_2-4
+  - Singapore_4-6
+  - Singapore_6-8
+  - Slovakia_20m-27m
+  - Slovakia_33m-40m
+  - Slovakia_3h20m-3h24m
+  - SquidGame_11m-14m
+  - SquidGame_3m-10m
+  - Street_Parkour_1
+  - Street_Skateboarding_1
+  - Street_Skateboarding_2
+  - Street_Skateboarding_3
+  - Street_Skateboarding_4
+  - Street_Skateboarding_5
+  - Street_Skateboarding_6
+  - Tokyo_10-12
+  - Tokyo_12-14
+  - Tokyo_6-8
+  - Tokyo_8-10
+  - america_football1.mp4
+  - basketball1_1.mp4
+  - cw1
+  - cw2
+  - cw3
+  - cw4
+  - cw5
+  - cw6
+  - football_video.mp4
+  - ht1
+  - ht10.mp4
+  - ht11.mp4
+  - ht12.mp4
+  - ht2
+  - ht3
+  - ht4
+  - ht5
+  - ht6
+  - ht7
+  - ht8
+  - ht9.mp4
+  - lyon
+  - match1_liverpool.mp4
+  - match2_chelsea.mp4
+  - match3_tottenham_first_5_minutes.mp4
+  - match5_part1.mp4
+  - montreal1
+  - montreal2
+  - montreal3
+  - montreal4
+  - montreal5
+  - montreal6
+  - montreal7
+  - opry1
+  - opry2
+  - opry3
+  - opry4
+  - opry5
+  - output_480p
+  - paris1
+  - paris2
+  - paris3
+  - paris4
+  - paris5
+  - paris6
+  - running_in_city.mp4
+  - shopping1
   - shopping1_0-5
   - shopping1_10-15
   - shopping1_15-20
@@ -17,11 +131,22 @@ JSON文件处理报告
   - shopping2_0-5
   - shopping2_10-15
   - shopping2_5-10
+  - shopping3.mp4
   - shopping3_0-4
   - shopping3_12-14
   - shopping3_14-17
   - shopping3_4-8
   - shopping3_8-12
+  - shopping4.mp4
+  - shopping5.mp4
+  - variety_show1.mp4
+  - variety_show2.mp4
 
 category分布:
-  - shopping: 136 项
+  - home tour: 152 项
+  - outdoor tour: 391 项
+  - shopping: 343 项
+  - shows: 15 项
+  - sport: 219 项
+  - sports: 168 项
+  - variety show: 69 项
