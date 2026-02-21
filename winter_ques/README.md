@@ -1,7 +1,13 @@
-此文件夹中包含了第一批出的新题
-其中包括：zzx140道，lsx136道，dhz84道
+此文件夹中包含了新题
+其中包括：zzx139道，lsx150道，dhz84道
 
-其余的新题将在之后进行测试
+xxx_new.json为每个人所有新出的题
+由于dhz说题目还需要调整，所以不再第一批进行测试
 
-命名规则：3in1_new.json是所有寒假新出的题
-all_ques.json包含了所有暑假以及寒假的题
+第一批测试
+new_batch_1.json 包含lsx，zzx所有新题
+all_batch_1.json 包含lsx，zzx所有新题以及所有旧题
+
+第二批测试
+new_batch_2.json 包含zzx（第二批新题），dhz新题，mzr新题
+

@@ -11,9 +11,7 @@ def process_json_files():
     
     # 要处理的JSON文件列表
     json_files = [
-        base_path / "winter_ques" / "3in1_new.json",
-        base_path / "winter_ques" / "all_ques.json",
-        base_path / "winter_ques" / "zzx_new.json"
+        base_path / "winter_ques" / "all_batch_1.json",
     ]
     
     # 存储所有video_id和category
