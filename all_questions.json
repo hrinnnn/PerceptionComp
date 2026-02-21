@@ -7002,7 +7002,7 @@
   },
   {
     "key": "501",
-    "video_id": "shopping3.mp4",
+    "video_id": "shopping3",
     "question": "①When the protagonist enters the supermarket pushing a cart, there is a salesperson A in front of him.\n②There is a fruit B in the supermarket that has the same color as salesperson A's clothes.\n③Between fruit B and salesperson A, there is another green fruit.\nWhat is this green fruit?",
     "answer_choice_0": "Green Apple",
     "answer_choice_1": "Watermelon",
@@ -7016,7 +7016,7 @@
   },
   {
     "key": "502",
-    "video_id": "shopping3.mp4",
+    "video_id": "shopping3",
     "question": "①Two items with the exact same price appear in the video.\n②Consider the item among these two that is placed further away from the store entrance.\nWhat is its original price? (Select the matching number)",
     "answer_choice_0": "7990",
     "answer_choice_1": "10990",
@@ -7030,7 +7030,7 @@
   },
   {
     "key": "503",
-    "video_id": "shopping3.mp4",
+    "video_id": "shopping3",
     "question": "Consider an item A in the video that satisfies the following conditions:\n①It is yellow.\n②It is not located under the stall section labeled \"vegetable\".\nWhat are the two English letters written on its packaging bag?",
     "answer_choice_0": "OK",
     "answer_choice_1": "GO",
@@ -7044,7 +7044,7 @@
   },
   {
     "key": "504",
-    "video_id": "shopping3.mp4",
+    "video_id": "shopping3",
     "question": "In a window that ①has a red flag hanging and ②has three distinct price tags, calculate the following:\nTake ③the highest price among these three tags and subtract ④the price of the strawberries.\nWhat is the result?",
     "answer_choice_0": "5000",
     "answer_choice_1": "7000",
@@ -7058,7 +7058,7 @@
   },
   {
     "key": "505",
-    "video_id": "shopping3.mp4",
+    "video_id": "shopping3",
     "question": "There is a window that ①has three distinct price tags and ②sells a lot of fried chicken.\n③Find the box of fried chicken whose price matches the second-highest price among the three tags. (Note: There are two boxes of fried chicken with this same price).\nWhat is the price of the box on the left among these two?",
     "answer_choice_0": "14990",
     "answer_choice_1": "10990",
@@ -7072,7 +7072,7 @@
   },
   {
     "key": "506",
-    "video_id": "shopping4.mp4",
+    "video_id": "shopping4",
     "question": "①Identify the number at the bottom-left corner of the purple vegetable label as x.\n②Among all the large hanging shop signs, count the letters in the word starting with B as y.\nWhat is x + y?",
     "answer_choice_0": "12",
     "answer_choice_1": "14",
@@ -7086,7 +7086,7 @@
   },
   {
     "key": "507",
-    "video_id": "shopping4.mp4",
+    "video_id": "shopping4",
     "question": "①In the bread section, there is a flag made of three colors.\n②Let x be the first digit on the far left of the label where this flag is located.\n③Let y be the last digit on the label of another orange, long-shaped vegetable.\nWhat is x * y?",
     "answer_choice_0": "16",
     "answer_choice_1": "24",
@@ -7100,7 +7100,7 @@
   },
   {
     "key": "508",
-    "video_id": "shopping4.mp4",
+    "video_id": "shopping4",
     "question": "①There are two items placed right next to each other.\n②Their price difference is 200.\n③The item on the right has a lighter color.\nWhat is the color of their price tags?",
     "answer_choice_0": "White",
     "answer_choice_1": "Yellow",
@@ -7114,7 +7114,7 @@
   },
   {
     "key": "509",
-    "video_id": "shopping4.mp4",
+    "video_id": "shopping4",
     "question": "Find an item that satisfies the following:\n①The packaging is white.\n②The item itself is brownish-yellow.\n③Every item has the number 100 on it.\nWhat is the price of this item?",
     "answer_choice_0": "2800",
     "answer_choice_1": "4800",
@@ -7128,7 +7128,7 @@
   },
   {
     "key": "510",
-    "video_id": "shopping4.mp4",
+    "video_id": "shopping4",
     "question": "①There is an item of which the protagonist takes two.\n②Let x be the price of the item to the right of this item.\n③Let y be the price of the purple vegetable in the video.\nWhat is x + y?",
     "answer_choice_0": "7190",
     "answer_choice_1": "6190",
@@ -7142,7 +7142,7 @@
   },
   {
     "key": "511",
-    "video_id": "shopping5.mp4",
+    "video_id": "shopping5",
     "question": "①The color of the shopping cart in the video is A.\n②There is a scene with 4 bottled products that look the same but have different colors.\n③The first letter on their label is A (the color name).\nWhat is the color of the leftmost bottle among these four?",
     "answer_choice_0": "Blue",
     "answer_choice_1": "Red",
@@ -7156,7 +7156,7 @@
   },
   {
     "key": "512",
-    "video_id": "shopping5.mp4",
+    "video_id": "shopping5",
     "question": "①There is a bottled product A.\n②The product to its right is red.\n③The product directly above it is green.\nWhat is the price of product A?",
     "answer_choice_0": "10.99",
     "answer_choice_1": "12.99",
@@ -7170,7 +7170,7 @@
   },
   {
     "key": "513",
-    "video_id": "shopping5.mp4",
+    "video_id": "shopping5",
     "question": "There is a product that satisfies:\n①The product immediately to its right is black.\n②It is composed mainly of white and color A.\n③Color A is the same as the color of a product with the 'elf' trademark.\nWhat is the first large letter on the top-left of this product's packaging?",
     "answer_choice_0": "m",
     "answer_choice_1": "s",
@@ -7184,7 +7184,7 @@
   },
   {
     "key": "514",
-    "video_id": "shopping5.mp4",
+    "video_id": "shopping5",
     "question": "①There is a distinct logo of shape A on the shopping cart.\n②There is another logo in the video that also has shape A.\n③The border color of this second logo matches the paper color on the Burt's Bees shelf.\nWhat is the first letter on the left of this logo?",
     "answer_choice_0": "A",
     "answer_choice_1": "B",
@@ -7198,7 +7198,7 @@
   },
   {
     "key": "515",
-    "video_id": "shopping5.mp4",
+    "video_id": "shopping5",
     "question": "①There is a product whose trademark name starts with 'f' and ②ends with 'e'.\n③Among these identical products, the main packaging color is not white.\nWhat is the color of the font for this trademark name?",
     "answer_choice_0": "Black",
     "answer_choice_1": "Blue",
@@ -7212,7 +7212,7 @@
   },
   {
     "key": "516",
-    "video_id": "shopping5.mp4",
+    "video_id": "shopping5",
     "question": "There is a product satisfying:\n①The main color is white.\n②There is a wood-colored product to its right.\n③To the left of this product, there is a sign with a portrait of a person.\nWhat is the race of this person?",
     "answer_choice_0": "White",
     "answer_choice_1": "Black",
@@ -7226,7 +7226,7 @@
   },
   {
     "key": "517",
-    "video_id": "shopping5.mp4",
+    "video_id": "shopping5",
     "question": "There is an object that satisfies:\n①It can be used to store things.\n②It has a total of three layers.\n③The top layer holds mainly white objects.\nWhat is stored on the bottom layer of this object?",
     "answer_choice_0": "A white box",
     "answer_choice_1": "A brown cardboard box",
@@ -7240,7 +7240,7 @@
   },
   {
     "key": "518",
-    "video_id": "shopping5.mp4",
+    "video_id": "shopping5",
     "question": "There is a product that satisfies:\n①Its color is the same as the protagonist's pants.\n②The first letter on the top left is S.\n③In one scene, it is placed under a purple-packaged object.\nWhat is the last letter on the bottom right of this product?",
     "answer_choice_0": "S",
     "answer_choice_1": "E",
@@ -7254,7 +7254,7 @@
   },
   {
     "key": "519",
-    "video_id": "shopping5.mp4",
+    "video_id": "shopping5",
     "question": "There is a shelf layer that satisfies:\n①The shelf above it and the shelf to its right have the same color.\n②The surface color of this shelf is A.\n③On the same level directly opposite, there is also a product with color A.\nWhat is the color of the product to the left of that product?",
     "answer_choice_0": "White",
     "answer_choice_1": "Yellow",
@@ -7268,7 +7268,7 @@
   },
   {
     "key": "520",
-    "video_id": "shopping5.mp4",
+    "video_id": "shopping5",
     "question": "①There is a sign with the word 'love' and a person A on it.\nAnother product satisfies:\n②It is located on the second shelf from the bottom.\n③The person on the package of the product next to it has the same skin color as A.\nBesides white, what is the other color on this product's packaging?",
     "answer_choice_0": "Red",
     "answer_choice_1": "Green",
@@ -7282,7 +7282,7 @@
   },
   {
     "key": "521",
-    "video_id": "shopping5.mp4",
+    "video_id": "shopping5",
     "question": "There is a product that satisfies:\n①Its packaging has grey components.\n②It is placed next to a black product.\n③Its color matches the shopping cart.\nHow many such products are there on the shelf with complete packaging (excluding display items)?",
     "answer_choice_0": "5",
     "answer_choice_1": "6",
@@ -7296,7 +7296,7 @@
   },
   {
     "key": "522",
-    "video_id": "shopping5.mp4",
+    "video_id": "shopping5",
     "question": "There is a product that satisfies:\n①It has the letter N on it.\n②The product to its left is color A, and to its right is color B.\n③The main color of the Burt's Bees product the protagonist held earlier was also A.\n④The main color of the product labeled 'Little Trees' is B.\nHow many such products are there on the shelf with complete packaging (excluding display items)?",
     "answer_choice_0": "7",
     "answer_choice_1": "8",
@@ -7310,7 +7310,7 @@
   },
   {
     "key": "523",
-    "video_id": "football_video.mp4",
+    "video_id": "football_video",
     "question": "There is a team that satisfies:\n①They have a center-back wearing jersey number 4.\n②This center-back is wearing yellow-green shoes.\n③The opposing team's number 9 forward scored a goal.\nWhat is the jersey color of this team's goalkeeper?",
     "answer_choice_0": "Green",
     "answer_choice_1": "Orange",
@@ -7324,7 +7324,7 @@
   },
   {
     "key": "524",
-    "video_id": "football_video.mp4",
+    "video_id": "football_video",
     "question": "There is a team where:\n①A scoring player A has a jersey name ending with the letter N.\n②Another scoring player B has a digit in his jersey number that is also present in player A's jersey number.\n③When player B scores, what is the jersey number of the player raising both arms in celebration?",
     "answer_choice_0": "2",
     "answer_choice_1": "4",
@@ -7338,7 +7338,7 @@
   },
   {
     "key": "525",
-    "video_id": "football_video.mp4",
+    "video_id": "football_video",
     "question": "There is a player who satisfies:\n①He is Moroccan.\n②He has the number 1 on his jersey.\n③He scored a goal in the video.\nWhich team did he score against?",
     "answer_choice_0": "Chelsea",
     "answer_choice_1": "Arsenal",
@@ -7352,7 +7352,7 @@
   },
   {
     "key": "526",
-    "video_id": "football_video.mp4",
+    "video_id": "football_video",
     "question": "There is a team that satisfies:\n①Their jersey is red.\n②The jersey has the Adidas logo.\n③The captain scores in the match.\nWhat is the sum of the jersey numbers of all the players from this team who scored in that match?",
     "answer_choice_0": "24",
     "answer_choice_1": "25",
@@ -7366,7 +7366,7 @@
   },
   {
     "key": "527",
-    "video_id": "football_video.mp4",
+    "video_id": "football_video",
     "question": "①A player scored a long-range goal from outside the box.\n②At the same time, there was Chinese text on the pitch-side advertising board.\n③The first digit of this player's jersey number is x.\n④In another match, a team conceded x goals. What is the position of the player wearing number x on that team?",
     "answer_choice_0": "Striker",
     "answer_choice_1": "Midfielder",
@@ -7380,7 +7380,7 @@
   },
   {
     "key": "528",
-    "video_id": "football_video.mp4",
+    "video_id": "football_video",
     "question": "①When Manchester United scored their second goal, a United player was visible outside the box witnessing the goal.\n②When Manchester United scored their first goal, what was the jersey number of the player to the right-rear of this player?",
     "answer_choice_0": "4",
     "answer_choice_1": "5",
@@ -7394,7 +7394,7 @@
   },
   {
     "key": "529",
-    "video_id": "football_video.mp4",
+    "video_id": "football_video",
     "question": "A team satisfies:\n①Their jersey is red.\n②A scoring player has the number 3 on his jersey.\n③What is the jersey number of the player who provided the assist for this team's second goal?",
     "answer_choice_0": "19",
     "answer_choice_1": "39",
@@ -7408,7 +7408,7 @@
   },
   {
     "key": "530",
-    "video_id": "football_video.mp4",
+    "video_id": "football_video",
     "question": "A team satisfies:\n①They scored three goals.\n②One player scored two of them.\nWhat was the posture of this player after scoring his last goal?",
     "answer_choice_0": "Running",
     "answer_choice_1": "Standing still",
@@ -7422,7 +7422,7 @@
   },
   {
     "key": "531",
-    "video_id": "football_video.mp4",
+    "video_id": "football_video",
     "question": "There is a player who satisfies:\n①He is English.\n②He scored a goal.\nHow many total goals were scored in the match involving this player?",
     "answer_choice_0": "1",
     "answer_choice_1": "2",
@@ -7435,7 +7435,7 @@
   },
   {
     "key": "532",
-    "video_id": "match1_liverpool.mp4",
+    "video_id": "match1_liverpool",
     "question": "①At the start, a player held a jersey.\n②The player behind this player is A.\n③This player (A) kicked a long ball after kickoff. Which position player from the green team headed this ball?",
     "answer_choice_0": "Left Back",
     "answer_choice_1": "Center Back",
@@ -7449,7 +7449,7 @@
   },
   {
     "key": "533",
-    "video_id": "match1_liverpool.mp4",
+    "video_id": "match1_liverpool",
     "question": "①After kickoff, player A passed the ball back and it went out of bounds.\n②Later, green team player B blocked a cross.\n③The cross was made with the right foot by an opponent.\n④The block happened inside the box and went out for a throw-in.\nWhat is the sum of player A's and player B's jersey numbers?",
     "answer_choice_0": "10",
     "answer_choice_1": "12",
@@ -7463,7 +7463,7 @@
   },
   {
     "key": "534",
-    "video_id": "match1_liverpool.mp4",
+    "video_id": "match1_liverpool",
     "question": "①A player from the red and white team made two consecutive crosses with his right foot.\n②Each cross was successfully defended by a different player.\n③Regarding the player who successfully defended the first cross, what is his nationality?",
     "answer_choice_0": "Dutch",
     "answer_choice_1": "English",
@@ -7477,7 +7477,7 @@
   },
   {
     "key": "535",
-    "video_id": "match1_liverpool.mp4",
+    "video_id": "match1_liverpool",
     "question": "①At the start, flames were released, and the number of flames released the first time was x.\n②For the green team's player number x, the player to his left in the formation is player B.\nWhat is player B's jersey number?",
     "answer_choice_0": "24",
     "answer_choice_1": "25",
@@ -7491,7 +7491,7 @@
   },
   {
     "key": "536",
-    "video_id": "match1_liverpool.mp4",
+    "video_id": "match1_liverpool",
     "question": "①During an attack, some green team players combined on the left flank.\n②The final shot/pass was completed by a German player.\nWhat was the jersey number of the player who made the penultimate pass in this attack?",
     "answer_choice_0": "10",
     "answer_choice_1": "8",
@@ -7505,7 +7505,7 @@
   },
   {
     "key": "537",
-    "video_id": "match1_liverpool.mp4",
+    "video_id": "match1_liverpool",
     "question": "①In the video, player A completed two shots.\n②For the second shot, the player who passed to him was B.\nWhat is the sum of player A and B's jersey numbers?",
     "answer_choice_0": "15",
     "answer_choice_1": "16",
@@ -7519,7 +7519,7 @@
   },
   {
     "key": "538",
-    "video_id": "match2_chelsea.mp4",
+    "video_id": "match2_chelsea",
     "question": "①In the video, there is a goal where only three passes were made starting from the center-back's first forward pass until the shot.\n②The scoring player's number is x.\n③During this attack, a white team defender fell down; his number is y.\nWhat is y - x?",
     "answer_choice_0": "1",
     "answer_choice_1": "2",
@@ -7532,7 +7532,7 @@
   },
   {
     "key": "539",
-    "video_id": "match2_chelsea.mp4",
+    "video_id": "match2_chelsea",
     "question": "①There is a goal scored with the left foot in the video.\n②This was not from a set-piece. The scoring player's number is x.\n③Later, a white team player fell, resulting in a penalty. This player's number is y.\nWhat is x / y?",
     "answer_choice_0": "5",
     "answer_choice_1": "2",
@@ -7546,7 +7546,7 @@
   },
   {
     "key": "540",
-    "video_id": "match2_chelsea.mp4",
+    "video_id": "match2_chelsea",
     "question": "①There were x penalties in total in this match.\n②The player who committed the foul for the second penalty is A.\n③Later, a pass from player A created a scoring chance, which was wasted by player B (number y).\nWhat is x + y?",
     "answer_choice_0": "10",
     "answer_choice_1": "11",
@@ -7560,7 +7560,7 @@
   },
   {
     "key": "541",
-    "video_id": "match2_chelsea.mp4",
+    "video_id": "match2_chelsea",
     "question": "There is a player A who satisfies:\n①He provided an assist for player B to score.\n②He missed a scoring opportunity.\n③Player B was once fouled by another player C.\nWhat is the first letter of player C's name on his jersey?",
     "answer_choice_0": "A",
     "answer_choice_1": "B",
@@ -7574,7 +7574,7 @@
   },
   {
     "key": "542",
-    "video_id": "match2_chelsea.mp4",
+    "video_id": "match2_chelsea",
     "question": "①When the blue team took a penalty, the white team player furthest to the right on screen was number x.\n②When the white team took a penalty, the blue team player furthest to the left on screen was number y.\nWhat is y - x?",
     "answer_choice_0": "4",
     "answer_choice_1": "5",
@@ -7588,7 +7588,7 @@
   },
   {
     "key": "543",
-    "video_id": "running_in_city.mp4",
+    "video_id": "running_in_city",
     "question": "There is a sign satisfying:\n①The pattern is generally triangular.\n②The label has two identical letters.\n③Its background color is A.\nAnother sign also satisfies:\n④Its background is also color A.\n⑤It also has two identical letters.\nWhat is the last letter on this second sign?",
     "answer_choice_0": "m",
     "answer_choice_1": "o",
@@ -7602,7 +7602,7 @@
   },
   {
     "key": "544",
-    "video_id": "running_in_city.mp4",
+    "video_id": "running_in_city",
     "question": "①The first person filmed passing the yellow and black obstacle in the video wears clothes of color A.\n②Later, when a child wearing pants of color A jumps over an obstacle,\n③a spectator wearing color A is watching.\nWhat is the color of the shirt of the person to the right of this spectator (from the video's perspective, not the spectator's)?",
     "answer_choice_0": "Black",
     "answer_choice_1": "Grey",
@@ -7616,7 +7616,7 @@
   },
   {
     "key": "545",
-    "video_id": "running_in_city.mp4",
+    "video_id": "running_in_city",
     "question": "①In the video, a trademark starting with V has a background color A.\n②A spectator wearing brown pants and a hat of color A is watching.\nWhat kind of pants is the person to the right of this spectator wearing?",
     "answer_choice_0": "Black shorts",
     "answer_choice_1": "Grey sweatpants",
@@ -7630,7 +7630,7 @@
   },
   {
     "key": "546",
-    "video_id": "running_in_city.mp4",
+    "video_id": "running_in_city",
     "question": "①In the video, a person wears a bandana of color A.\n②A person wearing both shirt and pants of color A swings across a bar.\n③When he swings past the bar, what color shoes is the person to his left wearing?",
     "answer_choice_0": "White",
     "answer_choice_1": "Red",
@@ -7644,7 +7644,7 @@
   },
   {
     "key": "547",
-    "video_id": "running_in_city.mp4",
+    "video_id": "running_in_city",
     "question": "There is a person satisfying:\n①Their shirt color is similar to the sky color in the video.\n②Their pants color is the same as the background color of a trademark starting with F.\nWhat color are the pants of the person who appears immediately after this person in the video?",
     "answer_choice_0": "Blue",
     "answer_choice_1": "Grey",
@@ -7658,7 +7658,7 @@
   },
   {
     "key": "548",
-    "video_id": "running_in_city.mp4",
+    "video_id": "running_in_city",
     "question": "There is a person satisfying:\n①He did a flip.\n②After landing, he rolled once.\n③This person's clothes are made of two colors, one is black.\nWhat is the other color?",
     "answer_choice_0": "White",
     "answer_choice_1": "Red",
@@ -7672,7 +7672,7 @@
   },
   {
     "key": "549",
-    "video_id": "running_in_city.mp4",
+    "video_id": "running_in_city",
     "question": "①In the video, a person is shirtless and wears shorts of color A.\n②The next parkour athlete appearing immediately after him wears clothes of color A.\nWhat is the color of the clothes of the parkour athlete appearing after that athlete?",
     "answer_choice_0": "Black",
     "answer_choice_1": "Grey",
@@ -7686,7 +7686,7 @@
   },
   {
     "key": "550",
-    "video_id": "running_in_city.mp4",
+    "video_id": "running_in_city",
     "question": "①In the video, a person wears a shirt ending with the letter H, and the shirt is color A.\n②Another sign has a white background,\n③black font,\n④and the first English letter is not V.\nWhat is the second English letter on this sign?",
     "answer_choice_0": "A",
     "answer_choice_1": "O",
@@ -7700,7 +7700,7 @@
   },
   {
     "key": "551",
-    "video_id": "running_in_city.mp4",
+    "video_id": "running_in_city",
     "question": "There is a person who:\n①Made a mistake during parkour.\n②Landed smoothly after a flip.\n③In the shot where he lands, what color is the hat worn by the person closest to the camera?",
     "answer_choice_0": "Black",
     "answer_choice_1": "White",
@@ -7714,7 +7714,7 @@
   },
   {
     "key": "552",
-    "video_id": "ht9.mp4",
+    "video_id": "ht9",
     "question": "There is a type of chair that satisfies:\n①It is outdoors.\n②It has more than one color.\n③There are two identical ones.\nWhat is the color of the back of this chair?",
     "answer_choice_0": "Black",
     "answer_choice_1": "Brown",
@@ -7728,7 +7728,7 @@
   },
   {
     "key": "553",
-    "video_id": "ht9.mp4",
+    "video_id": "ht9",
     "question": "①There is a lamp at the entrance to the house; the color of its main body is A.\nThere is also a table satisfying:\n②The table legs are also color A.\n③There are plants on the table.\nHow many legs does this table have?",
     "answer_choice_0": "4",
     "answer_choice_1": "2",
@@ -7742,7 +7742,7 @@
   },
   {
     "key": "554",
-    "video_id": "ht9.mp4",
+    "video_id": "ht9",
     "question": "①There is a type of chair of which there are six identical ones; the legs of these chairs are color A.\n②The house has a door handle which is also color A.\n③If a person faces this door looking from inside to outside, what is the most prominent thing on the ground outside?",
     "answer_choice_0": "Lawn",
     "answer_choice_1": "Swimming pool",
@@ -7756,7 +7756,7 @@
   },
   {
     "key": "555",
-    "video_id": "ht9.mp4",
+    "video_id": "ht9",
     "question": "Chair A satisfies:\n①It faces the window directly.\n②There is more than one chair identical to Chair A.\n③It is placed on a carpet.\n④If a person sits on this chair, what space is to their right?",
     "answer_choice_0": "Living room",
     "answer_choice_1": "Bathroom",
@@ -7770,7 +7770,7 @@
   },
   {
     "key": "556",
-    "video_id": "ht9.mp4",
+    "video_id": "ht9",
     "question": "If a person sits in a seat satisfying:\n①They can see a painting without turning their head.\n②There is a glass table in front of them.\n③There is a green plant to their front-left.\nHow many chairs are in the space (room/living room/bedroom) to this person's left?",
     "answer_choice_0": "4",
     "answer_choice_1": "5",
@@ -7784,7 +7784,7 @@
   },
   {
     "key": "557",
-    "video_id": "ht9.mp4",
+    "video_id": "ht9",
     "question": "①If a person stands in the dining room facing the kitchen, the refrigerator is in position x relative to them.\nIf another person stands on a bed that has ②white sheets and ③red stripes,\n④facing the foot of the bed,\nwhat is the other space located in position x relative to them?",
     "answer_choice_0": "Closet",
     "answer_choice_1": "Hallway",
@@ -7798,7 +7798,7 @@
   },
   {
     "key": "558",
-    "video_id": "ht9.mp4",
+    "video_id": "ht9",
     "question": "If a space satisfies:\n①The walls are mainly pink.\n②There is a mirror.\n③If a person stands facing the mirror, what color is the cabinet in front of them?",
     "answer_choice_0": "White",
     "answer_choice_1": "Brown",
@@ -7812,7 +7812,7 @@
   },
   {
     "key": "559",
-    "video_id": "ht9.mp4",
+    "video_id": "ht9",
     "question": "①If a person stands in a bathroom with pink wallpaper,\n②facing the mirror.\n③What is placed on the top shelf of the cabinet to their rear-right?",
     "answer_choice_0": "Towels",
     "answer_choice_1": "Nothing",
@@ -7826,7 +7826,7 @@
   },
   {
     "key": "560",
-    "video_id": "ht9.mp4",
+    "video_id": "ht9",
     "question": "If a chair satisfies:\n①It has wooden armrests.\n②From the front, you can see a bed and two windows.\n③A cloakroom is very close to its left.\nIf a person sits on this chair, on which side is the white cabinet in the room?",
     "answer_choice_0": "Left",
     "answer_choice_1": "Front",
@@ -7840,7 +7840,7 @@
   },
   {
     "key": "561",
-    "video_id": "ht9.mp4",
+    "video_id": "ht9",
     "question": "①If a person stands in front of a mirror facing it,\n②and there is an article of clothing immediately to their right.\n③Then, relative to this person, in which direction is the room with the blue-based bathtub?",
     "answer_choice_0": "Front",
     "answer_choice_1": "Left",
@@ -7854,7 +7854,7 @@
   },
   {
     "key": "562",
-    "video_id": "ht10.mp4",
+    "video_id": "ht10",
     "question": "①If a person lies on an outdoor lounge chair,\n②and the main door of the house is to their right,\n③what color is the chair cushion besides blue?",
     "answer_choice_0": "White",
     "answer_choice_1": "Black",
@@ -7868,7 +7868,7 @@
   },
   {
     "key": "563",
-    "video_id": "ht10.mp4",
+    "video_id": "ht10",
     "question": "There is a type of chair that satisfies:\n①It is in the living room.\n②It is on the first floor.\n③Multiple chairs are placed around the same table.\n④There is a pot of flowers on this table.\nHow many of these identical chairs are placed around this table?",
     "answer_choice_0": "6",
     "answer_choice_1": "10",
@@ -7882,7 +7882,7 @@
   },
   {
     "key": "564",
-    "video_id": "ht10.mp4",
+    "video_id": "ht10",
     "question": "①If a person stands at the door leading from the outdoor pool to the living room, facing indoors,\n②the largest painting in the living room is at position x relative to the person.\n③If another person sits on the sofa facing the TV directly, what is in their x position?",
     "answer_choice_0": "Table",
     "answer_choice_1": "TV",
@@ -7896,7 +7896,7 @@
   },
   {
     "key": "565",
-    "video_id": "ht10.mp4",
+    "video_id": "ht10",
     "question": "There is an object that satisfies:\n①It is black.\n②It is taller than the female protagonist.\n③If a person stands facing this object, in which direction is the TV?",
     "answer_choice_0": "Left-rear",
     "answer_choice_1": "Right-front",
@@ -7910,7 +7910,7 @@
   },
   {
     "key": "566",
-    "video_id": "ht10.mp4",
+    "video_id": "ht10",
     "question": "A sofa satisfies:\n①It has multiple cushions.\n②The color of one type of cushion matches the color of a stool in the sofa area.\n③If a person sits on this sofa facing outdoors, in which direction is the floor lamp in that area?",
     "answer_choice_0": "Left-front",
     "answer_choice_1": "Right-front",
@@ -7924,7 +7924,7 @@
   },
   {
     "key": "567",
-    "video_id": "ht10.mp4",
+    "video_id": "ht10",
     "question": "There is a space that satisfies:\n①It has more than one mirror.\n②It has large windows.\n③It is on the second floor.\n④If a person stands in this space facing the window, what space is to their right?",
     "answer_choice_0": "Bathroom",
     "answer_choice_1": "Closet",
@@ -7937,7 +7937,7 @@
   },
   {
     "key": "568",
-    "video_id": "ht10.mp4",
+    "video_id": "ht10",
     "question": "If a sitting area satisfies:\n①It has more than one cushion.\n②There is a TV nearby.\n③It is placed on a carpet.\n④One type of cushion has a color similar to the lounge chair by the pool.\nHow many such cushions are there?",
     "answer_choice_0": "3",
     "answer_choice_1": "4",
@@ -7951,7 +7951,7 @@
   },
   {
     "key": "569",
-    "video_id": "match3_tottenham_first_5_minutes.mp4",
+    "video_id": "match3_tottenham_first_5_minutes",
     "question": "In a shot:\n①There is a bald man in the shot.\n②The camera points towards the Newcastle team bench.\n③At this moment, there is a man on the bench.\n④He is not wearing purely black clothes.\nWhat is his action right now?",
     "answer_choice_0": "Clapping",
     "answer_choice_1": "Drinking water",
@@ -7965,7 +7965,7 @@
   },
   {
     "key": "570",
-    "video_id": "match3_tottenham_first_5_minutes.mp4",
+    "video_id": "match3_tottenham_first_5_minutes",
     "question": "①The player who touched the ball first at kickoff is player A.\n②After the goalkeeper kicked a long ball,\n③player number 19 challenged for a header.\n④If a person stands at player 19's position facing the Newcastle goal, what is the position of player A relative to this person?",
     "answer_choice_0": "Left-front",
     "answer_choice_1": "Right-rear",
@@ -7979,7 +7979,7 @@
   },
   {
     "key": "571",
-    "video_id": "match3_tottenham_first_5_minutes.mp4",
+    "video_id": "match3_tottenham_first_5_minutes",
     "question": "If a player satisfies:\n①He is a black player.\n②His preferred foot is the right foot.\n③He raised his hand to signal in the video.\nHow did this attack end after this player signaled?",
     "answer_choice_0": "Goal kick",
     "answer_choice_1": "Throw-in",
@@ -7993,7 +7993,7 @@
   },
   {
     "key": "572",
-    "video_id": "match3_tottenham_first_5_minutes.mp4",
+    "video_id": "match3_tottenham_first_5_minutes",
     "question": "①A player was fouled while turning.\n②He was wearing orange pants. Let the first digit of his jersey number be x.\n③During this attack, a Newcastle player opened both arms; his jersey number is y.\nWhat is x + y?",
     "answer_choice_0": "5",
     "answer_choice_1": "6",
@@ -8007,7 +8007,7 @@
   },
   {
     "key": "573",
-    "video_id": "match3_tottenham_first_5_minutes.mp4",
+    "video_id": "match3_tottenham_first_5_minutes",
     "question": "①A player performed a heel shot, and the defender marking him was player A.\n②The Tottenham center-forward is player B.\n③Before player number 20 took the corner kick,\n④if a person stands at player A's position facing the Tottenham goal, where is player B relative to this person?",
     "answer_choice_0": "Left-rear",
     "answer_choice_1": "Right-front",
@@ -8021,7 +8021,7 @@
   },
   {
     "key": "574",
-    "video_id": "match3_tottenham_first_5_minutes.mp4",
+    "video_id": "match3_tottenham_first_5_minutes",
     "question": "①A long-range shot from Newcastle missed the near post.\n②During this attack, when the Newcastle player took the shot, how many Newcastle players were in an offside position in the shot?",
     "answer_choice_0": "One",
     "answer_choice_1": "Three",
@@ -8034,7 +8034,7 @@
   },
   {
     "key": "575",
-    "video_id": "match3_tottenham_first_5_minutes.mp4",
+    "video_id": "match3_tottenham_first_5_minutes",
     "question": "①When player 41 took a long shot, Tottenham player A stepped up to block.\n②Player A was closest to player 41. Let A's jersey number be x.\n③Another player scored from a rebound after a teammate's header; his jersey number is y.\nWhat is x + y?",
     "answer_choice_0": "18",
     "answer_choice_1": "19",
@@ -8048,7 +8048,7 @@
   },
   {
     "key": "576",
-    "video_id": "match3_tottenham_first_5_minutes.mp4",
+    "video_id": "match3_tottenham_first_5_minutes",
     "question": "①In an attack, the referee cleverly dodged the passing lane from player A to player B.\n②Eventually, the ball went into the net in this attack.\n③The first digit of player A's jersey number is x.\n④From the moment the referee dodged the ball until the goal, y players touched the ball.\nWhat is x + y?",
     "answer_choice_0": "4",
     "answer_choice_1": "5",
@@ -8062,7 +8062,7 @@
   },
   {
     "key": "577",
-    "video_id": "match3_tottenham_first_5_minutes.mp4",
+    "video_id": "match3_tottenham_first_5_minutes",
     "question": "①Player A cut past a defender after receiving a through ball and scored.\n②The defender marking him fell down.\n③Player A also had a long shot that missed the goal. When he took that shot, excluding the goalkeeper, which position player from the white team was the furthest back?",
     "answer_choice_0": "Center Back",
     "answer_choice_1": "Right Back",
@@ -8076,7 +8076,7 @@
   },
   {
     "key": "578",
-    "video_id": "ht11.mp4",
+    "video_id": "ht11",
     "question": "①The number of steps on the stairs entering the house is x.\n②After walking up the steps, there are y layers of shelves on the protagonist's left.\n③There are a total of z sofas in the living room.\nWhat is x + y + z?",
     "answer_choice_0": "10",
     "answer_choice_1": "11",
@@ -8090,7 +8090,7 @@
   },
   {
     "key": "579",
-    "video_id": "ht11.mp4",
+    "video_id": "ht11",
     "question": "①The main color of the room's sink is A.\n②At the same time, among the seats in the living room, there is a cushion whose color is also A.\n③If a person sits on this chair, what is on their left?",
     "answer_choice_0": "A coffee table",
     "answer_choice_1": "A small table lamp",
@@ -8104,7 +8104,7 @@
   },
   {
     "key": "580",
-    "video_id": "ht11.mp4",
+    "video_id": "ht11",
     "question": "Suppose a person is sitting in a spot that satisfies the following:\n①There are windows on both the left and rear sides.\n②The seat is black.\n③If a person sits in this spot, in what direction is the restroom relative to them?",
     "answer_choice_0": "To the right",
     "answer_choice_1": "Directly ahead",
@@ -8118,7 +8118,7 @@
   },
   {
     "key": "581",
-    "video_id": "ht11.mp4",
+    "video_id": "ht11",
     "question": "①There is a painting A near the living room door.\n②If a person stands facing the painting, the direction of the sink relative to them is x.\n③If a person sits on the pink chair on the second floor, what is in their x direction?",
     "answer_choice_0": "A white wardrobe",
     "answer_choice_1": "A black TV",
@@ -8132,7 +8132,7 @@
   },
   {
     "key": "582",
-    "video_id": "ht12.mp4",
+    "video_id": "ht12",
     "question": "①There is a number above the entrance door, its color is A, and the last digit is x.\n②Find a shelf with y layers, where an object of color A is placed on the second layer from the bottom.\nWhat is x - y?",
     "answer_choice_0": "-2",
     "answer_choice_1": "-1",
@@ -8146,7 +8146,7 @@
   },
   {
     "key": "583",
-    "video_id": "ht12.mp4",
+    "video_id": "ht12",
     "question": "①A person stands facing an old-fashioned fireplace, and the stool to their front-left is color A. \nIf a person stands in front of a sink on the second floor that is ②mainly color A, ③what is on their right?",
     "answer_choice_0": "A stove",
     "answer_choice_1": "A refrigerator",
@@ -8160,7 +8160,7 @@
   },
   {
     "key": "584",
-    "video_id": "ht12.mp4",
+    "video_id": "ht12",
     "question": "①The chair closest to the door after entering is A. Object B satisfies: ②It is in the living room, ③is mainly white, and ④has a black object on top of it. \n⑤If a person sits on chair A, what direction is object B relative to them?",
     "answer_choice_0": "Front-right",
     "answer_choice_1": "Rear-right",
@@ -8174,7 +8174,7 @@
   },
   {
     "key": "585",
-    "video_id": "ht12.mp4",
+    "video_id": "ht12",
     "question": "There is a seating area that satisfies: ①It is in the living room, ②has other objects placed on it, and ③is dark-colored. \n④If a person sits in this place facing the TV, in what direction is the door of the house relative to them?",
     "answer_choice_0": "Front-left",
     "answer_choice_1": "Rear-left",
@@ -8188,7 +8188,7 @@
   },
   {
     "key": "586",
-    "video_id": "ht12.mp4",
+    "video_id": "ht12",
     "question": "There is a seat in the room that satisfies: ①There are multiple identical seats, ②they are placed on the first floor, and ③the one closest to the window is called A. \n④If a person sits on the yellow chair in the living room, in what direction is A relative to this person?",
     "answer_choice_0": "Rear-left",
     "answer_choice_1": "Front-left",
@@ -8202,7 +8202,7 @@
   },
   {
     "key": "587",
-    "video_id": "match5_part1.mp4",
+    "video_id": "match5_part1",
     "question": "A player satisfies: ①He follows the referee at the beginning, and ②the mascot child he is holding hands with wears red shoes. This player's number is x. \n③There is another player whose number is x - 12, and ④he is Portuguese. \nWhat is the shoe color of the mascot child led by this Portuguese player?",
     "answer_choice_0": "Black",
     "answer_choice_1": "Red",
@@ -8216,7 +8216,7 @@
   },
   {
     "key": "588",
-    "video_id": "match5_part1.mp4",
+    "video_id": "match5_part1",
     "question": "There is a player A who satisfies: ①Has long hair, ②wears pink shoes. \n③At the beginning, during West Ham United's long-shot attack, this player switched defensive marks. What is the jersey number of the player he was initially defending?",
     "answer_choice_0": "9",
     "answer_choice_1": "10",
@@ -8230,7 +8230,7 @@
   },
   {
     "key": "589",
-    "video_id": "match5_part1.mp4",
+    "video_id": "match5_part1",
     "question": "There is a player in the video who: ①Cuts inside from the left wing, ②takes a shot, and ③the shot is saved by the goalkeeper. \nIn the one-on-one scene before cutting inside, what is the jersey number of the player defending him?",
     "answer_choice_0": "2",
     "answer_choice_1": "3",
@@ -8244,7 +8244,7 @@
   },
   {
     "key": "590",
-    "video_id": "match5_part1.mp4",
+    "video_id": "match5_part1",
     "question": "A player satisfies: ①Completed a shot with his right foot, and ②the first letter of the name on his jersey is S. This player's number is x. \n③In another corner kick attack, a Manchester United defender completed a shot with his foot, and his number is y. \nWhat is y - x?",
     "answer_choice_0": "12",
     "answer_choice_1": "14",
@@ -8258,7 +8258,7 @@
   },
   {
     "key": "591",
-    "video_id": "match5_part1.mp4",
+    "video_id": "match5_part1",
     "question": "There is a player who: ①Has played for both teams, and ②had a touch of the ball in his own penalty area. \n③After this touch, the next player to touch the ball is A. What is player A's jersey number?",
     "answer_choice_0": "2",
     "answer_choice_1": "4",
@@ -8272,7 +8272,7 @@
   },
   {
     "key": "592",
-    "video_id": "match5_part1.mp4",
+    "video_id": "match5_part1",
     "question": "In one attack: ①Player A passed the ball to Player B, ②Player B made a pass switching the play from the right flank to the left flank, and ③the ball eventually went out over the end line. \nWhat is Player B's jersey number minus Player A's jersey number?",
     "answer_choice_0": "1",
     "answer_choice_1": "2",
@@ -8286,7 +8286,7 @@
   },
   {
     "key": "593",
-    "video_id": "match5_part1.mp4",
+    "video_id": "match5_part1",
     "question": "①During an attack, a West Ham United player's hand was injured. \n②At this time, the player defending him was player A. \n③During West Ham United's first goal, what is the jersey number of the West Ham player closest to player A?",
     "answer_choice_0": "9",
     "answer_choice_1": "10",
@@ -8300,7 +8300,7 @@
   },
   {
     "key": "594",
-    "video_id": "match5_part1.mp4",
+    "video_id": "match5_part1",
     "question": "In one scene, two players A and B ①shake hands together. \n②Both players have the digit 2 in their jersey numbers, and ③the white player B is taller. \n④The last person to have physical contact with player B before this was player C. What is player C's jersey number?",
     "answer_choice_0": "12",
     "answer_choice_1": "22",
@@ -8314,7 +8314,7 @@
   },
   {
     "key": "595",
-    "video_id": "match5_part1.mp4",
+    "video_id": "match5_part1",
     "question": "①The first digit of the jersey number of the player who scored West Ham's first goal is x. Another player satisfies: \n②His jersey number also contains the digit x, and ③he had a shot blocked inside the penalty area. \nWhat is the other digit in this player's jersey number besides x?",
     "answer_choice_0": "1",
     "answer_choice_1": "2",
@@ -8328,7 +8328,7 @@
   },
   {
     "key": "596",
-    "video_id": "match5_part1.mp4",
+    "video_id": "match5_part1",
     "question": "①There was a goal where the goalkeeper was nutmegged. \n②At the exact moment the assisting player passed the ball, the jersey number of the last defender of the white team was x. At this time, there is a player in the frame whose ③jersey number's two digits sum to x, and ④he is located to the front-left of the referee (who is facing the white team's goal). \nWhere is this player located at this moment?",
     "answer_choice_0": "Inside the goal area",
     "answer_choice_1": "Near the corner flag",
@@ -8342,7 +8342,7 @@
   },
   {
     "key": "597",
-    "video_id": "basketball1_1.mp4",
+    "video_id": "basketball1_1",
     "question": "A player satisfies: ①Immediately picked up the ball after his team conceded a goal, and ②subsequently took the ball on offense and scored. ③After this goal, a teammate patted him. What is the jersey number of this teammate?",
     "answer_choice_0": "1",
     "answer_choice_1": "5",
@@ -8356,7 +8356,7 @@
   },
   {
     "key": "598",
-    "video_id": "basketball1_1.mp4",
+    "video_id": "basketball1_1",
     "question": "A player satisfies: ①He is a player of the red team, and ②fell to the ground after scoring a goal. The player who passed him the ball during this attack is A. ③Player A later completed a block. What is the jersey number of the player who was blocked?",
     "answer_choice_0": "1",
     "answer_choice_1": "5",
@@ -8370,7 +8370,7 @@
   },
   {
     "key": "599",
-    "video_id": "basketball1_1.mp4",
+    "video_id": "basketball1_1",
     "question": "A shot satisfies: ①The No. 1 player is in the free-throw lane, and ②a player is dunking. At this moment, the player to the left of the No. 1 player is player A. ③Later, another No. 1 player B scores a layup after spinning. In what direction is player A relative to player B at this time?",
     "answer_choice_0": "Behind him",
     "answer_choice_1": "To his left",
@@ -8384,7 +8384,7 @@
   },
   {
     "key": "600",
-    "video_id": "basketball1_1.mp4",
+    "video_id": "basketball1_1",
     "question": "A shot attempt satisfies: ①It is inside the three-point line, and ②is on the right side of the screen. In this attack, the player setting the screen is player A. What is player A's jersey number?",
     "answer_choice_0": "1",
     "answer_choice_1": "5",
@@ -8398,7 +8398,7 @@
   },
   {
     "key": "601",
-    "video_id": "basketball1_1.mp4",
+    "video_id": "basketball1_1",
     "question": "An attack satisfies: ①The offensive player first fakes a drive to the left, ②then fakes a drive to the right, and ③finally shoots and scores. For the shooting player A and the defending player B, what is the absolute difference between their jersey numbers?",
     "answer_choice_0": "12",
     "answer_choice_1": "18",
@@ -8412,7 +8412,7 @@
   },
   {
     "key": "602",
-    "video_id": "basketball1_1.mp4",
+    "video_id": "basketball1_1",
     "question": "An attack satisfies: ①A player wearing red shoes completes an excellent defensive play, and ②his teammate subsequently shoots and scores. ③After this shot goes in, what is the shoe color of the first player to touch the ball?",
     "answer_choice_0": "White",
     "answer_choice_1": "Black",
@@ -8426,7 +8426,7 @@
   },
   {
     "key": "603",
-    "video_id": "basketball1_1.mp4",
+    "video_id": "basketball1_1",
     "question": "①A player falls to the ground after shooting, and ②he subsequently tries to defend the opponent but fails. ③At the exact moment this player's defense is breached, what is the shoe color of the red team player closest to the baseline?",
     "answer_choice_0": "Black",
     "answer_choice_1": "White",
@@ -8440,7 +8440,7 @@
   },
   {
     "key": "604",
-    "video_id": "basketball1_1.mp4",
+    "video_id": "basketball1_1",
     "question": "①Player number x scored a goal, defended by player number y, and ②x - y = 10. ③In another attack, when player x competes with player 30 for a rebound, what is the shoe color of the red team player farthest from the baseline?",
     "answer_choice_0": "Black",
     "answer_choice_1": "Red",
@@ -8454,7 +8454,7 @@
   },
   {
     "key": "605",
-    "video_id": "america_football1.mp4",
+    "video_id": "america_football1",
     "question": "In one scene, ①two people walk over to celebrate with player A. ②These two people share an identical digit on their jerseys, and ③one of them has a name ending in the letter T. What is the first letter of the name on player A's jersey?",
     "answer_choice_0": "M",
     "answer_choice_1": "S",
@@ -8468,7 +8468,7 @@
   },
   {
     "key": "606",
-    "video_id": "america_football1.mp4",
+    "video_id": "america_football1",
     "question": "①During an attack, player No. 4 stands on the Super Bowl logo to catch the ball. ②In this attack, the ball is eventually kicked out of bounds. ③When this player catches the ball, what is the jersey number of the teammate closest to him in front of him?",
     "answer_choice_0": "31",
     "answer_choice_1": "25",
@@ -8482,7 +8482,7 @@
   },
   {
     "key": "607",
-    "video_id": "america_football1.mp4",
+    "video_id": "america_football1",
     "question": "①In an attack, a player retreats into his own end zone before passing the ball forward. ②The receiving player immediately falls to the ground. ③The moment the receiving player stands up, what is the jersey number of the teammate to his left?",
     "answer_choice_0": "11",
     "answer_choice_1": "85",
@@ -8496,7 +8496,7 @@
   },
   {
     "key": "608",
-    "video_id": "america_football1.mp4",
+    "video_id": "america_football1",
     "question": "①In one shot, the NE team's score is x. ②The player with number x is also in the frame, standing near the 10-yard line. At this time, a player satisfies: ③He is a SEA team player, and ④he remains relatively close to the front-left of player x. What is this player's jersey number?",
     "answer_choice_0": "12",
     "answer_choice_1": "24",
@@ -8510,7 +8510,7 @@
   },
   {
     "key": "609",
-    "video_id": "america_football1.mp4",
+    "video_id": "america_football1",
     "question": "①During an attack, player number x tackles player number y to the ground, and ②x + y = 40. ③Between the two, the first letter on player x's jersey is M. What is the last digit of player y's jersey number?",
     "answer_choice_0": "3",
     "answer_choice_1": "4",
@@ -8524,7 +8524,7 @@
   },
   {
     "key": "610",
-    "video_id": "america_football1.mp4",
+    "video_id": "america_football1",
     "question": "①Once the quarterback catches the ball and runs straight forward. ②In this attack, there were originally x players charging straight toward the opponent's end line. ③Find the y-yard line on the field, where y = x * 10 + 10. Approximately how many yards away from this line is the player when he falls to the ground?",
     "answer_choice_0": "3 yards",
     "answer_choice_1": "5 yards",
@@ -8538,7 +8538,7 @@
   },
   {
     "key": "611",
-    "video_id": "america_football1.mp4",
+    "video_id": "america_football1",
     "question": "A player A satisfies: ①The first letter of his name is B, and ②he once stood shoulder-to-shoulder with an opposing player B. ③The two digits of player B's jersey number are the same. What is the last letter of player A's name?",
     "answer_choice_0": "S",
     "answer_choice_1": "N",
@@ -8552,7 +8552,7 @@
   },
   {
     "key": "612",
-    "video_id": "america_football1.mp4",
+    "video_id": "america_football1",
     "question": "In one scene: ①Player A and Player B are in the same frame. ②Both players' jersey numbers consist of repeated identical digits (e.g., 22, 33). ③Player A is the one with the larger number. ④Relative to Player A, the teammate of Player A positioned in front of Player A is Player C. What is Player C's jersey number?",
     "answer_choice_0": "12",
     "answer_choice_1": "29",
@@ -8566,7 +8566,7 @@
   },
   {
     "key": "613",
-    "video_id": "america_football1.mp4",
+    "video_id": "america_football1",
     "question": "①When SEA's number 7 walks toward the bench, x players walk past and overtake him. In another attack, ②there are only x players behind the 35-yard line, and ③the quarterback passes the ball to his front-right. Around which yard line does this attack eventually conclude?",
     "answer_choice_0": "25-yard line",
     "answer_choice_1": "30-yard line",
@@ -8580,7 +8580,7 @@
   },
   {
     "key": "614",
-    "video_id": "america_football1.mp4",
+    "video_id": "america_football1",
     "question": "During an attack: ①The quarterback throws a long pass to his front-right. ②The teammate fails to catch it, and ③a defensive player falls down. Approximately at what yard line does the ball land?",
     "answer_choice_0": "15-yard line",
     "answer_choice_1": "20-yard line",
@@ -8594,7 +8594,7 @@
   },
   {
     "key": "615",
-    "video_id": "america_football1.mp4",
+    "video_id": "america_football1",
     "question": "In one shot: ①Two referees open their arms simultaneously, and ②then walk in opposite directions. ③When both referees open their arms simultaneously, the player near the sideline on the bottom-right of the screen is A. What is player A's jersey number?",
     "answer_choice_0": "12",
     "answer_choice_1": "24",
@@ -8608,7 +8608,7 @@
   },
   {
     "key": "616",
-    "video_id": "america_football1.mp4",
+    "video_id": "america_football1",
     "question": "During an attack: ①The quarterback passes the ball to his front-right. ②The receiving player runs forward and crosses midfield. ③The jersey of the player who successfully makes the final tackle contains the digit 2. Approximately how many yards did the receiving player advance?",
     "answer_choice_0": "10",
     "answer_choice_1": "20",
@@ -8622,7 +8622,7 @@
   },
   {
     "key": "617",
-    "video_id": "variety_show1.mp4",
+    "video_id": "variety_show1",
     "question": "Object A in the video satisfies: ①It is black, and ②it has three legs. ③If a person stands at object A and faces the entrance of the house where the object is located, in what direction is the staircase leading to the second floor relative to this person?",
     "answer_choice_0": "Front-left",
     "answer_choice_1": "Front-right",
@@ -8636,7 +8636,7 @@
   },
   {
     "key": "618",
-    "video_id": "variety_show1.mp4",
+    "video_id": "variety_show1",
     "question": "①Person A is wearing a green hat when entering the door. Person B, upon entering, satisfies: ②She is behind and to the left of person A, ③has black hair, and ④is female. ⑤Later, when the man wearing a blue-and-white hat sits on the sofa and a three-stripe visual effect appears on the screen, ⑥the person to the left of person B is person C. What color are person C's pants?",
     "answer_choice_0": "Blue",
     "answer_choice_1": "White",
@@ -8650,7 +8650,7 @@
   },
   {
     "key": "619",
-    "video_id": "variety_show1.mp4",
+    "video_id": "variety_show1",
     "question": "①In the living room to the front-right after entering the main door, there are x pillows that are entirely dark blue. ②Another painting mainly consists of x identical objects A, and ③its background is black. What is the rightmost English letter on object A in this painting?",
     "answer_choice_0": "A",
     "answer_choice_1": "E",
@@ -8664,7 +8664,7 @@
   },
   {
     "key": "620",
-    "video_id": "variety_show1.mp4",
+    "video_id": "variety_show1",
     "question": "①When the people in green clothes shake hands with a person in black clothes and black pants, the second person to shake his hand is A. ②When an exclamation mark appears next to the person wearing the green hat, what is A doing with a female?",
     "answer_choice_0": "Shaking hands",
     "answer_choice_1": "Hugging",
@@ -8678,7 +8678,7 @@
   },
   {
     "key": "621",
-    "video_id": "variety_show1.mp4",
+    "video_id": "variety_show1",
     "question": "①The team members once shook hands with a person in black clothes, and the first person to shake his hand is A. ②The person wearing the blue hat is B. ③When the person wearing the green hat points a finger at a doll, in what direction is person A relative to person B?",
     "answer_choice_0": "To his left",
     "answer_choice_1": "To his right",
@@ -8692,7 +8692,7 @@
   },
   {
     "key": "622",
-    "video_id": "variety_show1.mp4",
+    "video_id": "variety_show1",
     "question": "①In one shot, a person wears his cap backward; this person is A. ②The person in the shot immediately preceding this scene is person B. What does person B's hair look like?",
     "answer_choice_0": "Short black hair",
     "answer_choice_1": "Long straight brown hair",
@@ -8706,7 +8706,7 @@
   },
   {
     "key": "623",
-    "video_id": "variety_show1.mp4",
+    "video_id": "variety_show1",
     "question": "①In one shot, all 7 people in green clothes are in the frame, ②the girl wearing jeans is on the far left of the screen, and ③she is standing by the window. ④In this shot, among five people in the frame, two people have their crossbody bags slung in a different direction than the other three. What is the pants color of the person further to the right among these two?",
     "answer_choice_0": "Blue",
     "answer_choice_1": "White",
@@ -8720,7 +8720,7 @@
   },
   {
     "key": "624",
-    "video_id": "variety_show1.mp4",
+    "video_id": "variety_show1",
     "question": "In one shot: ①There are five people in green clothes in the frame, and ②the person wearing the green hat is closest to the camera. ③In this shot, person A blocks person B from view. What kind of pants is person A wearing?",
     "answer_choice_0": "White long pants",
     "answer_choice_1": "Black shorts",
@@ -8734,7 +8734,7 @@
   },
   {
     "key": "625",
-    "video_id": "variety_show1.mp4",
+    "video_id": "variety_show1",
     "question": "In the video: ①Person A reaches out and touches person B, ②the temples of person A's glasses are white, and ③person B's hat is blue. At this moment, in what direction is the brown-haired female relative to person B?",
     "answer_choice_0": "Front-left",
     "answer_choice_1": "Rear-left",
@@ -8748,7 +8748,7 @@
   },
   {
     "key": "626",
-    "video_id": "variety_show1.mp4",
+    "video_id": "variety_show1",
     "question": "①In one scene, three people sit on the long sofa in the video, and ②the person exactly in the middle is person A. ③In another scene, several people in green clothes shake hands with a person B who is wearing black clothes and black pants. In this scene, in what direction is person A relative to person B?",
     "answer_choice_0": "To his left",
     "answer_choice_1": "Front-left",
@@ -8762,7 +8762,7 @@
   },
   {
     "key": "627",
-    "video_id": "variety_show1.mp4",
+    "video_id": "variety_show1",
     "question": "①Among all the people wearing green clothes, the person with the relatively darkest skin tone is person A. ②In one shot, person B, to the right of person A, is talking, and a red visual effect appears. ③The person communicating with person B at this time is person C. What does person C's hair look like?",
     "answer_choice_0": "Short black hair",
     "answer_choice_1": "Long brown hair",
@@ -8776,7 +8776,7 @@
   },
   {
     "key": "628",
-    "video_id": "variety_show1.mp4",
+    "video_id": "variety_show1",
     "question": "There is a person A who satisfies: ①Wears a white top, and ②wears black glasses. ③When person A makes his first appearance, person B satisfies: ④She is behind and to the left of person A, and ⑤her clothes are not white. What is the color of person B's shoes?",
     "answer_choice_0": "White",
     "answer_choice_1": "Black",
@@ -8790,7 +8790,7 @@
   },
   {
     "key": "629",
-    "video_id": "variety_show1.mp4",
+    "video_id": "variety_show1",
     "question": "①Among all the people wearing green clothes, the first person to hug the child in white clothes is person A. ②At this time, the person to the left of person A is person B. What is the head styling of person B?",
     "answer_choice_0": "Wearing a black cap forward",
     "answer_choice_1": "Long black hair",
@@ -8804,7 +8804,7 @@
   },
   {
     "key": "630",
-    "video_id": "variety_show2.mp4",
+    "video_id": "variety_show2",
     "question": "In one shot that satisfies: ①Among all the people in green clothes, only one person is standing, and ②the standing person is on the far left of the screen. ③In this shot, a person uses his right hand to stroke his hair. Counting from right to left, which position is this person among everyone in the frame?",
     "answer_choice_0": "First",
     "answer_choice_1": "Second",
@@ -8818,7 +8818,7 @@
   },
   {
     "key": "631",
-    "video_id": "variety_show2.mp4",
+    "video_id": "variety_show2",
     "question": "①Person A is wearing a blue swimming cap. ②The moment person A climbs ashore from the pool, the direction of the orange swimming ring relative to A is x. ③In the same shot, for person B who is standing and wearing white shoes, what is in person B's x direction?",
     "answer_choice_0": "A lounge chair",
     "answer_choice_1": "A wooden table",
@@ -8832,7 +8832,7 @@
   },
   {
     "key": "632",
-    "video_id": "variety_show2.mp4",
+    "video_id": "variety_show2",
     "question": "In one shot satisfying: ①Among all the people wearing green clothes, four are sitting and one is standing. ②Find the large goose float above the pool at this moment. ③There are x objects floating on the water to the front-left relative to the large goose float. What is x?",
     "answer_choice_0": "1",
     "answer_choice_1": "2",
@@ -8846,7 +8846,7 @@
   },
   {
     "key": "633",
-    "video_id": "variety_show2.mp4",
+    "video_id": "variety_show2",
     "question": "①In one shot, the large goose float in the water flies onto the shore for the first time. ②Near where the goose lands on the shore, there is a chair, and the color of its cushion is A. ③The person in the video wearing arm sleeves of color A is person B. ④When the third person jumps into the water, what is person B's action?",
     "answer_choice_0": "Standing by the pool",
     "answer_choice_1": "Standing in the pool",
@@ -8860,7 +8860,7 @@
   },
   {
     "key": "634",
-    "video_id": "variety_show2.mp4",
+    "video_id": "variety_show2",
     "question": "Person A satisfies: ①Wears black arm sleeves, and ②wears purely black pants with no other colors. ③In one shot, person A squats by the pool together with a man. In what direction is the man wearing the green hat relative to person A?",
     "answer_choice_0": "Front-right",
     "answer_choice_1": "Front-left",
@@ -8874,7 +8874,7 @@
   },
   {
     "key": "635",
-    "video_id": "variety_show2.mp4",
+    "video_id": "variety_show2",
     "question": "①In one shot, a person A wears her cap backward, and ②assume she is standing by the pool facing the pool at this moment. ③Person B is lying on a bed receiving a massage. In what direction is person B relative to person A?",
     "answer_choice_0": "Front-left",
     "answer_choice_1": "Rear-left",
@@ -8888,7 +8888,7 @@
   },
   {
     "key": "636",
-    "video_id": "variety_show2.mp4",
+    "video_id": "variety_show2",
     "question": "Person A satisfies: ①Wears glasses, and ②is not wearing a hat. ③When he is chatting with person B who is drinking yellow milk tea, how many people in the background behind him are wearing hats?",
     "answer_choice_0": "2",
     "answer_choice_1": "3",
@@ -8902,7 +8902,7 @@
   },
   {
     "key": "637",
-    "video_id": "variety_show2.mp4",
+    "video_id": "variety_show2",
     "question": "①Person A in the video once stood up from a squatting position, and ②began rummaging through his bag. ③Assuming he stands where he stood up and faces the direction he was facing when he stood up, in what direction is the person wearing the blue hat relative to him?",
     "answer_choice_0": "Front-left",
     "answer_choice_1": "Rear-left",
@@ -8916,7 +8916,7 @@
   },
   {
     "key": "638",
-    "video_id": "variety_show2.mp4",
+    "video_id": "variety_show2",
     "question": "①In one scene, two yellow dice appear. ②At this moment, the color of the glasses temples of the person closest to the camera is A. ③The person in the video wearing arm sleeves of color A is person B. What is the color of this person's hat?",
     "answer_choice_0": "Blue",
     "answer_choice_1": "Black",
@@ -8930,7 +8930,7 @@
   },
   {
     "key": "639",
-    "video_id": "variety_show2.mp4",
+    "video_id": "variety_show2",
     "question": "A person in the video satisfies: ①The color of the arm sleeves he wears is not white, and ②he once received a massage on the massage bed. ③While he is receiving the massage and others are gathered around the pool discussing, what is the main body part he is receiving the massage on?",
     "answer_choice_0": "Back",
     "answer_choice_1": "Shoulders",
