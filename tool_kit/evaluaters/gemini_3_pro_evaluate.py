@@ -383,25 +383,25 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--api_key",
-        default="",
+        default=None,
         type=str,
         help="Google API key",
     )
     parser.add_argument(
         "--video_path",
-        default="/Users/jadeons/Desktop/code/research/perception comp/PerceptionComp/videos",
+        default="/Users/jadeons/Desktop/project/research/PerceptionComp/PerceptionComp/videos",
         type=str,
         help="Path to video files",
     )
     parser.add_argument(
         "--json_file",
-        default="/Users/jadeons/Desktop/code/research/perception comp/PerceptionComp/winter_ques/3in1_new.json",
+        default="/Users/jadeons/Desktop/project/research/PerceptionComp/PerceptionComp/winter_ques/new_batch_1.json",
         type=str,
         help="Path to test JSON",
     )
     parser.add_argument(
         "--output_path",
-        default="/Users/jadeons/Desktop/code/research/perception comp/PerceptionComp/test_result_winter/gemini_3_pro",
+        default="/Users/jadeons/Desktop/project/research/PerceptionComp/PerceptionComp/test_result_winter/gemini_3_pro",
         type=str,
         help="Output directory",
     )
