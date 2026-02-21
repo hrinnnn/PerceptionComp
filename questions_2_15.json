@@ -4650,7 +4650,7 @@
   {
     "key": "333",
     "video_id": "ht5",
-      "question": "An object satisfies: ① it is black, ② it is taller than a person. \nIf a person stands in front of this object facing it, in what direction is the television relative to them?",
+    "question": "An object satisfies: ① it is black, ② it is taller than a person. \nIf a person stands in front of this object facing it, in what direction is the television relative to them?",
     "answer_choice_0": "To the right",
     "answer_choice_1": "To the left",
     "answer_choice_2": "Directly in front",
@@ -8942,5 +8942,4 @@
     "category": "variety show",
     "difficulty": 1
   }
-
 ]

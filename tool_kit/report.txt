@@ -1,0 +1,27 @@
+============================================================
+JSON文件处理报告
+============================================================
+
+统计信息:
+  总项目数: 136
+  不同的video_id数量: 14
+  不同的category数量: 1
+
+所有video_id:
+  - shopping1_0-5
+  - shopping1_10-15
+  - shopping1_15-20
+  - shopping1_20-25
+  - shopping1_25-30
+  - shopping1_5-10
+  - shopping2_0-5
+  - shopping2_10-15
+  - shopping2_5-10
+  - shopping3_0-4
+  - shopping3_12-14
+  - shopping3_14-17
+  - shopping3_4-8
+  - shopping3_8-12
+
+category分布:
+  - shopping: 136 项

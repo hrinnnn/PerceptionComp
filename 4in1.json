@@ -3427,7 +3427,7 @@
     "answer_id": 2,
     "answer": "A tote bag",
     "category": "outdoor tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "246",
@@ -3441,7 +3441,7 @@
     "answer_id": 2,
     "answer": "White",
     "category": "outdoor tour",
-	"difficulty": 0
+    "difficulty": 0
   },
   {
     "key": "247",
@@ -3455,7 +3455,7 @@
     "answer_id": 0,
     "answer": "1 person",
     "category": "outdoor tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "248",
@@ -3469,7 +3469,7 @@
     "answer_id": 1,
     "answer": "White",
     "category": "outdoor tour",
-	"difficulty": 0
+    "difficulty": 0
   },
   {
     "key": "249",
@@ -3483,7 +3483,7 @@
     "answer_id": 2,
     "answer": "Rear-right",
     "category": "outdoor tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "250",
@@ -3497,7 +3497,7 @@
     "answer_id": 2,
     "answer": "Light Blue",
     "category": "outdoor tour",
-	"difficulty": 0
+    "difficulty": 0
   },
   {
     "key": "251",
@@ -3511,7 +3511,7 @@
     "answer_id": 0,
     "answer": "Left side",
     "category": "outdoor tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "252",
@@ -3525,7 +3525,7 @@
     "answer_id": 2,
     "answer": "Goodbye",
     "category": "outdoor tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "253",
@@ -3539,7 +3539,7 @@
     "answer_id": 2,
     "answer": "Turn left, then walk straight for about 10 meters.",
     "category": "outdoor tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "254",
@@ -3553,7 +3553,7 @@
     "answer_id": 1,
     "answer": "South",
     "category": "outdoor tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "255",
@@ -3567,7 +3567,7 @@
     "answer_id": 3,
     "answer": "5; Rear-right",
     "category": "outdoor tour",
-	"difficulty": 0
+    "difficulty": 0
   },
   {
     "key": "256",
@@ -3581,7 +3581,7 @@
     "answer_id": 2,
     "answer": "Rear-left",
     "category": "outdoor tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "257",
@@ -3595,7 +3595,7 @@
     "answer_id": 2,
     "answer": "Rear-left",
     "category": "outdoor tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "258",
@@ -3609,7 +3609,7 @@
     "answer_id": 1,
     "answer": "Yellow; Front-right",
     "category": "outdoor tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "259",
@@ -3623,7 +3623,7 @@
     "answer_id": 1,
     "answer": "Right side",
     "category": "outdoor tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "260",
@@ -3637,7 +3637,7 @@
     "answer_id": 2,
     "answer": "White",
     "category": "outdoor tour",
-	"difficulty": 0
+    "difficulty": 0
   },
   {
     "key": "261",
@@ -3651,7 +3651,7 @@
     "answer_id": 2,
     "answer": "Staff area",
     "category": "outdoor tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "262",
@@ -3665,7 +3665,7 @@
     "answer_id": 4,
     "answer": "A cola can",
     "category": "outdoor tour",
-	"difficulty": 0
+    "difficulty": 0
   },
   {
     "key": "263",
@@ -3679,7 +3679,7 @@
     "answer_id": 2,
     "answer": "A tape dispenser",
     "category": "outdoor tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "264",
@@ -3693,7 +3693,7 @@
     "answer_id": 3,
     "answer": "Behind",
     "category": "outdoor tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "265",
@@ -3707,7 +3707,7 @@
     "answer_id": 2,
     "answer": "A black and white plaid shirt",
     "category": "outdoor tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "266",
@@ -3721,7 +3721,7 @@
     "answer_id": 2,
     "answer": "3",
     "category": "outdoor tour",
-	"difficulty": 0
+    "difficulty": 0
   },
   {
     "key": "267",
@@ -3735,7 +3735,7 @@
     "answer_id": 3,
     "answer": "Front-right",
     "category": "outdoor tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "268",
@@ -3749,7 +3749,7 @@
     "answer_id": 2,
     "answer": "4",
     "category": "outdoor tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "269",
@@ -3763,7 +3763,7 @@
     "answer_id": 2,
     "answer": "Khaki",
     "category": "outdoor tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "270",
@@ -3777,7 +3777,7 @@
     "answer_id": 3,
     "answer": "Rear-right",
     "category": "home tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "271",
@@ -3791,7 +3791,7 @@
     "answer_id": 1,
     "answer": "Four",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "272",
@@ -3805,7 +3805,7 @@
     "answer_id": 3,
     "answer": "Rear-right",
     "category": "home tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "273",
@@ -3819,7 +3819,7 @@
     "answer_id": 2,
     "answer": "Lawn",
     "category": "home tour",
-	"difficulty": 0
+    "difficulty": 0
   },
   {
     "key": "274",
@@ -3833,7 +3833,7 @@
     "answer_id": 1,
     "answer": "Right side",
     "category": "home tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "275",
@@ -3847,7 +3847,7 @@
     "answer_id": 3,
     "answer": "A beige sofa",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "276",
@@ -3861,7 +3861,7 @@
     "answer_id": 0,
     "answer": "Color A: Light Brown, Color B: Dark Brown",
     "category": "home tour",
-	"difficulty": 0
+    "difficulty": 0
   },
   {
     "key": "277",
@@ -3875,7 +3875,7 @@
     "answer_id": 1,
     "answer": "White",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "278",
@@ -3889,7 +3889,7 @@
     "answer_id": 1,
     "answer": "Abstract sculpture",
     "category": "home tour",
-	"difficulty": 0
+    "difficulty": 0
   },
   {
     "key": "279",
@@ -3903,7 +3903,7 @@
     "answer_id": 1,
     "answer": "Sink",
     "category": "home tour",
-	"difficulty": 0
+    "difficulty": 0
   },
   {
     "key": "280",
@@ -3917,7 +3917,7 @@
     "answer_id": 3,
     "answer": "Gray",
     "category": "home tour",
-	"difficulty": 0
+    "difficulty": 0
   },
   {
     "key": "281",
@@ -3931,7 +3931,7 @@
     "answer_id": 3,
     "answer": "Beige/Off-white",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "282",
@@ -3945,7 +3945,7 @@
     "answer_id": 1,
     "answer": "Two",
     "category": "home tour",
-	"difficulty": 0
+    "difficulty": 0
   },
   {
     "key": "283",
@@ -3959,7 +3959,7 @@
     "answer_id": 4,
     "answer": "Black",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "284",
@@ -3973,7 +3973,7 @@
     "answer_id": 0,
     "answer": "White",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "285",
@@ -3987,7 +3987,7 @@
     "answer_id": 0,
     "answer": "Black",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "286",
@@ -4001,7 +4001,7 @@
     "answer_id": 2,
     "answer": "Four",
     "category": "home tour",
-	"difficulty": 0
+    "difficulty": 0
   },
   {
     "key": "287",
@@ -4015,7 +4015,7 @@
     "answer_id": 0,
     "answer": "Bed",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "288",
@@ -4029,7 +4029,7 @@
     "answer_id": 4,
     "answer": "6",
     "category": "home tour",
-	"difficulty": 0
+    "difficulty": 0
   },
   {
     "key": "289",
@@ -4043,7 +4043,7 @@
     "answer_id": 3,
     "answer": "6",
     "category": "outdoor tour",
-	"difficulty": 0
+    "difficulty": 0
   },
   {
     "key": "290",
@@ -4057,7 +4057,7 @@
     "answer_id": 4,
     "answer": "Triangle",
     "category": "outdoor tour",
-	"difficulty": 0
+    "difficulty": 0
   },
   {
     "key": "291",
@@ -4071,7 +4071,7 @@
     "answer_id": 2,
     "answer": "159",
     "category": "outdoor tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "292",
@@ -4084,7 +4084,8 @@
     "answer_choice_4": "dpd",
     "answer_id": 3,
     "answer": "deadline",
-    "category": "outdoor tour","difficulty": 0
+    "category": "outdoor tour",
+    "difficulty": 0
   },
   {
     "key": "293",
@@ -4098,7 +4099,7 @@
     "answer_id": 3,
     "answer": "Purple",
     "category": "outdoor tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "294",
@@ -4112,7 +4113,7 @@
     "answer_id": 2,
     "answer": "L",
     "category": "outdoor tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "295",
@@ -4126,7 +4127,7 @@
     "answer_id": 4,
     "answer": "Green",
     "category": "outdoor tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "296",
@@ -4140,7 +4141,7 @@
     "answer_id": 2,
     "answer": "A fountain",
     "category": "outdoor tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "297",
@@ -4154,7 +4155,7 @@
     "answer_id": 1,
     "answer": "White",
     "category": "outdoor tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "298",
@@ -4168,7 +4169,7 @@
     "answer_id": 3,
     "answer": "A lion",
     "category": "outdoor tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "299",
@@ -4182,7 +4183,7 @@
     "answer_id": 1,
     "answer": "Turn left, walk a dozen meters, then turn right and walk a dozen meters",
     "category": "outdoor tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "300",
@@ -4196,7 +4197,7 @@
     "answer_id": 0,
     "answer": "A Christmas tree",
     "category": "outdoor tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "301",
@@ -4210,7 +4211,7 @@
     "answer_id": 3,
     "answer": "Pink",
     "category": "outdoor tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "302",
@@ -4224,7 +4225,7 @@
     "answer_id": 2,
     "answer": "Black",
     "category": "outdoor tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "303",
@@ -4238,7 +4239,7 @@
     "answer_id": 3,
     "answer": "Southwest",
     "category": "outdoor tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "304",
@@ -4252,7 +4253,7 @@
     "answer_id": 2,
     "answer": "Brick red",
     "category": "outdoor tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "305",
@@ -4266,7 +4267,7 @@
     "answer_id": 3,
     "answer": "Green",
     "category": "outdoor tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "306",
@@ -4280,7 +4281,7 @@
     "answer_id": 4,
     "answer": "taxi",
     "category": "outdoor tour",
-	"difficulty": 0
+    "difficulty": 0
   },
   {
     "key": "307",
@@ -4294,7 +4295,7 @@
     "answer_id": 3,
     "answer": "Black",
     "category": "outdoor tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "308",
@@ -4307,7 +4308,8 @@
     "answer_choice_4": "Rear-left",
     "answer_id": 3,
     "answer": "Front-right",
-    "category": "home tour","difficulty": 2
+    "category": "home tour",
+    "difficulty": 2
   },
   {
     "key": "309",
@@ -4321,7 +4323,7 @@
     "answer_id": 2,
     "answer": "Three",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "310",
@@ -4335,7 +4337,7 @@
     "answer_id": 3,
     "answer": "7",
     "category": "home tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "311",
@@ -4349,7 +4351,7 @@
     "answer_id": 2,
     "answer": "Orange",
     "category": "home tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "312",
@@ -4363,7 +4365,7 @@
     "answer_id": 4,
     "answer": "A black computer chair",
     "category": "home tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "313",
@@ -4377,7 +4379,7 @@
     "answer_id": 0,
     "answer": "Yellow",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "314",
@@ -4391,7 +4393,7 @@
     "answer_id": 1,
     "answer": "Stairs",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "315",
@@ -4405,7 +4407,7 @@
     "answer_id": 0,
     "answer": "Round",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "316",
@@ -4419,7 +4421,7 @@
     "answer_id": 3,
     "answer": "Dark brown",
     "category": "home tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "317",
@@ -4433,7 +4435,7 @@
     "answer_id": 1,
     "answer": "Two",
     "category": "home tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "318",
@@ -4447,7 +4449,7 @@
     "answer_id": 2,
     "answer": "Black stairs",
     "category": "home tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "319",
@@ -4461,7 +4463,7 @@
     "answer_id": 0,
     "answer": "Pool",
     "category": "home tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "320",
@@ -4475,7 +4477,7 @@
     "answer_id": 1,
     "answer": "Bathtub",
     "category": "home tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "321",
@@ -4489,7 +4491,7 @@
     "answer_id": 2,
     "answer": "7",
     "category": "home tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "322",
@@ -4503,7 +4505,7 @@
     "answer_id": 2,
     "answer": "Four",
     "category": "home tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "323",
@@ -4517,7 +4519,7 @@
     "answer_id": 3,
     "answer": "Dark green",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "324",
@@ -4531,7 +4533,7 @@
     "answer_id": 1,
     "answer": "Two trees",
     "category": "outdoor tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "325",
@@ -4545,7 +4547,7 @@
     "answer_id": 4,
     "answer": "Yellow",
     "category": "outdoor tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "326",
@@ -4559,7 +4561,7 @@
     "answer_id": 2,
     "answer": "Gray",
     "category": "outdoor tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "327",
@@ -4572,13 +4574,14 @@
     "answer_choice_4": "Camper",
     "answer_id": 3,
     "answer": "Skechers",
-    "category": "outdoor tour","difficulty": 2
+    "category": "outdoor tour",
+    "difficulty": 2
   },
   {
     "key": "328",
     "video_id": "cw4",
     "question": "If a person stands at an intersection that satisfies: 1) three of the four surrounding buildings are brick red. 2) If this person stands in the center of the intersection, 3) facing the one building that is not white, what is the name of the shop behind them?",
-    "answer_choice_0": "The Nags Head", 
+    "answer_choice_0": "The Nags Head",
     "answer_choice_1": "The White Lion",
     "answer_choice_2": "Skechers",
     "answer_choice_3": "Gaucho",
@@ -4586,7 +4589,7 @@
     "answer_id": 1,
     "answer": "The White Lion",
     "category": "outdoor tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "329",
@@ -4600,7 +4603,7 @@
     "answer_id": 2,
     "answer": "Three floors",
     "category": "outdoor tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "330",
@@ -4614,7 +4617,7 @@
     "answer_id": 2,
     "answer": "Four",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "331",
@@ -4628,7 +4631,7 @@
     "answer_id": 3,
     "answer": "Television",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "332",
@@ -4642,7 +4645,7 @@
     "answer_id": 4,
     "answer": "Floor lamp",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "333",
@@ -4656,7 +4659,7 @@
     "answer_id": 1,
     "answer": "To the left",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "334",
@@ -4670,7 +4673,7 @@
     "answer_id": 3,
     "answer": "Green",
     "category": "home tour",
-	"difficulty": 0
+    "difficulty": 0
   },
   {
     "key": "335",
@@ -4684,7 +4687,7 @@
     "answer_id": 2,
     "answer": "3",
     "category": "outdoor tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "336",
@@ -4698,7 +4701,7 @@
     "answer_id": 3,
     "answer": "21",
     "category": "outdoor tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "337",
@@ -4712,7 +4715,7 @@
     "answer_id": 3,
     "answer": "Nunhead",
     "category": "outdoor tour",
-	"difficulty": 0
+    "difficulty": 0
   },
   {
     "key": "338",
@@ -4726,7 +4729,7 @@
     "answer_id": 2,
     "answer": "A mirror",
     "category": "home tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "339",
@@ -4740,7 +4743,7 @@
     "answer_id": 2,
     "answer": "A painting of a horse",
     "category": "home tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "340",
@@ -4754,7 +4757,7 @@
     "answer_id": 2,
     "answer": "Two",
     "category": "home tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "341",
@@ -4768,7 +4771,7 @@
     "answer_id": 2,
     "answer": "A pot of green plant",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "342",
@@ -4782,7 +4785,7 @@
     "answer_id": 1,
     "answer": "A wooden table",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "343",
@@ -4796,7 +4799,7 @@
     "answer_id": 2,
     "answer": "To the left",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "344",
@@ -4810,7 +4813,7 @@
     "answer_id": 3,
     "answer": "Stand up, turn left, and walk forward 3 meters",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "345",
@@ -4824,7 +4827,7 @@
     "answer_id": 1,
     "answer": "The television",
     "category": "home tour",
-	"difficulty": 0
+    "difficulty": 0
   },
   {
     "key": "346",
@@ -4838,7 +4841,7 @@
     "answer_id": 2,
     "answer": "A string of light bulbs",
     "category": "home tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "347",
@@ -4852,7 +4855,7 @@
     "answer_id": 3,
     "answer": "White",
     "category": "home tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "348",
@@ -4866,7 +4869,7 @@
     "answer_id": 2,
     "answer": "Two",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "349",
@@ -4880,7 +4883,7 @@
     "answer_id": 1,
     "answer": "Second",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "350",
@@ -4894,7 +4897,7 @@
     "answer_id": 4,
     "answer": "Off-white",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "351",
@@ -4908,7 +4911,7 @@
     "answer_id": 3,
     "answer": "Kitchen",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "352",
@@ -4922,7 +4925,7 @@
     "answer_id": 3,
     "answer": "Circle",
     "category": "home tour",
-	"difficulty": 0
+    "difficulty": 0
   },
   {
     "key": "353",
@@ -4936,7 +4939,7 @@
     "answer_id": 1,
     "answer": "Rear-right",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "354",
@@ -4950,7 +4953,7 @@
     "answer_id": 3,
     "answer": "Two",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "355",
@@ -4964,7 +4967,7 @@
     "answer_id": 2,
     "answer": "8",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "356",
@@ -4978,7 +4981,7 @@
     "answer_id": 2,
     "answer": "Three",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "357",
@@ -4992,7 +4995,7 @@
     "answer_id": 3,
     "answer": "Lower-right",
     "category": "home tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "358",
@@ -5006,7 +5009,7 @@
     "answer_id": 2,
     "answer": "A washing machine",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "359",
@@ -5020,7 +5023,7 @@
     "answer_id": 2,
     "answer": "Three",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "360",
@@ -5034,7 +5037,7 @@
     "answer_id": 2,
     "answer": "A television",
     "category": "home tour",
-	"difficulty": 0
+    "difficulty": 0
   },
   {
     "key": "361",
@@ -5048,7 +5051,7 @@
     "answer_id": 2,
     "answer": "Orange",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "362",
@@ -5062,7 +5065,7 @@
     "answer_id": 4,
     "answer": "Beige",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "363",
@@ -5076,7 +5079,7 @@
     "answer_id": 0,
     "answer": "Front-left",
     "category": "home tour",
-	"difficulty": 0
+    "difficulty": 0
   },
   {
     "key": "364",
@@ -5090,7 +5093,7 @@
     "answer_id": 0,
     "answer": "Pink",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "365",
@@ -5104,7 +5107,7 @@
     "answer_id": 0,
     "answer": "Rear-left",
     "category": "home tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "366",
@@ -5118,7 +5121,7 @@
     "answer_id": 0,
     "answer": "Guest Bathroom",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "367",
@@ -5132,7 +5135,7 @@
     "answer_id": 0,
     "answer": "White",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "368",
@@ -5146,7 +5149,7 @@
     "answer_id": 0,
     "answer": "Six",
     "category": "home tour",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "369",
@@ -5160,7 +5163,7 @@
     "answer_id": 0,
     "answer": "A multi-colored painting",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "370",
@@ -5174,7 +5177,7 @@
     "answer_id": 0,
     "answer": "The toilet",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "371",
@@ -5188,7 +5191,7 @@
     "answer_id": 0,
     "answer": "Two",
     "category": "home tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "372",
@@ -5202,7 +5205,7 @@
     "answer_id": 0,
     "answer": "Two",
     "category": "outdoor tour",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "373",
@@ -5216,7 +5219,7 @@
     "answer_id": 0,
     "answer": "Gray",
     "category": "outdoor tour",
-	"difficulty": 0
+    "difficulty": 0
   },
   {
     "key": "374",
@@ -5230,7 +5233,7 @@
     "answer_id": 1,
     "answer": "Upper-left side",
     "category": "Shopping",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "375",
@@ -5244,7 +5247,7 @@
     "answer_id": 2,
     "answer": "Three",
     "category": "Shopping",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "376",
@@ -5258,7 +5261,7 @@
     "answer_id": 2,
     "answer": "6",
     "category": "Shopping",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "377",
@@ -5272,7 +5275,7 @@
     "answer_id": 3,
     "answer": "Black",
     "category": "Shopping",
-	"difficulty": 2
+    "difficulty": 2
   },
   {
     "key": "378",
@@ -5286,7 +5289,7 @@
     "answer_id": 2,
     "answer": "Black",
     "category": "Shopping",
-	"difficulty": 1
+    "difficulty": 1
   },
   {
     "key": "379",
