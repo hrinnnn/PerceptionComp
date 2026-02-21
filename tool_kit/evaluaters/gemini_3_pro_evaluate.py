@@ -383,7 +383,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--api_key",
-        default="AlzaSyAgvVcUyRQyqjRfTeZ8xrOEfnWYKFz12Gc",
+        default="",
         type=str,
         help="Google API key",
     )
