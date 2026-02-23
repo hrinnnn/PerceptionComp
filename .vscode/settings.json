@@ -1,5 +1,11 @@
 {
     "python-envs.defaultEnvManager": "ms-python.python:conda",
     "python-envs.defaultPackageManager": "ms-python.python:conda",
-    "python-envs.pythonProjects": []
+	"python-envs.pythonProjects": [],
+	"chat.tools.terminal.autoApprove": {
+		"/^python3 tool_kit/standardize_categories\\.py --dry-run$/": {
+			"approve": true,
+			"matchCommandLine": true
+		}
+	}
 }
