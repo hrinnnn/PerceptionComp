@@ -425,13 +425,13 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--json_file",
-        default="/Users/jadeons/Desktop/project/research/PerceptionComp/PerceptionComp/winter_ques/new_batch_1.json",
+        default="/Users/jadeons/Desktop/project/research/PerceptionComp/PerceptionComp/summer_ques/4in1.json",
         type=str,
         help="Path to test JSON",
     )
     parser.add_argument(
         "--output_path",
-        default="/Users/jadeons/Desktop/project/research/PerceptionComp/PerceptionComp/test_result_winter/gemini_3_pro",
+        default="/Users/jadeons/Desktop/project/research/PerceptionComp/PerceptionComp/test_result_summer/gemini_3_pro",
         type=str,
         help="Output directory",
     )

@@ -1,0 +1,88 @@
+============================================================
+JSON文件处理报告
+============================================================
+
+统计信息:
+  总项目数: 500
+  不同的video_id数量: 72
+  不同的category数量: 4
+
+所有video_id:
+  - 10PeopleFight_1m-4m
+  - 10PeopleFight_4m-8m
+  - 2000People_0m-2m
+  - 2000People_7m-11m
+  - Ages_1m-5m
+  - BeastGames_16m-20m
+  - BeastGames_3m-5m
+  - BeastGames_6m-8m
+  - BiggestYoutubers_1m-3m
+  - BiggestYoutubers_4m-6m
+  - Celebrities_1m-3m
+  - Celebrities_4m-6m
+  - Elimination_1m-3m
+  - FPV 1
+  - FPV 10
+  - FPV 11
+  - FPV 12
+  - FPV 2
+  - FPV 3
+  - FPV 4
+  - FPV 5
+  - FPV 6
+  - FPV 7
+  - FPV 8
+  - FPV 9
+  - Hiding_1m-4m
+  - Hiding_4m-7m
+  - Ronaldo_1m-3m
+  - Street Parkour 1
+  - Street Skateboard 1
+  - Street Skateboard 2
+  - Street Skateboard 3
+  - Street Skateboard 4
+  - Street Skateboard 5
+  - Street Skateboard 6
+  - Twins_2m-5m
+  - Twins_5m-8m
+  - america_football1
+  - basketball1_1
+  - football_video
+  - ht10
+  - ht11
+  - ht12
+  - ht14
+  - ht9
+  - match1_liverpool
+  - match2_chelsea
+  - match3_tottenham_first_5_minutes
+  - match5_part1
+  - running_in_city
+  - shopping1_0-5
+  - shopping1_10-15
+  - shopping1_15-20
+  - shopping1_20-25
+  - shopping1_25-30
+  - shopping1_5-10
+  - shopping2_0-5
+  - shopping2_10-15
+  - shopping2_5-10
+  - shopping3
+  - shopping3_0-4
+  - shopping3_12-14
+  - shopping3_14-17
+  - shopping3_17-21
+  - shopping3_4-8
+  - shopping3_8-12
+  - shopping4
+  - shopping5
+  - variety_show1
+  - variety_show2
+  - variety_show3
+  - variety_show4
+
+category分布:
+  - home tour: 42 项
+  - shopping: 172 项
+  - sport: 178 项
+  - variety show: 108 项
