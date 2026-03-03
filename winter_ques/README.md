@@ -15,3 +15,5 @@ added by zzx:
 我们需要统一一下分类。现在题目中的分类不统一，到时候统计数据很麻烦
 体育统一设置为sport，购物设置为shopping，户外outdoor tour
 综艺叫variety show（要把show改成variety show）
+
+大家可以把新出的题加到1001-1100.json文件中

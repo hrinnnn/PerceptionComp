@@ -822,7 +822,8 @@
     "answer_id": 4,
     "answer": "Directly behind",
     "category": "shopping",
-    "difficulty": 2
+    "difficulty": 2,
+    "answer_choice_4": "Directly behind"
   },
   {
     "key": "60",
@@ -2529,7 +2530,8 @@
     "answer_id": 1,
     "answer": "2",
     "category": "sport",
-    "difficulty": 1
+    "difficulty": 1,
+    "answer_choice_4": "5"
   },
   {
     "key": "182",
@@ -2626,7 +2628,8 @@
     "answer_id": 2,
     "answer": "3",
     "category": "sport",
-    "difficulty": 2
+    "difficulty": 2,
+    "answer_choice_4": "5"
   },
   {
     "key": "189",
@@ -3031,7 +3034,8 @@
     "answer_id": 2,
     "answer": "Bedroom",
     "category": "home tour",
-    "difficulty": 3
+    "difficulty": 3,
+    "answer_choice_4": "Kitchen"
   },
   {
     "key": "218",
@@ -3128,7 +3132,8 @@
     "answer_id": 2,
     "answer": "Two",
     "category": "sport",
-    "difficulty": 1
+    "difficulty": 1,
+    "answer_choice_4": "Five"
   },
   {
     "key": "225",
@@ -5717,7 +5722,8 @@
     "answer_id": 2,
     "answer": "3",
     "category": "sport",
-    "difficulty": 2
+    "difficulty": 2,
+    "answer_choice_4": "5"
   },
   {
     "key": "410",
@@ -5744,7 +5750,8 @@
     "answer_id": 2,
     "answer": "2",
     "category": "sport",
-    "difficulty": 1
+    "difficulty": 1,
+    "answer_choice_4": "5"
   },
   {
     "key": "412",
@@ -5757,7 +5764,8 @@
     "answer_id": 2,
     "answer": "4",
     "category": "sport",
-    "difficulty": 2
+    "difficulty": 2,
+    "answer_choice_4": "6"
   },
   {
     "key": "413",
@@ -5896,7 +5904,8 @@
     "answer_id": 2,
     "answer": "3rd",
     "category": "sport",
-    "difficulty": 1
+    "difficulty": 1,
+    "answer_choice_4": "5th"
   },
   {
     "key": "423",
@@ -6063,7 +6072,8 @@
     "answer_id": 2,
     "answer": "3rd",
     "category": "sport",
-    "difficulty": 1
+    "difficulty": 1,
+    "answer_choice_4": "5th"
   },
   {
     "key": "435",
@@ -6104,7 +6114,8 @@
     "answer_id": 2,
     "answer": "Right rear",
     "category": "sport",
-    "difficulty": 1
+    "difficulty": 1,
+    "answer_choice_4": "Right front"
   },
   {
     "key": "438",
@@ -6131,7 +6142,8 @@
     "answer_id": 2,
     "answer": "3rd",
     "category": "sport",
-    "difficulty": 1
+    "difficulty": 1,
+    "answer_choice_4": "5th"
   },
   {
     "key": "440",
