@@ -3,11 +3,68 @@ JSON文件处理报告
 ============================================================
 
 统计信息:
-  总项目数: 57
-  不同的video_id数量: 57
-  不同的category数量: 3
+  总项目数: 114
+  不同的video_id数量: 114
+  不同的category数量: 5
 
 所有video_id:
+  - 2077-1
+  - 2077-2
+  - 2077-3
+  - 2077-4
+  - 2077-5
+  - 2077-6
+  - 2077-7
+  - 2077-8
+  - 2077-9
+  - 50Youtubers_0m-1m10s
+  - 50Youtubers_1m10s-1m30s
+  - 50Youtubers_1m30s-2m
+  - 50Youtubers_2m-3m
+  - 50Youtubers_3m-4m
+  - 50Youtubers_4m-5m
+  - 50Youtubers_5m-6m
+  - 50Youtubers_6m-7m
+  - 50Youtubers_7m-8m
+  - 50Youtubers_8m-9m
+  - KendallHome_0m-1m
+  - KendallHome_11m-12m
+  - KendallHome_1m-2m
+  - KendallHome_2m-3m
+  - KendallHome_3m-4m
+  - KendallHome_4m-5m
+  - KendallHome_5m-6m
+  - KendallHome_7m-8m
+  - MandyHome_0m-1m
+  - MandyHome_3m-4m
+  - MandyHome_6m-7m
+  - RobertHome_0m-1m
+  - RobertHome_1m-2m
+  - RobertHome_2m-3m
+  - RobertHome_3m-4m
+  - RobertHome_4m-5m
+  - black_myth_1
+  - black_myth_2
+  - black_myth_3
+  - elden ring 1
+  - elden ring 10
+  - elden ring 11
+  - elden ring 12
+  - elden ring 13
+  - elden ring 14
+  - elden ring 15
+  - elden ring 16
+  - elden ring 17
+  - elden ring 18
+  - elden ring 19
+  - elden ring 2
+  - elden ring 3
+  - elden ring 4
+  - elden ring 5
+  - elden ring 6
+  - elden ring 7
+  - elden ring 8
+  - elden ring 9
   - luxury_home1_0-1
   - luxury_home1_1-2
   - luxury_home1_10-11
@@ -67,6 +124,8 @@ JSON文件处理报告
   - shopping4_9-10
 
 category分布:
+  - game: 31 项
   - home tour: 12 项
   - movie: 25 项
   - shopping: 20 项
+  - variety show: 26 项
