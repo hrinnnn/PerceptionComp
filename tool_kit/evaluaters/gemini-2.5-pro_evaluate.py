@@ -425,7 +425,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--json_file",
-        default="/Users/jadeons/Desktop/project/research/PerceptionComp/PerceptionComp/winter_ques/new_batch_1.json",
+        default="/Users/jadeons/Desktop/project/research/PerceptionComp/PerceptionComp/winter_ques/new_batch.json",
         type=str,
         help="Path to test JSON",
     )
