@@ -1,0 +1,17 @@
+% Columns: Outdoor Tour | Shopping | Sport | Home Tour | Show | Movie | Game | Level 1 | Level 2 | Level 3 | Overall
+% Source: winter_ques/1-1114.json (difficulty corrected 1/2/3)
+
+% Qwen3-VL-30B-Instruct  (1111 answered, 382 correct, 34.38%)
+Qwen3-VL\citep{qwen3} & 30B & 64 & 32.48 & 42.64 & 20.21 & 31.25 & 48.32 & 27.27 & 45.16 & 38.03 & 34.87 & 25.48 & 34.38 \\
+
+% Qwen3-VL-30B-Thinking  (1110 answered, 396 correct, 35.68%)
+\rowcolor{green!10!white} Qwen3-VL-Thinking\citep{qwen3} & 30B & 64 & 39.13 & 36.04 & 26.94 & 25.78 & 46.31 & 38.10 & 32.26 & 35.65 & 37.06 & 32.69 & 35.68 \\
+
+% Qwen3-VL-235B-Instruct  (1111 answered, 378 correct, 34.02%)
+Qwen3-VL\citep{qwen3} & 235B & 64 & 39.64 & 36.04 & 23.83 & 32.03 & 40.27 & 22.73 & 0.00 & 35.57 & 33.99 & 30.77 & 34.02 \\
+
+% Qwen3-VL-235B-Thinking  (1110 answered, 424 correct, 38.20%)
+\rowcolor{green!10!white} Qwen3-VL-Thinking\citep{qwen3} & 235B & 64 & 38.87 & 41.12 & 30.57 & 33.59 & 48.99 & 42.86 & 22.58 & 39.46 & 38.16 & 35.58 & 38.20 \\
+
+% GLM-4.5V  (1101 answered, 404 correct, 36.69%)
+GLM-4.5V\citep{glm4.5v} & 106B & 64 & 36.57 & 37.56 & 30.77 & 28.12 & 51.01 & 52.17 & 22.58 & 39.10 & 34.37 & 36.59 & 36.69 \\
