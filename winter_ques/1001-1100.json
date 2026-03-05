@@ -1,356 +1,6 @@
 [
   {
     "key": "1",
-    "video_id": "movie1",
-    "question": "If a scene satisfies: ①There are two people in the scene, ②the woman is looking at the man, and ③a bright lamp is to the rear-left of the man. In what direction is the microphone relative to the man?",
-    "answer_choice_0": "Front-right",
-    "answer_choice_1": "Rear-left",
-    "answer_choice_2": "Rear-right",
-    "answer_choice_3": "Directly behind",
-    "answer_choice_4": "Front-left",
-    "answer_id": 4,
-    "answer": "Front-left",
-    "category": "movie",
-    "difficulty": 2
-  },
-  {
-    "key": "2",
-    "video_id": "movie2",
-    "question": "In one shot: ①The man is facing the TV, and ②there is a chair behind the man. How many TVs are there in this shot?",
-    "answer_choice_0": "1",
-    "answer_choice_1": "2",
-    "answer_choice_2": "3",
-    "answer_choice_3": "4",
-    "answer_choice_4": "5",
-    "answer_id": 1,
-    "answer": "2",
-    "category": "movie",
-    "difficulty": 1
-  },
-  {
-    "key": "3",
-    "video_id": "movie3",
-    "question": "In one shot: ①There is a desk lamp, and ②there is a person. ③The walkie-talkie is to the left of the desk lamp. What does the person in the frame look like?",
-    "answer_choice_0": "A man with short hair",
-    "answer_choice_1": "A woman with long blonde hair",
-    "answer_choice_2": "A woman with shoulder-length hair",
-    "answer_choice_3": "A child with a hat",
-    "answer_choice_4": "An old man with glasses",
-    "answer_id": 2,
-    "answer": "A woman with shoulder-length hair",
-    "category": "movie",
-    "difficulty": 1
-  },
-  {
-    "key": "4",
-    "video_id": "movie4",
-    "question": "In one shot: ①A woman is standing leaning against the door, and ②she is wearing black clothes. ③On the table behind her, how many white glass cups are there?",
-    "answer_choice_0": "2",
-    "answer_choice_1": "4",
-    "answer_choice_2": "6",
-    "answer_choice_3": "8",
-    "answer_choice_4": "10",
-    "answer_id": 2,
-    "answer": "6",
-    "category": "movie",
-    "difficulty": 2
-  },
-  {
-    "key": "5",
-    "video_id": "movie5",
-    "question": "In one shot: ①Everyone is sitting at the table, and a person satisfies: ②She has long blonde hair, and ③the person sitting to her right is male. What color clothes is the person to her left wearing?",
-    "answer_choice_0": "Red",
-    "answer_choice_1": "Black",
-    "answer_choice_2": "White",
-    "answer_choice_3": "Blue",
-    "answer_choice_4": "Green",
-    "answer_id": 3,
-    "answer": "Blue",
-    "category": "movie",
-    "difficulty": 2
-  },
-  {
-    "key": "6",
-    "video_id": "movie6",
-    "question": "In one shot: ①There are two people, ②the person in yellow is standing to the right of the person in black (relative to the person in black), and ③there is a banana on the table behind the person in yellow. What is the woman holding in her hands?",
-    "answer_choice_0": "A spoon",
-    "answer_choice_1": "A cup",
-    "answer_choice_2": "A phone",
-    "answer_choice_3": "A fork and a knife",
-    "answer_choice_4": "A pen",
-    "answer_id": 3,
-    "answer": "A fork and a knife",
-    "category": "movie",
-    "difficulty": 1
-  },
-  {
-    "key": "7",
-    "video_id": "movie7",
-    "question": "A scene satisfies: ①There is only one person in the shot, ②the wall is green, and ③there is no window behind the person in the shot. How many chairs are there behind this person?",
-    "answer_choice_0": "1",
-    "answer_choice_1": "2",
-    "answer_choice_2": "3",
-    "answer_choice_3": "4",
-    "answer_choice_4": "5",
-    "answer_id": 2,
-    "answer": "3",
-    "category": "movie",
-    "difficulty": 1
-  },
-  {
-    "key": "8",
-    "video_id": "movie8",
-    "question": "①In one scene, the woman in white sweeps her hair. ②The moment she sweeps her hair, what is the main color of the painting to her front-right?",
-    "answer_choice_0": "Red",
-    "answer_choice_1": "Blue",
-    "answer_choice_2": "Green",
-    "answer_choice_3": "Yellow",
-    "answer_choice_4": "Black",
-    "answer_id": 3,
-    "answer": "Yellow",
-    "category": "movie",
-    "difficulty": 1
-  },
-  {
-    "key": "9",
-    "video_id": "movie9",
-    "question": "①In one shot, a woman is looking at a man, and ②they are on two sides of a wall. ③At this time, on the cabinet to the man's left, what is the color of the rightmost object?",
-    "answer_choice_0": "Black",
-    "answer_choice_1": "White",
-    "answer_choice_2": "Red",
-    "answer_choice_3": "Blue",
-    "answer_choice_4": "Green",
-    "answer_id": 1,
-    "answer": "White",
-    "category": "movie",
-    "difficulty": 1
-  },
-  {
-    "key": "10",
-    "video_id": "movie10",
-    "question": "①In the scene where everyone is sitting at the dining table eating, ②if a person stands at the position of the grandmother in blue clothes, and ③faces the clock on the wall, in what direction is the person in green clothes relative to them?",
-    "answer_choice_0": "Front-left",
-    "answer_choice_1": "Rear-right",
-    "answer_choice_2": "Rear-left",
-    "answer_choice_3": "Directly behind",
-    "answer_choice_4": "Directly to the left",
-    "answer_id": 2,
-    "answer": "Rear-left",
-    "category": "movie",
-    "difficulty": 1
-  },
-  {
-    "key": "11",
-    "video_id": "movie11",
-    "question": "①In one scene, the person in blue clothes is carried by two people. ②The person his left arm rests on is Person A, and ③the color of Person A's pants is close to the color of Person B's top. When playing cards, what is the clothing color of the person to the right of Person B (relative to Person B)?",
-    "answer_choice_0": "White",
-    "answer_choice_1": "Red",
-    "answer_choice_2": "Blue",
-    "answer_choice_3": "Black",
-    "answer_choice_4": "Yellow",
-    "answer_id": 3,
-    "answer": "Black",
-    "category": "movie",
-    "difficulty": 2
-  },
-  {
-    "key": "12",
-    "video_id": "movie12",
-    "question": "①In one scene, a person is being carried over a railing by two other people, and ②they pass by a grey car. ③If a person stands in front of the railing facing it, in what direction is the grey car relative to them?",
-    "answer_choice_0": "Front-left",
-    "answer_choice_1": "Front-right",
-    "answer_choice_2": "Rear-right",
-    "answer_choice_3": "Rear-left",
-    "answer_choice_4": "Directly behind",
-    "answer_id": 3,
-    "answer": "Rear-left",
-    "category": "movie",
-    "difficulty": 1
-  },
-  {
-    "key": "13",
-    "video_id": "movie13",
-    "question": "①In one scene, a woman in red leans against a car. ②The color of this car is A. ③In another scene shown to you, several objects of color A are placed on the top shelf. How many such objects are there?",
-    "answer_choice_0": "1",
-    "answer_choice_1": "2",
-    "answer_choice_2": "3",
-    "answer_choice_3": "4",
-    "answer_choice_4": "5",
-    "answer_id": 2,
-    "answer": "3",
-    "category": "movie",
-    "difficulty": 2
-  },
-  {
-    "key": "14",
-    "video_id": "movie14",
-    "question": "A chair satisfies: ①It is red, ②it has a cushion, and ③it is closer to the house entrance. ④If a person sits on this chair, in what direction is the white Chinese painting relative to them?",
-    "answer_choice_0": "Front-left",
-    "answer_choice_1": "Rear-left",
-    "answer_choice_2": "Rear-right",
-    "answer_choice_3": "Front-right",
-    "answer_choice_4": "Directly behind",
-    "answer_id": 1,
-    "answer": "Rear-left",
-    "category": "movie",
-    "difficulty": 2
-  },
-  {
-    "key": "15",
-    "video_id": "movie15",
-    "question": "In one scene: ①A woman is sitting, and ②there is a green plant in the frame. ③There is an object on the wall to the right of that woman. What color is it?",
-    "answer_choice_0": "Pure white",
-    "answer_choice_1": "Black",
-    "answer_choice_2": "Yellowish-white",
-    "answer_choice_3": "Light blue",
-    "answer_choice_4": "Grey",
-    "answer_id": 2,
-    "answer": "Yellowish-white",
-    "category": "movie",
-    "difficulty": 1
-  },
-  {
-    "key": "16",
-    "video_id": "movie16",
-    "question": "A chair satisfies: ①It is made of wood, ②it has a backrest, and ③it is not red. ④If a person sits on this chair, in what direction is the white traditional Chinese painting relative to them?",
-    "answer_choice_0": "Front-left",
-    "answer_choice_1": "Rear-left",
-    "answer_choice_2": "Rear-right",
-    "answer_choice_3": "Front-right",
-    "answer_choice_4": "Directly to the right",
-    "answer_id": 3,
-    "answer": "Front-right",
-    "category": "movie",
-    "difficulty": 3
-  },
-  {
-    "key": "17",
-    "video_id": "movie17",
-    "question": "①In one scene, the woman is holding money in her hand, and ②the man is looking at her. At this moment, in what direction is the floor lamp relative to the woman?",
-    "answer_choice_0": "Front-left",
-    "answer_choice_1": "Front-right",
-    "answer_choice_2": "Rear-left",
-    "answer_choice_3": "Rear-right",
-    "answer_choice_4": "Directly behind",
-    "answer_id": 2,
-    "answer": "Rear-left",
-    "category": "movie",
-    "difficulty": 1
-  },
-  {
-    "key": "18",
-    "video_id": "movie18",
-    "question": "①In one scene, a person wearing a white hat is drinking a beverage with a straw. ②At this time, the person wearing a black suit in the shot is Person A, and ③another person wearing a tall white hat and ④glasses is Person B. In what direction is Person B relative to Person A?",
-    "answer_choice_0": "Front-left",
-    "answer_choice_1": "Rear-left",
-    "answer_choice_2": "Front-right",
-    "answer_choice_3": "Rear-right",
-    "answer_choice_4": "Directly behind",
-    "answer_id": 3,
-    "answer": "Rear-right",
-    "category": "movie",
-    "difficulty": 2
-  },
-  {
-    "key": "19",
-    "video_id": "movie19",
-    "question": "A shot satisfies: ①A woman and a man are arguing, ②the man breaks something, and ③there is a chair in the bottom right corner of the frame. What is the color of the background in the shot at this time?",
-    "answer_choice_0": "Red",
-    "answer_choice_1": "Blue",
-    "answer_choice_2": "Green",
-    "answer_choice_3": "Yellow",
-    "answer_choice_4": "White",
-    "answer_id": 2,
-    "answer": "Green",
-    "category": "movie",
-    "difficulty": 1
-  },
-  {
-    "key": "20",
-    "video_id": "movie20",
-    "question": "①In one shot, a woman walks out of the room, and ②then immediately walks back in. ③When they walk out of the room for the second time, at the exact moment of stepping out the door, in what direction is the room door the woman walked out of the first time relative to them?",
-    "answer_choice_0": "Front-left",
-    "answer_choice_1": "Rear-left",
-    "answer_choice_2": "Front-right",
-    "answer_choice_3": "Rear-right",
-    "answer_choice_4": "Directly to the right",
-    "answer_id": 3,
-    "answer": "Rear-right",
-    "category": "movie",
-    "difficulty": 1
-  },
-  {
-    "key": "21",
-    "video_id": "movie21",
-    "question": "①In one scene, a car drives into the parking garage. ②In the shot, there are many blue signs. ③At this time, relative to the right side of this car, how many blue signs are there?",
-    "answer_choice_0": "1",
-    "answer_choice_1": "2",
-    "answer_choice_2": "3",
-    "answer_choice_3": "4",
-    "answer_choice_4": "5",
-    "answer_id": 1,
-    "answer": "2",
-    "category": "movie",
-    "difficulty": 1
-  },
-  {
-    "key": "22",
-    "video_id": "movie22",
-    "question": "①In one scene, a person brings something to another person, and ②both of them are startled and scream. ③What is the clothing color of the person on the left side of the frame?",
-    "answer_choice_0": "Red",
-    "answer_choice_1": "Black",
-    "answer_choice_2": "White",
-    "answer_choice_3": "Blue",
-    "answer_choice_4": "Green",
-    "answer_id": 3,
-    "answer": "Blue",
-    "category": "movie",
-    "difficulty": 1
-  },
-  {
-    "key": "23",
-    "video_id": "movie23",
-    "question": "①In one scene, a person hides in the bathtub. ②There is a candle near the wall. ③If a person stands in the bathtub facing the candle, in what direction is the painting in the room relative to them?",
-    "answer_choice_0": "Front-left",
-    "answer_choice_1": "Rear-left",
-    "answer_choice_2": "Front-right",
-    "answer_choice_3": "Rear-right",
-    "answer_choice_4": "Directly behind",
-    "answer_id": 2,
-    "answer": "Front-right",
-    "category": "movie",
-    "difficulty": 1
-  },
-  {
-    "key": "24",
-    "video_id": "movie24",
-    "question": "①In one shot, a woman is talking to a man, and ②the man is in a hurry to leave. ③The background colors on the left and right sides of the woman's head are different. From the perspective of the camera, what is the background color on the right side of the woman's head?",
-    "answer_choice_0": "Red",
-    "answer_choice_1": "Yellow",
-    "answer_choice_2": "Green",
-    "answer_choice_3": "Blue",
-    "answer_choice_4": "Black",
-    "answer_id": 3,
-    "answer": "Blue",
-    "category": "movie",
-    "difficulty": 1
-  },
-  {
-    "key": "25",
-    "video_id": "movie25",
-    "question": "①There is a person in purple clothes in the shot, and ②he is followed by two people serving him. ③When the person in purple sits down on the chair, what is the hat color of the person closest to him?",
-    "answer_choice_0": "Black",
-    "answer_choice_1": "White",
-    "answer_choice_2": "Red",
-    "answer_choice_3": "Blue",
-    "answer_choice_4": "Yellow",
-    "answer_id": 2,
-    "answer": "Red",
-    "category": "movie",
-    "difficulty": 1
-  },
-  {
-    "key": "26",
     "video_id": "shopping4_0-1",
     "question": "①In the video, first locate a large silver SUV making a slow right turn in the center of the frame toward a distant building entrance.\n②As the vehicle turns, a man in a beige T-shirt walks from the front of the SUV toward the camera, against the flow of traffic.\n③Follow the man in the beige shirt as he passes a woman.\n④Observe this woman; what color is the object she is holding in her right hand?",
     "answer_choice_0": "Black",
@@ -364,7 +14,7 @@
     "difficulty": 1
   },
   {
-    "key": "27",
+    "key": "2",
     "video_id": "shopping4_1-2",
     "question": "①Locate the automatic glass door entrance leading indoors (Dining Pavilion) directly in front.\n②Wait until two young men walk out of this door side by side.\n③Between them, one man is carrying a white plastic shopping bag and wearing long pants.\n④What color are the slides (slippers) he is wearing?",
     "answer_choice_0": "Black",
@@ -378,7 +28,7 @@
     "difficulty": 1
   },
   {
-    "key": "28",
+    "key": "3",
     "video_id": "shopping4_2-3",
     "question": "①Inside the mall, locate a shop on the right with a green glowing sign named 'MAGIC PEARLS'.\n②Near this shop, a muscular man in a dark grey short-sleeved T-shirt is walking toward the camera.\n③Behind and to the left of the man in grey, there is another man wearing black-framed glasses and a pink top.\n④What color are the pants of the man in the pink top?",
     "answer_choice_0": "Black",
@@ -392,7 +42,7 @@
     "difficulty": 1
   },
   {
-    "key": "29",
+    "key": "4",
     "video_id": "shopping4_3-4",
     "question": "①Find a booth displaying a green car (near the Divine Diamonds Kiosk).\n②Identify a man sitting on the trunk of this green car.\n③Centering on this man, look for an open-style stall (Stall A) directly behind him.\n④As a couple passes the entrance of Stall A walking away from the camera, what color is the woman's top?",
     "answer_choice_0": "Pink",
@@ -406,7 +56,7 @@
     "difficulty": 1
   },
   {
-    "key": "30",
+    "key": "5",
     "video_id": "shopping4_4-5",
     "question": "①Locate a police officer with a K9 dog in the video.\n②Directly behind the officer, there is a stall where a man in a red shirt is waiting for food.\n③In which direction is the 'Tous' shop located relative to the man in the red shirt?",
     "answer_choice_0": "Directly in front",
@@ -420,7 +70,7 @@
     "difficulty": 1
   },
   {
-    "key": "31",
+    "key": "6",
     "video_id": "shopping4_5-6",
     "question": "①Find the 'Capital One Café' on the left side of the video.\n②Locate a woman in a white top with a shoulder bag walking past the café entrance.\n③She passes a man in a black T-shirt walking toward the camera who is looking at his phone.\n④What color are this man's shoes?",
     "answer_choice_0": "White",
@@ -434,7 +84,7 @@
     "difficulty": 2
   },
   {
-    "key": "32",
+    "key": "7",
     "video_id": "shopping4_6-7",
     "question": "①In the video, first find an electronics/gaming store with a black storefront and a sign with glowing green letters.\n②Look directly across the hallway from this store to find a square standalone kiosk with a 'GlassesUSA' sign in black letters on a white background.\n③Go behind this kiosk to find a fruit and drink stall named 'Mang Mia' immediately adjacent to it.\n④A man with a pink backpack is waiting in front of this fruit stall.\n⑤Observe the large square pillar behind him (between him and the UNIQLO store) which has a vertical digital sign saying 'Find it @ The Mall'.\n⑥At this moment, a woman in a light blue dress passes the pillar with a little girl. What color is the little girl's top?",
     "answer_choice_0": "White",
@@ -448,7 +98,7 @@
     "difficulty": 2
   },
   {
-    "key": "33",
+    "key": "8",
     "video_id": "shopping4_7-8",
     "question": "①Locate a woman wearing pink clothes pushing a stroller; watch her as she enters a store.\n②Identify a man sitting and resting directly to the left of this woman at the moment she enters.\n③What color are the words on the sign of the shop located to the front-right of this man?",
     "answer_choice_0": "White",
@@ -462,7 +112,7 @@
     "difficulty": 2
   },
   {
-    "key": "34",
+    "key": "9",
     "video_id": "shopping4_8-9",
     "question": "①Find a highly recognizable store with a storefront consisting of large areas of black and bright neon yellow/green (JD Sports).\n②Across the hallway from this store is a sports shop named 'Champs Sports'.\n③Between these two stores, there is a glass display kiosk (Vape CBD) showing many anime figurines (like Dragon Ball).\n④Locate a muscular man in a blue jersey (with 'UNIBET' in white on the chest) walking toward the camera, having just passed the kiosk.\n⑤Behind him (about 3-5 meters) follows a man in a yellow T-shirt.\n⑥From the perspective of the man in the yellow T-shirt, there is a woman in a white top to his left (the right side of the screen). What color is the bag she is carrying?",
     "answer_choice_0": "Black",
@@ -476,7 +126,7 @@
     "difficulty": 2
   },
   {
-    "key": "35",
+    "key": "10",
     "video_id": "shopping4_9-10",
     "question": "①Locate a shop on the right side with a black and white striped awning.\n②Find a man in a grey jacket and dark pants walking past the store while looking at his phone.\n③At this moment, Man A, wearing a blue hat and blue T-shirt, overtakes him from behind.\n④When Man A appears, what color is the top of the man to A's left?",
     "answer_choice_0": "Red",
@@ -490,7 +140,7 @@
     "difficulty": 2
   },
   {
-    "key": "36",
+    "key": "11",
     "video_id": "shopping4_10-11",
     "question": "①Find the 'Crêpe Delicious' food kiosk in the middle of the hallway.\n②Identify a man in a grey T-shirt and dark shorts sitting at a round table, looking at an electronic device (or phone).\n③From the camera's perspective, directly behind him is a store with a unique style, featuring a bright green door frame and facade.\n④There is a white advertisement easel standing at the entrance of this green store.\n⑤What color is the bottom (underwear/shorts) of the person depicted on the easel's poster?",
     "answer_choice_0": "Black",
@@ -504,7 +154,7 @@
     "difficulty": 1
   },
   {
-    "key": "37",
+    "key": "12",
     "video_id": "shopping4_11-12",
     "question": "①Find a male salesman dressed in all black, holding trial samples in the middle of the hallway.\n②Observe the passerby he tries to intercept; she is a woman in a grey T-shirt with a large white 'Adidas' logo on the chest.\n③Trace her path back: before meeting the salesman, she passed a woman in blue who was carrying a red shopping bag with white text.\n④At the moment they pass each other, there is a white display cart parked next to the woman in blue (on the left of the frame).\n⑤What color is the word printed on the base of this white display cart?",
     "answer_choice_0": "Silver",
@@ -518,7 +168,7 @@
     "difficulty": 1
   },
   {
-    "key": "38",
+    "key": "13",
     "video_id": "shopping4_12-13",
     "question": "①Move along the hallway until you see a shop named 'Claire's' on the right.\n②As you pass this shop, a man in a shirt with a large American flag pattern walks toward the camera.\n③Ignore him and continue forward until a boba tea shop named 'MAGIC PEARLS' appears on the right.\n④At this moment, look at the bench area on the left side (opposite the tea shop) where a woman in a red top is sitting.\n⑤A man in a white Polo shirt, with his back to the camera, walks past the woman in red toward the distance.\n⑥What color are the shorts worn by this man in the white Polo shirt?",
     "answer_choice_0": "Khaki",
@@ -532,7 +182,7 @@
     "difficulty": 1
   },
   {
-    "key": "39",
+    "key": "14",
     "video_id": "shopping4_13-14",
     "question": "①Find a vertical digital billboard in the middle of the path showing a 'MANGO' brand advertisement.\n②Standing next to this billboard is a man in a black jersey looking down at his phone.\n③Observe the number on the back of his jersey (it is 10).\n④Look past this man and continue down the hall until you see a large red 'H&M' sign on the right.\n⑤In front of the H&M window, an adult male is crouching on the ground.\n⑥He is taking care of a standing child. What is the main color of the child's outfit (dress/set)?",
     "answer_choice_0": "White",
@@ -546,7 +196,7 @@
     "difficulty": 1
   },
   {
-    "key": "40",
+    "key": "15",
     "video_id": "shopping4_14-15",
     "question": "①Locate a shop named 'SWAIDAN' on the right side of the hallway.\n②As the camera moves forward, the red 'JCPenney' sign is visible in the distance.\n③Before reaching JCPenney, notice a brightly colored store named 'Fun Factory' on the left.\n④Near this shop, a family walks toward the camera, with a man in a green T-shirt pushing a stroller.\n⑤As the family passes, look to the far right to find a man in a white long-sleeved T-shirt and a white hat walking away from the camera.\n⑥There is a colored logo on the back of his white shirt. Which animal is depicted in this logo?",
     "answer_choice_0": "Whale",
@@ -560,7 +210,7 @@
     "difficulty": 1
   },
   {
-    "key": "41",
+    "key": "16",
     "video_id": "shopping4_15-16",
     "question": "①Locate the large 'JCPenney' store in the video.\n②Directly beneath the store's sign, there is a row of seating for resting.\n③Looking to the right from the camera's perspective, find a large blue wall featuring a mural of a roller coaster.\n④On the mural, several children have their hands raised. Identify the child on the far right and note her top color (Color A).\n⑤At this moment, a pedestrian walking by is wearing a top of the same Color A.\n⑥As this pedestrian passes a man sitting on a bench, assume you are that seated man facing the mural. What is the name of the shop on the closest vertical billboard to your left?",
     "answer_choice_0": "Fashion Hub",
@@ -574,7 +224,7 @@
     "difficulty": 2
   },
   {
-    "key": "42",
+    "key": "17",
     "video_id": "shopping4_16-17",
     "question": "①Locate a Black man walking toward the camera wearing a full red tracksuit (red T-shirt and pants with a black Jordan logo).\n②As he walks, he passes a group of young girls walking in the opposite direction.\n③Observe the girls' uniform T-shirts and note the pattern on the back (tie-dye/pink and black mix).\n④Follow the girls in tie-dye shirts as they walk toward a brightly decorated candy store with green and pink accents.\n⑤Once you find the candy store, look to its immediate right from the camera's perspective.\n⑥What is the brand name on the sign of the predominantly white-decorated shop located there?",
     "answer_choice_0": "Cold Stone",
@@ -588,7 +238,7 @@
     "difficulty": 1
   },
   {
-    "key": "43",
+    "key": "18",
     "video_id": "shopping4_17-18",
     "question": "①As the camera advances, find a shop named 'Fine Ink' with a red and black sign.\n②To the left of this shop, there is a Barber Shop with a signature spinning pole.\n③Further left is a massage shop (Relax Spa) where a woman in black is pointing at a price board.\n④Move left again to find a blue archway leading to a back area next to the spa.\n⑤To the left of the archway is a food shop.\n⑥Inside the pillar on the far right of this food shop, there is a vending machine. What is the yellow 3D capital word printed directly above this vending machine?",
     "answer_choice_0": "SNACKS",
@@ -602,7 +252,7 @@
     "difficulty": 1
   },
   {
-    "key": "44",
+    "key": "19",
     "video_id": "shopping4_18-19",
     "question": "①At the start of this segment, locate a couple resting on a mall bench; the woman is wearing a pink top and camouflage pants.\n②Find the shop to the right of the direction she is facing, which has a red background sign (FINE INK).\n③Look to the left of that sign to find a large blue curved wall with white cursive text (Orlando).\n④Enter the department store (SEARS) through the entrance next to the blue wall. Near the entrance, you will see three vertically displayed kayaks.\n⑤Identify the orange kayak among the three.\n⑥Next to the orange kayak is a purple promotional billboard. What color is the bikini worn by the person on this purple poster?",
     "answer_choice_0": "Blue",
@@ -616,7 +266,7 @@
     "difficulty": 1
   },
   {
-    "key": "45",
+    "key": "20",
     "video_id": "shopping4_19-20",
     "question": "①Find a man looking at bicycles wearing a blue and white striped Polo shirt and beige shorts.\n②Follow the aisle he is in as the camera moves forward, passing a shelf on the left displaying bamboo torches (labeled TIKI).\n③Continue forward to find a large yellow water sports board (paddleboard/surfboard) leaning vertically on the right side of the aisle.\n④As the camera passes the yellow board, look left at the mattress sales area and locate a square pillar hanging with beige rug/towel samples.\n⑤A blue machine (Price Check) is mounted on the front of this pillar. What white punctuation mark is printed at the very top of the blue machine's sign?",
     "answer_choice_0": "Question mark (?)",
@@ -630,7 +280,7 @@
     "difficulty": 1
   },
   {
-    "key": "46",
+    "key": "21",
     "video_id": "luxury_home1_0-1",
     "question": "①In the first minute of the video, find the static screen that lists the 'Property Specs'.\n②In this list, find the number representing the 'Car Garage' capacity and denote it as 'n'.\n③Return to the beginning of the video and find an aerial shot that clearly shows these 'n' brown garage doors.\n④In the foreground of this shot (directly in front of the garage doors), there is a row of small conical green trees planted on a light-colored concrete edge. Focus on the leftmost tree in this row.\n⑤Imagine you are standing next to this leftmost tree, facing the 'n' garage doors. What is the color of the roof of the large non-residential standalone building located in the far back-left of your field of vision?",
     "answer_choice_0": "Silver",
@@ -644,7 +294,7 @@
     "difficulty": 1
   },
   {
-    "key": "47",
+    "key": "22",
     "video_id": "luxury_home1_1-2",
     "question": "①Locate an aerial shot where the camera retreats through two fully open black gates flanked by stone pillars.\n②As you pass through the gates, observe an SUV parked on the far left of the driveway and denote its color as 'a'.\n③The camera then switches to a first-person perspective, walking along the curved concrete driveway toward the main entrance.\n④During the walk, a dirt/gravel path branches off the grass to the right. A prominent landscape rock is placed at the junction of the dirt path and the concrete driveway.\n⑤Imagine you are standing on this landscape rock, facing the SUV of color 'a'. In this position, where is the house's main entrance with the large wooden A-frame roof located relative to you?",
     "answer_choice_0": "Directly in front",
@@ -658,7 +308,7 @@
     "difficulty": 2
   },
   {
-    "key": "48",
+    "key": "23",
     "video_id": "luxury_home1_2-3",
     "question": "①Find the moment when the camera is outside the wooden double doors, about to enter the house.\n②Observe the reflection in the glass to the right of the door and identify the primary light color of the person's upper clothing.\n③After entering the house, look to the left to find a small glass-enclosed space (wine cellar) hidden under the wooden stairs.\n④Look inside this glass space and identify the texture/material of the innermost back wall (grey stone texture).\n⑤Imagine you are the person seen in the reflection, and you walk into this glass space under the stairs, standing with your back against that innermost stone wall, facing outward. Where is the large white marble fireplace (with black trim and wooden shelves) located relative to you?",
     "answer_choice_0": "Directly to the right",
@@ -672,7 +322,7 @@
     "difficulty": 2
   },
   {
-    "key": "49",
+    "key": "24",
     "video_id": "luxury_home1_3-4",
     "question": "①Locate the staircase area with horizontal black metal railings and wooden steps.\n②Follow the stairs down to the ground level, then look across the hall at the large white marble structure with grey veins (the fireplace).\n③To the right of this marble structure (from the camera's perspective), there is a column of wooden shelves built into the wall.\n④Move your gaze to the right of these shelves until you see a large floor-to-ceiling glass door leading to the backyard lawn.\n⑤Observe the wall area directly above this glass door, which is decorated with vertical slats. What color is this wall area?",
     "answer_choice_0": "White",
@@ -686,7 +336,7 @@
     "difficulty": 2
   },
   {
-    "key": "50",
+    "key": "25",
     "video_id": "luxury_home1_4-5",
     "question": "①Find the wine rack display area enclosed by glass walls under the stairs.\n②Locate a small doorway to the left of this glass area and follow the camera into this narrow storage space.\n③Inside this small room, find a wall with the same light-colored stone veneer as the background wall of the wine rack area outside.\n④On the lower half of this stone wall, there is a small white double door.\n⑤Observe what is hidden behind the doors when the person opens the left panel.",
     "answer_choice_0": "Safe box",
@@ -700,7 +350,7 @@
     "difficulty": 1
   },
   {
-    "key": "51",
+    "key": "26",
     "video_id": "luxury_home1_5-6",
     "question": "①The camera moves to a large kitchen island with a dark base and a white countertop.\n②Look past the island to the cooking area on the back wall and find the large white stove with multiple knobs.\n③Above the stove, there is a trapezoidal range hood cover made of a brown natural material.\n④Focus on the white tile backsplash area between the brown hood and the stove below.\n⑤A black metal fixture with folding joints is installed on the wall in this area. What is the specific function of this device in the kitchen?",
     "answer_choice_0": "Knife rack",
@@ -714,7 +364,7 @@
     "difficulty": 2
   },
   {
-    "key": "52",
+    "key": "27",
     "video_id": "luxury_home1_6-7",
     "question": "①Locate the large refrigerator in the kitchen disguised as white double-door cabinets.\n②Observe the single beverage can inside when the fridge is opened; note which side of the vertical centerline it is on (Direction D1).\n③Enter the hidden pantry to the right of the oven, which features white open shelving.\n④Find the black faucet and the metal dishwasher installed under the counter in the pantry.\n⑤Note which side of the black faucet the dishwasher is located on (Direction D2).\n⑥Find a square empty space under the counter on the wall corresponding to Direction D1 in the pantry.\n⑦Stand directly in front of and facing this empty space. Where is the metal dishwasher (Direction D2) located relative to your current position?",
     "answer_choice_0": "Rear-right",
@@ -728,7 +378,7 @@
     "difficulty": 1
   },
   {
-    "key": "53",
+    "key": "28",
     "video_id": "luxury_home1_7-8",
     "question": "①In the open living area, find the white marble fireplace with grey veining in the center.\n②Observe the large black kitchen island in front of the fireplace; how many transparent glass pendant lights are hanging directly above it? (Number X).\n③Walk through the hallway to the mudroom area featuring a built-in bench. Note which side of the hallway the bench is on as you enter (Direction D1).\n④Count the black hooks installed on the white vertical slat backboard of this bench (Number Y).\n⑤If X equals Y, imagine sitting in the exact center of the bench with your back against the middle hook, facing the opposite wall.\n⑥On the wall you are facing, there is a black circular vent. In this sitting position, where is the entrance hallway leading back to the living room located?",
     "answer_choice_0": "Directly behind",
@@ -742,7 +392,7 @@
     "difficulty": 1
   },
   {
-    "key": "54",
+    "key": "29",
     "video_id": "luxury_home1_8-9",
     "question": "①Near the end of the hallway, locate a single white door with a large pane of opaque frosted glass.\n②Open the door to enter a very spacious indoor garage.\n③Notice the standalone utility sink in the corner against the right-hand wall; what color is it? (Color C).\n④Count the dark structural pillars standing in a row in the center of the garage (Number N).\n⑤Imagine standing next to the first pillar closest to the entrance with your back against it.\n⑥Turn right until your body is directly facing the utility sink of Color C.\n⑦While facing the sink, where are the white garage doors with glass windows located relative to you?",
     "answer_choice_0": "Directly to the right",
@@ -756,7 +406,7 @@
     "difficulty": 1
   },
   {
-    "key": "55",
+    "key": "30",
     "video_id": "luxury_home1_9-10",
     "question": "①In the spacious garage featuring three large white doors, locate the single door with frosted glass.\n②Enter this door to reach a room with a sink and a mudroom area. Find the bench with storage compartments and note the color of the wood seat (Color A).\n③Leave the room and walk through the wainscoted hallway into the room at the far end with a ceiling fan.\n④In this room, find a built-in structure (Structure B) featuring horizontal planks made of the same material and color as Color A.\n⑤Imagine standing in the center of this room, facing Structure B. Where is the large sliding glass door leading outside located relative to you?",
     "answer_choice_0": "Directly to the right",
@@ -770,7 +420,7 @@
     "difficulty": 1
   },
   {
-    "key": "56",
+    "key": "31",
     "video_id": "luxury_home1_10-11",
     "question": "①Locate the room with a black ceiling fan, open the white double doors of the closet, and note the color of the hanging rod inside (Color X).\n②Leave the room and walk down the hallway until you reach a corridor with a series of independent windows; confirm the frames are also Color X.\n③Look through these windows at the mechanical equipment (AC unit) on the ground outside and note the 2D geometric shape of its top vent mesh (Shape Y).\n④Imagine standing in this hallway facing the window with the AC unit, looking down at Shape Y.\n⑤What specific decoration or material is used on the lower half of the wall directly behind you (the opposite wall of the hallway)?",
     "answer_choice_0": "Exposed red brick",
@@ -784,7 +434,7 @@
     "difficulty": 1
   },
   {
-    "key": "57",
+    "key": "32",
     "video_id": "luxury_home1_11-12",
     "question": "①In the large hall with vaulted ceilings and exposed wooden beams, find the wall with white wainscoting on the bottom and four independent windows on top (Wall N).\n②Imagine standing in the center of the hall facing Wall N. The wall to your left (Wall W) contains a set of large black-framed sliding doors.\n③Through Wall W's doors, you can see an outdoor covered patio with a long stone/brick bar (Object S).\n④The wall to your right (Wall E) features a kitchen area with white countertops, a farmhouse sink, and a large window above the sink.\n⑤Turn 90 degrees to the right and walk toward Wall E until you are standing at the sink, facing the window.\n⑥In this position, where is Object S (the outdoor patio bar) located relative to you?",
     "answer_choice_0": "Directly behind",
@@ -798,7 +448,7 @@
     "difficulty": 1
   },
   {
-    "key": "58",
+    "key": "33",
     "video_id": "2077-1",
     "question": "① Locate the direction the person is moving when first getting into the car; assume this direction is North. ② Locate the direction the car moves after it starts hovering. What is this direction?",
     "answer_choice_0": "North",
@@ -812,7 +462,7 @@
     "difficulty": 1
   },
   {
-    "key": "59",
+    "key": "34",
     "video_id": "2077-2",
     "question": "① Locate the moment when the car speed shown in the bottom left corner first exceeds 200. ② What is the prominent text to the direct left of the car at this moment?",
     "answer_choice_0": "BELOW DESK",
@@ -826,7 +476,7 @@
     "difficulty": 2
   },
   {
-    "key": "60",
+    "key": "35",
     "video_id": "2077-3",
     "question": "① Locate the moment when the car first begins to drive backward in the view. ② Identify the color A of the closest sign at this moment. ③ Locate the last billboard seen before this moment where the main text color is A but the background is not A. What is the leading letter of this billboard (the last letter to disappear from the shot)?",
     "answer_choice_0": "E",
@@ -840,7 +490,7 @@
     "difficulty": 2
   },
   {
-    "key": "61",
+    "key": "36",
     "video_id": "2077-4",
     "question": "① Locate the fire-breathing towers; let the one closest to the flying car be position A. ② Locate the giant number '03' as position B. ③ Locate a tower divided into three roughly equal parts, each with a light on top, as position C. What shape do points A, B, and C form?",
     "answer_choice_0": "Obtuse triangle",
@@ -854,7 +504,7 @@
     "difficulty": 2
   },
   {
-    "key": "62",
+    "key": "37",
     "video_id": "2077-5",
     "question": "① Locate the moment the car first drives backward in the view; if the car's initial orientation is North. ② What is the car's orientation when it first starts driving backward?",
     "answer_choice_0": "North",
@@ -868,7 +518,7 @@
     "difficulty": 1
   },
   {
-    "key": "63",
+    "key": "38",
     "video_id": "2077-6",
     "question": "① Locate a giant KENDACHI sign. ② How many bridges did the car pass under before reaching this sign?",
     "answer_choice_0": "0",
@@ -882,7 +532,7 @@
     "difficulty": 1
   },
   {
-    "key": "64",
+    "key": "39",
     "video_id": "2077-7",
     "question": "① Locate the first 'CALI EXPRESS' sign encountered. ② Locate the second 'CALI EXPRESS' sign. If I stand in front of the second sign facing it, in what direction is the first sign relative to me?",
     "answer_choice_0": "Left front",
@@ -896,7 +546,7 @@
     "difficulty": 1
   },
   {
-    "key": "65",
+    "key": "40",
     "video_id": "2077-8",
     "question": "① Locate the 'IT'S BIG' billboard as position A. ② Locate the 'ORBITAL AIR' sign as position B. ③ Locate the 'CEC, CES' advertisement featuring a zombie head as position C. What shape do points A, B, and C form?",
     "answer_choice_0": "Obtuse triangle",
@@ -910,7 +560,7 @@
     "difficulty": 1
   },
   {
-    "key": "66",
+    "key": "41",
     "video_id": "2077-9",
     "question": "① If the camera's orientation at the start of the video is North. ② Locate the giant statue holding two purple spheres in each hand (A). What is its orientation?",
     "answer_choice_0": "North",
@@ -924,7 +574,7 @@
     "difficulty": 1
   },
   {
-    "key": "67",
+    "key": "42",
     "video_id": "elden ring 1",
     "question": "① Locate position A where the protagonist first performs a roll. ② Locate position B where the protagonist stands while opening a door. ③ Locate position C where the protagonist stands when 'Co-op multiplayer enabled' appears on screen. ④ Locate position D where the protagonist walks through green liquid. Which of these locations has the lowest elevation?",
     "answer_choice_0": "A",
@@ -938,7 +588,7 @@
     "difficulty": 1
   },
   {
-    "key": "68",
+    "key": "43",
     "video_id": "elden ring 2",
     "question": "① Locate a large object in constant motion. ② Locate the moment the protagonist is hit by an arrow. After how many times has the large object passed the protagonist when this moment begins?",
     "answer_choice_0": "1",
@@ -952,7 +602,7 @@
     "difficulty": 2
   },
   {
-    "key": "69",
+    "key": "44",
     "video_id": "elden ring 3",
     "question": "① Locate the moment the protagonist kills the first small enemy; identify the action performed as action A. ② How many times does the protagonist perform action A throughout the entire segment (considering the general movement)?",
     "answer_choice_0": "1",
@@ -966,7 +616,7 @@
     "difficulty": 2
   },
   {
-    "key": "70",
+    "key": "45",
     "video_id": "elden ring 4",
     "question": "① Locate the moment the protagonist first moves backward, let this position be A. ② Locate the moment the protagonist reaches the top of a descending staircase. In what direction is A relative to the protagonist at this moment?",
     "answer_choice_0": "Left front",
@@ -980,7 +630,7 @@
     "difficulty": 1
   },
   {
-    "key": "71",
+    "key": "46",
     "video_id": "elden ring 5",
     "question": "① Locate the moment the protagonist is moving toward a statue; assume the direction of movement is North. ② Locate the moment the protagonist reaches a set of upward stairs. What is the protagonist's orientation at this moment?",
     "answer_choice_0": "North",
@@ -994,7 +644,7 @@
     "difficulty": 1
   },
   {
-    "key": "72",
+    "key": "47",
     "video_id": "elden ring 6",
     "question": "① Locate the lift platforms used by the protagonist. ② What is the shape of the platform the protagonist rides for the longest duration during the ascent?",
     "answer_choice_0": "Circle",
@@ -1008,7 +658,7 @@
     "difficulty": 1
   },
   {
-    "key": "73",
+    "key": "48",
     "video_id": "elden ring 7",
     "question": "① Locate position A where the person wearing a hood is standing. ② Locate position B where the signals converge. ③ Locate position C where the protagonist kills two eagles. What shape do A, B, and C form?",
     "answer_choice_0": "Acute triangle",
@@ -1022,7 +672,7 @@
     "difficulty": 1
   },
   {
-    "key": "74",
+    "key": "49",
     "video_id": "elden ring 8",
     "question": "① Locate a bent-over tree-like sculpture (A). ② Locate the position where the protagonist kills the first person (B). ③ Locate the position where the protagonist gathers the first item (C). What shape do A, B, and C form?",
     "answer_choice_0": "Obtuse triangle",
@@ -1036,7 +686,7 @@
     "difficulty": 1
   },
   {
-    "key": "75",
+    "key": "50",
     "video_id": "elden ring 9",
     "question": "① Locate the item gathered in the largest quantity by the protagonist before entering the basement; let this quantity be A. ② Locate the protagonist's Ath successful hit against an enemy after entering the basement; let this movement be action B. ③ How many actions occur between action B and the next identical action?",
     "answer_choice_0": "0",
@@ -1050,7 +700,7 @@
     "difficulty": 1
   },
   {
-    "key": "76",
+    "key": "51",
     "video_id": "elden ring 10",
     "question": "① Locate the locked door that the protagonist does not enter (A). ② Locate the first monster that attacks the protagonist, jumping down from position B. ③ Locate position C where the protagonist gathers purple flowers. Which of these locations is the highest?",
     "answer_choice_0": "C",
@@ -1064,7 +714,7 @@
     "difficulty": 1
   },
   {
-    "key": "77",
+    "key": "52",
     "video_id": "elden ring 11",
     "question": "① Locate the first monster that the protagonist takes four hits to kill (A). ② Locate the first and second monsters killed with two hits (B and C). If A, B, and C are the Xth, Yth, and Zth monsters killed by the protagonist respectively, what is X + Y + Z?",
     "answer_choice_0": "6",
@@ -1078,7 +728,7 @@
     "difficulty": 2
   },
   {
-    "key": "78",
+    "key": "53",
     "video_id": "elden ring 12",
     "question": "① Locate a statue that the protagonist strikes once without effect. ② Locate the Site of Grace. In what direction is the Site of Grace relative to the statue?",
     "answer_choice_0": "Left front",
@@ -1092,7 +742,7 @@
     "difficulty": 1
   },
   {
-    "key": "79",
+    "key": "54",
     "video_id": "elden ring 13",
     "question": "① Locate the first item the protagonist gathers (A). ② Locate the next moment the protagonist gathers item A. ③ How many Ruin Fragments did the protagonist gather immediately before and after this moment respectively?",
     "answer_choice_0": "(1, 1)",
@@ -1106,7 +756,7 @@
     "difficulty": 1
   },
   {
-    "key": "80",
+    "key": "55",
     "video_id": "elden ring 14",
     "question": "① Locate the initially rolling sphere; assume the rolling direction is North. ② Locate the 4th soldier killed by the protagonist. What was its initial orientation?",
     "answer_choice_0": "West",
@@ -1120,7 +770,7 @@
     "difficulty": 1
   },
   {
-    "key": "81",
+    "key": "56",
     "video_id": "elden ring 15",
     "question": "① Locate the moment the protagonist is attacked by two wolves simultaneously. ② Before this, the protagonist killed a total of A wolves. ③ Locate the 4*Ath to last item collected by the protagonist; what is it?",
     "answer_choice_0": "Silver Firefly",
@@ -1134,7 +784,7 @@
     "difficulty": 2
   },
   {
-    "key": "82",
+    "key": "57",
     "video_id": "elden ring 16",
     "question": "① Locate the moment A when the protagonist is standing at the end of the video. ② Locate the cave entrance the protagonist exited from. In what direction is the cave entrance relative to the protagonist at moment A?",
     "answer_choice_0": "Left front",
@@ -1148,7 +798,7 @@
     "difficulty": 1
   },
   {
-    "key": "83",
+    "key": "58",
     "video_id": "elden ring 17",
     "question": "① Locate the position A of the first person killed. ② Locate the position B of the last bat killed. ③ Locate the position C of the first Rowa Fruit gathered. What shape do A, B, and C form?",
     "answer_choice_0": "Acute triangle",
@@ -1162,7 +812,7 @@
     "difficulty": 1
   },
   {
-    "key": "84",
+    "key": "59",
     "video_id": "elden ring 18",
     "question": "① Locate the sixth creature (A) killed in the video. ② What is A holding in its left hand?",
     "answer_choice_0": "A triangular shield",
@@ -1176,7 +826,7 @@
     "difficulty": 1
   },
   {
-    "key": "85",
+    "key": "60",
     "video_id": "elden ring 19",
     "question": "① Locate the most difficult soldier in the video; its fallen position is A. ② Locate the cellar entrance B. Draw a line from A to B; standing at A facing B, there is a chest in the wagon to the left of this line containing item C. How many soldiers carrying item C did the protagonist kill?",
     "answer_choice_0": "0",
@@ -1190,7 +840,7 @@
     "difficulty": 2
   },
   {
-    "key": "86",
+    "key": "61",
     "video_id": "black_myth_1",
     "question": "① If the protagonist's initial direction of movement is North. ② Locate a giant horse monster (Ma Tianba). ③ After talking to it, the protagonist begins to meditate. In what direction is he facing while meditating?",
     "answer_choice_0": "East",
@@ -1204,7 +854,7 @@
     "difficulty": 1
   },
   {
-    "key": "87",
+    "key": "62",
     "video_id": "black_myth_2",
     "question": "① Locate the second place where the protagonist gathers 'Will' (Lingyun) as position A. ② At what timestamp did the protagonist pass directly above position A?",
     "answer_choice_0": "1:06",
@@ -1218,7 +868,7 @@
     "difficulty": 2
   },
   {
-    "key": "88",
+    "key": "63",
     "video_id": "black_myth_3",
     "question": "① Locate the place where Wukong offers incense (the Shrine) as position A. ② Locate a wooden chest inside a dilapidated wooden house as position B. ③ Locate a monkey sitting inside a cave as position C. What shape do A, B, and C form?",
     "answer_choice_0": "Acute triangle",
@@ -1232,7 +882,7 @@
     "difficulty": 2
   },
   {
-    "key": "89",
+    "key": "64",
     "video_id": "50Youtubers_0m-1m10s",
     "question": "Locate a frame that meets the following conditions:\n(1) Two people appear in the frame.\n(2) The scene is in a garage.\n(3) There is a man wearing black clothes in the frame.\nIn this frame, what color clothes is the other person wearing?",
     "answer_choice_0": "Black",
@@ -1246,7 +896,7 @@
     "difficulty": 1
   },
   {
-    "key": "90",
+    "key": "65",
     "video_id": "50Youtubers_1m10s-1m30s",
     "question": "Locate the following conditions:\n(1) A frame where 'AIRRACK' appears in the top left corner.\n(2) A man in a dark hoodie appearing in the center of the frame.\n(3) From the man's first-person perspective, there are three main colors on the wall to his left.\n(4) Two of the colors are dark blue and red. What is the third color?",
     "answer_choice_0": "Yellow",
@@ -1260,7 +910,7 @@
     "difficulty": 1
   },
   {
-    "key": "91",
+    "key": "66",
     "video_id": "50Youtubers_1m30s-2m",
     "question": "Locate the following conditions:\n(1) A frame where 'UNSPEAKABLE' appears in the top left corner.\n(2) When a man wearing an orange hat appears in the frame.\n(3) In the room where the man is located, which of the following appliances does NOT appear in the frame?",
     "answer_choice_0": "Electric fan",
@@ -1274,7 +924,7 @@
     "difficulty": 1
   },
   {
-    "key": "92",
+    "key": "67",
     "video_id": "50Youtubers_2m-3m",
     "question": "Locate a frame that meets the following conditions:\n(1) Two people appear in the frame.\n(2) One person is wearing a black top.\n(3) The other person's hair is highlighted pink.\nThere is a door behind the person in black. What is the room number on this door?",
     "answer_choice_0": "F123-1A",
@@ -1288,7 +938,7 @@
     "difficulty": 2
   },
   {
-    "key": "93",
+    "key": "68",
     "video_id": "50Youtubers_3m-4m",
     "question": "Locate a frame that meets the following conditions:\n(1) A door can be seen in the center of the frame.\n(2) The camera is moving towards the door.\n(3) A man in black is trying to enter through this door.\nIn this frame, what is the English text in white letters on a red background in the top left corner?",
     "answer_choice_0": "MRBEAST",
@@ -1302,7 +952,7 @@
     "difficulty": 1
   },
   {
-    "key": "94",
+    "key": "69",
     "video_id": "50Youtubers_4m-5m",
     "question": "Locate a woman who meets the following conditions:\n(1) She is wearing yellow clothes.\n(2) There is a computer and a water cup on the table next to her.\n(3) A woman in black is standing next to her.\nWhat color is the water cup on her table?",
     "answer_choice_0": "Red",
@@ -1316,7 +966,7 @@
     "difficulty": 1
   },
   {
-    "key": "95",
+    "key": "70",
     "video_id": "50Youtubers_5m-6m",
     "question": "Locate the following:\n(1) A box seat in a stadium stand.\n(2) A man in black clothes walking into the box.\n(3) When the man finds another man in the corner of the box, that man is sitting on the floor.\nWhat is that man holding in his hand?",
     "answer_choice_0": "Water cup",
@@ -1330,7 +980,7 @@
     "difficulty": 2
   },
   {
-    "key": "96",
+    "key": "71",
     "video_id": "50Youtubers_6m-7m",
     "question": "Locate the following:\n(1) A man playing a video game.\n(2) The man is sitting on a cardboard box while playing.\n(3) Locate the ladder next to the box.\nWhat color is this ladder?",
     "answer_choice_0": "Blue",
@@ -1344,7 +994,7 @@
     "difficulty": 1
   },
   {
-    "key": "97",
+    "key": "72",
     "video_id": "50Youtubers_7m-8m",
     "question": "Locate the following:\n(1) A man in black wearing a baseball cap backwards.\n(2) The moment he is squatting on the ground holding a camera to interview a chef.\n(3) The chef takes a gift out of a bag.\nWhat color is the ribbon on the gift box?",
     "answer_choice_0": "Orange",
@@ -1358,7 +1008,7 @@
     "difficulty": 1
   },
   {
-    "key": "98",
+    "key": "73",
     "video_id": "50Youtubers_8m-9m",
     "question": "Locate the following:\n(1) The moment the man in black gets a small green note.\n(2) Locate the person who left this note.\nWhat color clothes is this person wearing?",
     "answer_choice_0": "Yellow",
@@ -1372,7 +1022,7 @@
     "difficulty": 3
   },
   {
-    "key": "99",
+    "key": "74",
     "video_id": "KendallHome_0m-1m",
     "question": "Locate the following:\n(1) A frame where Kendall is standing in front of a sofa, holding a water cup in her left hand.\n(2) Behind the sofa, there is a long table.\n(3) On the side of the table near Kendall, how many chairs can be seen in the frame?",
     "answer_choice_0": "1",
@@ -1386,7 +1036,7 @@
     "difficulty": 1
   },
   {
-    "key": "100",
+    "key": "75",
     "video_id": "KendallHome_1m-2m",
     "question": "Locate the following:\n(1) A golden fish-shaped tray.\n(2) There are 3 books placed under the tray.\n(3) In the frame, another stack of books can be seen right next to these 3 books.\nHow many books are in that stack?",
     "answer_choice_0": "1",
@@ -1400,7 +1050,7 @@
     "difficulty": 1
   },
   {
-    "key": "101",
+    "key": "76",
     "video_id": "KendallHome_2m-3m",
     "question": "Locate the following:\n(1) A black guitar.\n(2) A piano next to the guitar.\n(3) A frame where Kendall is sitting on the sofa with the piano behind her.\nFrom Kendall's first-person perspective, what is behind the sofa on her left?",
     "answer_choice_0": "Guitar",
@@ -1414,7 +1064,7 @@
     "difficulty": 2
   },
   {
-    "key": "102",
+    "key": "77",
     "video_id": "KendallHome_3m-4m",
     "question": "Locate the following:\n(1) A kitchen scene.\n(2) The second shelf of the kitchen stove area, where several plates are placed.\n(3) Facing the stove, locate the 3 plates on the right side of the range hood.\n(4) To the right of the 3 plates, there are several bottles of wine. Which of the following words appears on the bottle in the middle?",
     "answer_choice_0": "CAYMUS",
@@ -1428,7 +1078,7 @@
     "difficulty": 3
   },
   {
-    "key": "103",
+    "key": "78",
     "video_id": "KendallHome_4m-5m",
     "question": "Locate the following:\n(1) A panoramic view of a kitchen.\n(2) Observe the number of chandeliers in the kitchen.\n(3) Which of the following items has the same count as the chandeliers?",
     "answer_choice_0": "Ceramic cups",
@@ -1442,7 +1092,7 @@
     "difficulty": 2
   },
   {
-    "key": "104",
+    "key": "79",
     "video_id": "KendallHome_5m-6m",
     "question": "Locate the following:\n(1) A table with puzzles scattered on it.\n(2) A sofa on one side of the table.\n(3) Black chairs on the other side of the table.\nSpecifically, how many chairs are there?",
     "answer_choice_0": "3",
@@ -1456,7 +1106,7 @@
     "difficulty": 1
   },
   {
-    "key": "105",
+    "key": "80",
     "video_id": "KendallHome_7m-8m",
     "question": "Locate the following:\n(1) A fireplace with an armchair next to it.\n(2) A painting above the fireplace.\n(3) If a person stands facing the painting, right next to the fireplace, what is to their back-left?",
     "answer_choice_0": "Sofa",
@@ -1470,7 +1120,7 @@
     "difficulty": 2
   },
   {
-    "key": "106",
+    "key": "81",
     "video_id": "KendallHome_11m-12m",
     "question": "Locate the following:\n(1) A metal RV parked outside Kendall's house.\n(2) There are sensors and lights at the front of this RV.\n(3) What is the text below the sensor?",
     "answer_choice_0": "AIRSTREAM",
@@ -1484,7 +1134,7 @@
     "difficulty": 1
   },
   {
-    "key": "107",
+    "key": "82",
     "video_id": "RobertHome_0m-1m",
     "question": "Locate an illustration that meets the following conditions:\n(1) The illustration is hanging in a small room.\n(2) The wallpaper of the room is brown.\n(3) The theme of the illustration is a deer.\nWhich of the following words does NOT appear in the illustration?",
     "answer_choice_0": "PATIENCE",
@@ -1498,7 +1148,7 @@
     "difficulty": 2
   },
   {
-    "key": "108",
+    "key": "83",
     "video_id": "RobertHome_1m-2m",
     "question": "Locate the following:\n(1) The doorway where Joe appears.\n(2) The woman lying on the sofa when Robert appears near the sofa.\n(3) Assuming you are that woman, from her perspective, in which direction is the doorway where Joe is located?",
     "answer_choice_0": "Front",
@@ -1512,7 +1162,7 @@
     "difficulty": 1
   },
   {
-    "key": "109",
+    "key": "84",
     "video_id": "RobertHome_2m-3m",
     "question": "Locate the following:\n(1) A crystal skull ornament.\n(2) When a man and a woman are on either side of the crystal skull.\n(3) There is a hanging painting on the wall between them.\nWhich of the following words does NOT appear in this painting?",
     "answer_choice_0": "ALWAYS",
@@ -1526,7 +1176,7 @@
     "difficulty": 2
   },
   {
-    "key": "110",
+    "key": "85",
     "video_id": "RobertHome_3m-4m",
     "question": "Locate the following:\n(1) A frame where Robert is standing by the bed with a predominantly green painting behind him.\n(2) After this frame, a man in a black top can be seen walking into the bathroom.\n(3) Assuming a person stands at the bathroom door and looks inside.\nWhat is the main color of the wall he is facing directly?",
     "answer_choice_0": "White",
@@ -1540,7 +1190,7 @@
     "difficulty": 1
   },
   {
-    "key": "111",
+    "key": "86",
     "video_id": "RobertHome_4m-5m",
     "question": "Locate the following:\n(1) A door with a sign 'DON'T LET THE CATS OUT'.\n(2) Two cats can be seen through this door.\n(3) Locate the first cat that appears in the frame.\n(4) This cat is lying on a towel mat. What color is this towel?",
     "answer_choice_0": "Blue",
@@ -1554,7 +1204,7 @@
     "difficulty": 1
   },
   {
-    "key": "112",
+    "key": "87",
     "video_id": "MandyHome_0m-1m",
     "question": "Locate the following:\n(1) The hostess opening the door when first entering the house.\n(2) Remember the color of the hostess's dress.\n(3) A frame where the host and hostess are in the center, and a piano can be seen behind the hostess on the left.\n(4) Locate furniture near the piano that is a similar color to the hostess's dress.\nWhat is this furniture?",
     "answer_choice_0": "Cabinet",
@@ -1568,7 +1218,7 @@
     "difficulty": 2
   },
   {
-    "key": "113",
+    "key": "88",
     "video_id": "MandyHome_3m-4m",
     "question": "Locate the following:\n(1) A frame that captures the entire kitchen.\n(2) In the frame, several wall lamps can be seen on the wall, and chandeliers and white sensors are on the ceiling.\nHow many wall lamps, chandeliers, and sensors are there respectively?",
     "answer_choice_0": "2; 2; 5",
@@ -1582,7 +1232,7 @@
     "difficulty": 3
   },
   {
-    "key": "114",
+    "key": "89",
     "video_id": "MandyHome_6m-7m",
     "question": "Locate a table that meets the following conditions:\n(1) A red plant is placed on the table.\n(2) There is a chandelier directly above the table.\n(3) There are 6 chairs next to the table.\nSpecifically, how many illustrations are hanging on the wall facing the narrow side of the table?",
     "answer_choice_0": "2",
@@ -1594,5 +1244,355 @@
     "answer": "4",
     "category": "variety show",
     "difficulty": 2
+  },
+  {
+    "key": "90",
+    "video_id": "movie1",
+    "question": "If a scene satisfies: ①There are two people in the scene, ②the woman is looking at the man, and ③a bright lamp is to the rear-left of the man. In what direction is the microphone relative to the man?",
+    "answer_choice_0": "Front-right",
+    "answer_choice_1": "Rear-left",
+    "answer_choice_2": "Rear-right",
+    "answer_choice_3": "Directly behind",
+    "answer_choice_4": "Front-left",
+    "answer_id": 4,
+    "answer": "Front-left",
+    "category": "movie",
+    "difficulty": 2
+  },
+  {
+    "key": "91",
+    "video_id": "movie2",
+    "question": "In one shot: ①The man is facing the TV, and ②there is a chair behind the man. How many TVs are there in this shot?",
+    "answer_choice_0": "1",
+    "answer_choice_1": "2",
+    "answer_choice_2": "3",
+    "answer_choice_3": "4",
+    "answer_choice_4": "5",
+    "answer_id": 1,
+    "answer": "2",
+    "category": "movie",
+    "difficulty": 1
+  },
+  {
+    "key": "92",
+    "video_id": "movie3",
+    "question": "In one shot: ①There is a desk lamp, and ②there is a person. ③The walkie-talkie is to the left of the desk lamp. What does the person in the frame look like?",
+    "answer_choice_0": "A man with short hair",
+    "answer_choice_1": "A woman with long blonde hair",
+    "answer_choice_2": "A woman with shoulder-length hair",
+    "answer_choice_3": "A child with a hat",
+    "answer_choice_4": "An old man with glasses",
+    "answer_id": 2,
+    "answer": "A woman with shoulder-length hair",
+    "category": "movie",
+    "difficulty": 1
+  },
+  {
+    "key": "93",
+    "video_id": "movie4",
+    "question": "In one shot: ①A woman is standing leaning against the door, and ②she is wearing black clothes. ③On the table behind her, how many white glass cups are there?",
+    "answer_choice_0": "2",
+    "answer_choice_1": "4",
+    "answer_choice_2": "6",
+    "answer_choice_3": "8",
+    "answer_choice_4": "10",
+    "answer_id": 2,
+    "answer": "6",
+    "category": "movie",
+    "difficulty": 2
+  },
+  {
+    "key": "94",
+    "video_id": "movie5",
+    "question": "In one shot: ①Everyone is sitting at the table, and a person satisfies: ②She has long blonde hair, and ③the person sitting to her right is male. What color clothes is the person to her left wearing?",
+    "answer_choice_0": "Red",
+    "answer_choice_1": "Black",
+    "answer_choice_2": "White",
+    "answer_choice_3": "Blue",
+    "answer_choice_4": "Green",
+    "answer_id": 3,
+    "answer": "Blue",
+    "category": "movie",
+    "difficulty": 2
+  },
+  {
+    "key": "95",
+    "video_id": "movie6",
+    "question": "In one shot: ①There are two people, ②the person in yellow is standing to the right of the person in black (relative to the person in black), and ③there is a banana on the table behind the person in yellow. What is the woman holding in her hands?",
+    "answer_choice_0": "A spoon",
+    "answer_choice_1": "A cup",
+    "answer_choice_2": "A phone",
+    "answer_choice_3": "A fork and a knife",
+    "answer_choice_4": "A pen",
+    "answer_id": 3,
+    "answer": "A fork and a knife",
+    "category": "movie",
+    "difficulty": 1
+  },
+  {
+    "key": "96",
+    "video_id": "movie7",
+    "question": "A scene satisfies: ①There is only one person in the shot, ②the wall is green, and ③there is no window behind the person in the shot. How many chairs are there behind this person?",
+    "answer_choice_0": "1",
+    "answer_choice_1": "2",
+    "answer_choice_2": "3",
+    "answer_choice_3": "4",
+    "answer_choice_4": "5",
+    "answer_id": 2,
+    "answer": "3",
+    "category": "movie",
+    "difficulty": 1
+  },
+  {
+    "key": "97",
+    "video_id": "movie8",
+    "question": "①In one scene, the woman in white sweeps her hair. ②The moment she sweeps her hair, what is the main color of the painting to her front-right?",
+    "answer_choice_0": "Red",
+    "answer_choice_1": "Blue",
+    "answer_choice_2": "Green",
+    "answer_choice_3": "Yellow",
+    "answer_choice_4": "Black",
+    "answer_id": 3,
+    "answer": "Yellow",
+    "category": "movie",
+    "difficulty": 1
+  },
+  {
+    "key": "98",
+    "video_id": "movie9",
+    "question": "①In one shot, a woman is looking at a man, and ②they are on two sides of a wall. ③At this time, on the cabinet to the man's left, what is the color of the rightmost object?",
+    "answer_choice_0": "Black",
+    "answer_choice_1": "White",
+    "answer_choice_2": "Red",
+    "answer_choice_3": "Blue",
+    "answer_choice_4": "Green",
+    "answer_id": 1,
+    "answer": "White",
+    "category": "movie",
+    "difficulty": 1
+  },
+  {
+    "key": "99",
+    "video_id": "movie10",
+    "question": "①In the scene where everyone is sitting at the dining table eating, ②if a person stands at the position of the grandmother in blue clothes, and ③faces the clock on the wall, in what direction is the person in green clothes relative to them?",
+    "answer_choice_0": "Front-left",
+    "answer_choice_1": "Rear-right",
+    "answer_choice_2": "Rear-left",
+    "answer_choice_3": "Directly behind",
+    "answer_choice_4": "Directly to the left",
+    "answer_id": 2,
+    "answer": "Rear-left",
+    "category": "movie",
+    "difficulty": 1
+  },
+  {
+    "key": "100",
+    "video_id": "movie11",
+    "question": "①In one scene, the person in blue clothes is carried by two people. ②The person his left arm rests on is Person A, and ③the color of Person A's pants is close to the color of Person B's top. When playing cards, what is the clothing color of the person to the right of Person B (relative to Person B)?",
+    "answer_choice_0": "White",
+    "answer_choice_1": "Red",
+    "answer_choice_2": "Blue",
+    "answer_choice_3": "Black",
+    "answer_choice_4": "Yellow",
+    "answer_id": 3,
+    "answer": "Black",
+    "category": "movie",
+    "difficulty": 2
+  },
+  {
+    "key": "101",
+    "video_id": "movie12",
+    "question": "①In one scene, a person is being carried over a railing by two other people, and ②they pass by a grey car. ③If a person stands in front of the railing facing it, in what direction is the grey car relative to them?",
+    "answer_choice_0": "Front-left",
+    "answer_choice_1": "Front-right",
+    "answer_choice_2": "Rear-right",
+    "answer_choice_3": "Rear-left",
+    "answer_choice_4": "Directly behind",
+    "answer_id": 3,
+    "answer": "Rear-left",
+    "category": "movie",
+    "difficulty": 1
+  },
+  {
+    "key": "102",
+    "video_id": "movie13",
+    "question": "①In one scene, a woman in red leans against a car. ②The color of this car is A. ③In another scene shown to you, several objects of color A are placed on the top shelf. How many such objects are there?",
+    "answer_choice_0": "1",
+    "answer_choice_1": "2",
+    "answer_choice_2": "3",
+    "answer_choice_3": "4",
+    "answer_choice_4": "5",
+    "answer_id": 2,
+    "answer": "3",
+    "category": "movie",
+    "difficulty": 2
+  },
+  {
+    "key": "103",
+    "video_id": "movie14",
+    "question": "A chair satisfies: ①It is red, ②it has a cushion, and ③it is closer to the house entrance. ④If a person sits on this chair, in what direction is the white Chinese painting relative to them?",
+    "answer_choice_0": "Front-left",
+    "answer_choice_1": "Rear-left",
+    "answer_choice_2": "Rear-right",
+    "answer_choice_3": "Front-right",
+    "answer_choice_4": "Directly behind",
+    "answer_id": 1,
+    "answer": "Rear-left",
+    "category": "movie",
+    "difficulty": 2
+  },
+  {
+    "key": "104",
+    "video_id": "movie15",
+    "question": "In one scene: ①A woman is sitting, and ②there is a green plant in the frame. ③There is an object on the wall to the right of that woman. What color is it?",
+    "answer_choice_0": "Pure white",
+    "answer_choice_1": "Black",
+    "answer_choice_2": "Yellowish-white",
+    "answer_choice_3": "Light blue",
+    "answer_choice_4": "Grey",
+    "answer_id": 2,
+    "answer": "Yellowish-white",
+    "category": "movie",
+    "difficulty": 1
+  },
+  {
+    "key": "105",
+    "video_id": "movie16",
+    "question": "A chair satisfies: ①It is made of wood, ②it has a backrest, and ③it is not red. ④If a person sits on this chair, in what direction is the white traditional Chinese painting relative to them?",
+    "answer_choice_0": "Front-left",
+    "answer_choice_1": "Rear-left",
+    "answer_choice_2": "Rear-right",
+    "answer_choice_3": "Front-right",
+    "answer_choice_4": "Directly to the right",
+    "answer_id": 3,
+    "answer": "Front-right",
+    "category": "movie",
+    "difficulty": 3
+  },
+  {
+    "key": "106",
+    "video_id": "movie17",
+    "question": "①In one scene, the woman is holding money in her hand, and ②the man is looking at her. At this moment, in what direction is the floor lamp relative to the woman?",
+    "answer_choice_0": "Front-left",
+    "answer_choice_1": "Front-right",
+    "answer_choice_2": "Rear-left",
+    "answer_choice_3": "Rear-right",
+    "answer_choice_4": "Directly behind",
+    "answer_id": 2,
+    "answer": "Rear-left",
+    "category": "movie",
+    "difficulty": 1
+  },
+  {
+    "key": "107",
+    "video_id": "movie18",
+    "question": "①In one scene, a person wearing a white hat is drinking a beverage with a straw. ②At this time, the person wearing a black suit in the shot is Person A, and ③another person wearing a tall white hat and ④glasses is Person B. In what direction is Person B relative to Person A?",
+    "answer_choice_0": "Front-left",
+    "answer_choice_1": "Rear-left",
+    "answer_choice_2": "Front-right",
+    "answer_choice_3": "Rear-right",
+    "answer_choice_4": "Directly behind",
+    "answer_id": 3,
+    "answer": "Rear-right",
+    "category": "movie",
+    "difficulty": 2
+  },
+  {
+    "key": "108",
+    "video_id": "movie19",
+    "question": "A shot satisfies: ①A woman and a man are arguing, ②the man breaks something, and ③there is a chair in the bottom right corner of the frame. What is the color of the background in the shot at this time?",
+    "answer_choice_0": "Red",
+    "answer_choice_1": "Blue",
+    "answer_choice_2": "Green",
+    "answer_choice_3": "Yellow",
+    "answer_choice_4": "White",
+    "answer_id": 2,
+    "answer": "Green",
+    "category": "movie",
+    "difficulty": 1
+  },
+  {
+    "key": "109",
+    "video_id": "movie20",
+    "question": "①In one shot, a woman walks out of the room, and ②then immediately walks back in. ③When they walk out of the room for the second time, at the exact moment of stepping out the door, in what direction is the room door the woman walked out of the first time relative to them?",
+    "answer_choice_0": "Front-left",
+    "answer_choice_1": "Rear-left",
+    "answer_choice_2": "Front-right",
+    "answer_choice_3": "Rear-right",
+    "answer_choice_4": "Directly to the right",
+    "answer_id": 3,
+    "answer": "Rear-right",
+    "category": "movie",
+    "difficulty": 1
+  },
+  {
+    "key": "110",
+    "video_id": "movie21",
+    "question": "①In one scene, a car drives into the parking garage. ②In the shot, there are many blue signs. ③At this time, relative to the right side of this car, how many blue signs are there?",
+    "answer_choice_0": "1",
+    "answer_choice_1": "2",
+    "answer_choice_2": "3",
+    "answer_choice_3": "4",
+    "answer_choice_4": "5",
+    "answer_id": 1,
+    "answer": "2",
+    "category": "movie",
+    "difficulty": 1
+  },
+  {
+    "key": "111",
+    "video_id": "movie22",
+    "question": "①In one scene, a person brings something to another person, and ②both of them are startled and scream. ③What is the clothing color of the person on the left side of the frame?",
+    "answer_choice_0": "Red",
+    "answer_choice_1": "Black",
+    "answer_choice_2": "White",
+    "answer_choice_3": "Blue",
+    "answer_choice_4": "Green",
+    "answer_id": 3,
+    "answer": "Blue",
+    "category": "movie",
+    "difficulty": 1
+  },
+  {
+    "key": "112",
+    "video_id": "movie23",
+    "question": "①In one scene, a person hides in the bathtub. ②There is a candle near the wall. ③If a person stands in the bathtub facing the candle, in what direction is the painting in the room relative to them?",
+    "answer_choice_0": "Front-left",
+    "answer_choice_1": "Rear-left",
+    "answer_choice_2": "Front-right",
+    "answer_choice_3": "Rear-right",
+    "answer_choice_4": "Directly behind",
+    "answer_id": 2,
+    "answer": "Front-right",
+    "category": "movie",
+    "difficulty": 1
+  },
+  {
+    "key": "113",
+    "video_id": "movie24",
+    "question": "①In one shot, a woman is talking to a man, and ②the man is in a hurry to leave. ③The background colors on the left and right sides of the woman's head are different. From the perspective of the camera, what is the background color on the right side of the woman's head?",
+    "answer_choice_0": "Red",
+    "answer_choice_1": "Yellow",
+    "answer_choice_2": "Green",
+    "answer_choice_3": "Blue",
+    "answer_choice_4": "Black",
+    "answer_id": 3,
+    "answer": "Blue",
+    "category": "movie",
+    "difficulty": 1
+  },
+  {
+    "key": "114",
+    "video_id": "movie25",
+    "question": "①There is a person in purple clothes in the shot, and ②he is followed by two people serving him. ③When the person in purple sits down on the chair, what is the hat color of the person closest to him?",
+    "answer_choice_0": "Black",
+    "answer_choice_1": "White",
+    "answer_choice_2": "Red",
+    "answer_choice_3": "Blue",
+    "answer_choice_4": "Yellow",
+    "answer_id": 2,
+    "answer": "Red",
+    "category": "movie",
+    "difficulty": 1
   }
 ]

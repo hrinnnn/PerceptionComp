@@ -1,3 +1,5 @@
 /videos/
 .DS_Store
 **/.DS_Store
+/new_videos/
+new_videos.zip
