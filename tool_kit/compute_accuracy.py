@@ -139,6 +139,11 @@ RESULT_FILES = {
     'GPT-4.1': [
         (BASE / 'test_result_winter/Results-gpt-4.1.json',0),
     ],
+    # ── Doubao Seed-2.0-Pro (summer 1-500 + winter internal 1-614 → offset +500) ─
+    'Doubao-Seed-2.0-Pro': [
+        (BASE / 'test_result_summer/doubao/Results-doubao-seed-2-0-pro-260215.json', 0),
+        (BASE / 'test_result_winter/doubao/Results-doubao-seed-2-0-pro-260215.json', 500),
+    ],
     # ── Complete single-file models ─────────────────────────
     'GPT-5.2': [
         (BASE / 'test_result_winter/Results-gpt-5.2.json',0),

@@ -1,73 +1,75 @@
+
+\definecolor{highlightgreen}{RGB}{235, 255, 235}
+\definecolor{highlightred}{RGB}{255, 235, 235}
+
 \begin{table*}[!t]
 \centering
-\caption{\textbf{Comprehensive evaluation results of MLLMs on PerceptionComp.} We report both category-wise accuracies and accuracies across different difficulty levels. For open-source thinking models, performance improvements over instruction-tuned models are highlighted in green, while performance drops are highlighted in red.}
+\caption{\textbf{Comprehensive evaluation results of MLLMs on PerceptionComp.} We report both category-wise accuracies and accuracies across different difficulty levels. For open-source thinking models, performance improvements over instruction-tuned models are highlighted in \colorbox{highlightgreen}{green}, while performance drops are highlighted in \colorbox{highlightred}{red}.}
+\vspace{8pt}
+\label{tab:overall_results_final}
 \small
+\setlength{\tabcolsep}{3.5pt}
 \begin{adjustbox}{max width=\textwidth}
-\begin{tabular}{@{}lcc|ccccccc|ccc|c@{}}
+\begin{tabular}{@{} l cc ccccccc ccc c @{}}
 \toprule
-\multirow{2}{*}{\textbf{Model}} & \multirow{2}{*}{\textbf{Size}} & \multirow{2}{*}{\textbf{Frame}} &
-\multicolumn{7}{c|}{\textbf{Accuracy by Category}} &
-\multicolumn{3}{c|}{\textbf{Accuracy by Difficulty}} &
-\multirow{2}{*}{\textbf{Overall}} \\
+\multirow{2.5}{*}{\textbf{Model}} & \multirow{2.5}{*}{\textbf{Size}} & \multirow{2.5}{*}{\textbf{Frame}} & \multicolumn{7}{c}{\textbf{Accuracy by Category}} & \multicolumn{3}{c}{\textbf{Accuracy by Difficulty}} & \multirow{2.5}{*}{\textbf{Overall}} \\
 \cmidrule(lr){4-10} \cmidrule(lr){11-13}
-& & & \rotatebox[origin=lt]{-45}{Outdoor Tour} & \rotatebox[origin=lt]{-45}{Shopping} & \rotatebox[origin=lt]{-45}{Sport} & \rotatebox[origin=lt]{-45}{Home Tour} & \rotatebox[origin=lt]{-45}{Show} & \rotatebox[origin=lt]{-45}{Movie} & \rotatebox[origin=lt]{-45}{Game} & 
-\rotatebox[origin=lt]{-45}{Level 1} & \rotatebox[origin=lt]{-45}{Level 2} & \rotatebox[origin=lt]{-45}{Level 3} & \\
+& & & \rotatebox{45}{Outdoor} & \rotatebox{45}{Shopping} & \rotatebox{45}{Sport} & \rotatebox{45}{Home} & \rotatebox{45}{Show} & \rotatebox{45}{Movie} & \rotatebox{45}{Game} & \rotatebox{45}{Level 1} & \rotatebox{45}{Level 2} & \rotatebox{45}{Level 3} & \\
 \midrule
 
-\multicolumn{14}{c}{\textit{\textbf{Human Performance}}} \\ 
+\rowcolor{gray!5}
+\multicolumn{14}{l}{\textit{\textbf{Human Performance}}} \\
+Human & - & - & 81.33 & 86.80 & 87.56 & 86.72 & 87.25 & 88.00 & 87.10 & 90.18 & 86.00 & 72.25 & \textbf{85.10} \\
 
 \midrule
-Human    & -  & - & 82.10 & 80.00 & 81.08 & 93.33 & 100.00 & 91.22 & & & 85.12 & 68.61 & 82.40 \\
+\multicolumn{14}{l}{\textit{\textbf{Proprietary Models}}} \\
+Gemini-2.5-Pro~\cite{gemini2.5}   & -   & - & 45.78 & 45.18 & 32.64 & 42.19 & 52.35 & 52.00 & 58.06 & 44.64 & 44.20 & 44.02 & 44.34 \\
+GPT-o3~\cite{jaech2024openai} & - & 50 & 43.22 & 46.70 & 32.64 & 44.53 & 50.34 & 56.00 & 48.39 & 43.08 & 43.98 & 43.54 & 43.54 \\
+Gemini-3.1-Pro~\cite{gemini2.5} & -   & - & 39.90 & 44.16 & 39.90 & 42.97 & 56.38 & 48.00 & 51.61 & 45.76 & 45.08 & 36.36 & 43.72 \\
+Gemini-3-Pro~\cite{gemini2.5} & -   & - & 42.20 & 42.13 & 40.41 & 37.50 & 60.40 & 48.00 & 61.29 & 45.09 & 45.51 & 40.67 & 44.43 \\
+Gemini-3-Flash~\cite{gemini2.5} & -   & - & 45.27 & 45.18 & 38.34 & 42.97 & 59.73 & 52.00 & 48.39 & 43.75 & 47.26 & 47.85 & 45.96 \\
+Gemini-2.5-Flash~\cite{gemini2.5} & -   & - & 39.39 & 41.12 & 24.35 & 39.84 & 47.65 & 44.00 & 32.26 & 41.96 & 35.89 & 34.93 & 38.15 \\
+Seed-2.0-Pro~\cite{doubaovl}     & -     & 64 & 43.73 & 47.72 & 30.57 & 47.66 & 51.68 & 40.00 & 70.97 & 48.21 & 45.51 & 33.49 & 44.34 \\
+GPT-5.2~\cite{gpt4} & - & 64 & 42.97 & 44.16 & 27.46 & 38.28 & 48.99 & 48.00 & 38.71 & 44.42 & 38.07 & 38.76 & 40.75 \\
+GPT-4o-latest~\cite{gpt4o} & - & 50 & 30.18 & 36.04 & 25.39 & 32.81 & 40.94 & 48.00 & 29.03 & 35.04 & 30.63 & 29.67 & 32.50 \\
+GPT-5~\cite{gpt4}    & -   & 64  & 26.60 & 47.21 & 29.53 & 40.62 & 49.66 & 56.00 & 38.71 & 40.18 & 36.32 & 28.71 & 36.45 \\
+GPT-4.1~\cite{gpt4} & - & 50 & 26.09 & 46.70 & 27.46 & 28.91 & 44.97 & 52.00 & 48.39 & 37.28 & 34.79 & 24.40 & 34.02 \\ 
 
 \midrule
-
-\multicolumn{14}{c}{\textit{\textbf{Proprietary Models}}} \\ \midrule
-Gemini-2.5-Pro\citep{gemini2.5}   & -   & - & 45.78 & 80.00 & 33.33 & 47.30 & 46.67 & & & 50.68 & 44.65 & 43.07 & 46.00 \\
-GPT-o3\citep{jaech2024openai} & - & 50 & 43.22 & 80.00 & 40.00 & 43.24 & 20.00 & & & 37.84 & 45.58 & 43.80 & 42.80\\
-Gemini-2.5-Flash\citep{gemini2.5} & -   & - & 39.39 & 80.00 & 20.00 & 45.95 & 46.67 & & & 50.00 & 37.21 & 35.04 & 40.40 \\
-Seed-1.6-VL\citep{doubaovl}      & 200B  & 64 & 39.39 & 40.00 & 35.71 & 39.19 & 53.33 & & & 37.16 & 43.72 & 36.03 & 39.60 \\
-GPT-5.2\citep{} & - & 64 & 42.97 & 44.16 & 27.46 & 38.28 & 48.99 & 48.00 & 38.71 & 44.42 & 38.07 & 38.76 & 48.99\\
-GPT-4o-latest\citep{gpt4o} & - & 50 & 30.18 & 40.00 & 33.33 & 31.08 & 20.00 & & & 33.02 & 29.05 & 27.00 & 30.20 \\
-GPT-5\citep{gpt4}    & -   & 64  & 26.60 & 40.00 & 26.67 & 35.14 & 46.67 & & & 28.38 & 32.56 & 22.63 & 28.60\\
-GPT-4.1\citep{gpt4} & - & 50 & 26.09 & 40.00 & 13.33 & 28.38 & 20.00 & & & 29.77 & 26.39 & 19.71 & 26.00 \\ 
-
-\midrule
-\multicolumn{14}{c}{\textit{\textbf{Open-Source Instruct Models}}} \\ \midrule
-Qwen2.5-VL\citep{qwen2.5vl}    & 7B  & 64 & 26.34 & 40.00 & 14.29 & 16.22 & 33.33 & & & 24.32 & 26.98 & 22.06 & 25.40 \\
+\multicolumn{14}{l}{\textit{\textbf{Open-Source Instruct Models}}} \\
+Qwen2.5-VL~\cite{qwen2.5vl}    & 7B  & 64 & 26.34 & 24.87 & 13.54 & 17.97 & 26.85 & 20.00 & 22.58 & 24.11 & 21.44 & 22.60 & 22.73 \\
 InternVL-3.5~\cite{internvl3}       & 8B  & 64 & 31.20 & 20.00 & 13.33 & 27.03 & 53.33 & & & 31.76 & 30.23 & 29.93 & 30.60 \\
-Qwen3-VL\citep{qwen3}    & 8B  & 64 & 34.53 & 60.00 & 40.00 & 27.03 & 66.67 & & & 37.16 & 33.95 & 33.57 & 34.80 \\
-Kimi-VL\citep{kimivl}   & 16B & 64 & 27.88 & 40.00 & 26.67 & 35.14 & 40.00 & & & 33.11 & 29.77 &  24.82 & 29.40 \\
-Qwen3-VL\citep{qwen3} & 30B & 64 & 32.48 & 42.64 & 20.21 & 31.25 & 48.32 & 27.27 & 45.16 & 38.03 & 34.87 & 25.48 & 34.38 \\
-% Qwen3-VL\citep{qwen3}    & 30B  & 64 & 34.02 & 80.00 & 20.00 & 36.49 & 53.33 & & & 36.74 & 35.81 & 32.85 & 35.40 \\
-Qwen2.5-VL\citep{qwen2.5vl}   & 72B & 64 & 33.07 & 20.00 & 26.67 & 20.27 & 53.33 & & & 33.11 & 31.16 & 27.74 & 30.80 \\
-%GLM-4.5V\citep{glm4.5v}         & 106B  & 64 & 36.57 & 60.00 & 35.71 & 31.08 & 46.67 & & & 37.84 & 34.42 & 37.50 & 36.20 \\
-GLM-4.5V\citep{glm4.5v} & 106B & 64 & 36.57 & 37.56 & 30.77 & 28.12 & 51.01 & 52.17 & 22.58 & 39.10 & 34.37 & 36.59 & 36.69 \\
+Qwen3-VL~\cite{qwen3}    & 8B  & 64 & 34.53 & 60.00 & 40.00 & 27.03 & 66.67 & & & 37.16 & 33.95 & 33.57 & 34.80 \\
+% Kimi-VL\citep{kimivl}   & 16B & 64 & 27.88 & 40.00 & 26.67 & 35.14 & 40.00 & & & 33.11 & 29.77 &  24.82 & 29.40 \\
+Qwen3-VL~\cite{qwen3} & 30B & 64 & 32.48 & 42.64 & 20.21 & 31.25 & 48.32 & 27.27 & 45.16 & 38.03 & 34.87 & 25.48 & 34.38 \\
+Qwen2.5-VL~\cite{qwen2.5vl}   & 72B & 64 & 32.99 & 35.53 & 19.69 & 23.44 & 44.97 & 20.00 & 41.94 & 34.82 & 29.10 & 28.71 & 31.33 \\
+GLM-4.5V~\cite{glm4.5v} & 106B & 64 & 36.57 & 37.56 & 30.77 & 28.12 & 51.01 & 52.17 & 22.58 & 39.10 & 34.37 & 36.59 & 36.69 \\
+Qwen3-VL~\cite{qwen3} & 235B & 64 & 39.64 & 36.04 & 23.83 & 32.03 & 40.27 & 22.73 & 0.00 & 35.57 & 33.99 & 30.77 & 34.02 \\
 
-%Qwen3-VL\citep{qwen3}    & 235B  & 64 & 36.06 & 40.00 & 33.33 & 22.97 & 40.00 & & & 35.77 & 34.46 & 33.49 & 34.40 \\
-Qwen3-VL\citep{qwen3} & 235B & 64 & 39.64 & 36.04 & 23.83 & 32.03 & 40.27 & 22.73 & 0.00 & 35.57 & 33.99 & 30.77 & 34.02 \\
 \midrule
-\multicolumn{14}{c}{\textit{\textbf{Open-Source Thinking Models}}} \\ \midrule
-Mimo-VL-SFT\citep{mimovl}  & 7B  & 64 & 31.46 & 60.00 & 20.00 & 21.62 & 53.33 & & & 32.56 & 30.41 & 27.74 & 30.60 \\
+\multicolumn{14}{l}{\textit{\textbf{Open-Source Thinking Models}}} \\
+% Mimo-VL-SFT\citep{mimovl}  & 7B  & 64 & 31.46 & 60.00 & 20.00 & 21.62 & 53.33 & & & 32.56 & 30.41 & 27.74 & 30.60 \\
+% \rowcolor{green!10!white}
+% Mimo-VL-RL\citep{mimovl}  & 7B  & 64 & 31.20 & 60.00 & 20.00 & 37.84 & 26.67 & & & 35.14 & 32.56 & 29.20 & 32.40 \\
 \rowcolor{green!10!white}
-Mimo-VL-RL\citep{mimovl}  & 7B  & 64 & 31.20 & 60.00 & 20.00 & 37.84 & 26.67 & & & 35.14 & 32.56 & 29.20 & 32.40 \\
+Video-R1~\cite{videor1} & 7B & 64 & 26.34 & 40.00 & 33.33 & 25.68 & 26.67 & & & 22.97 & 26.97 & 29.93 & 26.60\\
 \rowcolor{green!10!white}
-Video-R1\citep{videor1} & 7B & 64 & 26.34 & 40.00 & 33.33 & 25.68 & 26.67 & & & 22.97 & 26.97 & 29.93 & 26.60\\
-\rowcolor{green!10!white}
-VideoChat-R1\citep{videochatr1} & 7B & 64 & 28.13 & 20.00 & 26.67 & 25.68 & 60.00 & & & 32.09 & 26.35 & 25.55 & 28.60 \\
+VideoChat-R1~\cite{videochatr1} & 7B & 64 & 28.13 & 20.00 & 26.67 & 25.68 & 60.00 & & & 32.09 & 26.35 & 25.55 & 28.60 \\
 \rowcolor{red!10!white}
-Qwen3-VL-Thinking\citep{qwen3}    & 8B  & 64 & 34.02 & 40.00 & 40.00 & 27.03 & 53.33 & & & 35.14 & 34.42 & 31.39 & 33.80 \\
+Qwen3-VL-Thinking~\cite{qwen3}    & 8B  & 64 & 34.02 & 40.00 & 40.00 & 27.03 & 53.33 & & & 35.14 & 34.42 & 31.39 & 33.80 \\
 \rowcolor{green!10!white}
-Kimi-VL-Thinking\citep{kimivl}   & 16B & 64 & 30.70 & 40.00 & 13.33 & 27.03 & 33.33 & & & 32.43 & 29.77 &  26.28& 29.60 \\
-%\rowcolor{red!10!white}
- %Qwen3-VL-Thinking\citep{qwen3}    & 30B  & 64 & 32.99 & 60.00 & 20.00 & 25.68 & 60.00 & & & 33.58 & 28.38 & 34.88 & 32.60 \\
-Qwen3-VL-Thinking\citep{qwen3} & 30B & 64 & 39.13 & 36.04 & 26.94 & 25.78 & 46.31 & 38.10 & 32.26 & 35.65 & 37.06 & 32.69 & 35.68 \\
-%\rowcolor{red!10!white}
-%Qwen3-VL-Thinking\citep{qwen3}    & 235B  & 64 & 32.48 & 40.00 & 26.67 & 20.27 & 53.33 & & & 31.76 & 30.70 & 31.39 & 31.20 \\
-Qwen3-VL-Thinking\citep{qwen3} & 235B & 64 & 38.87 & 41.12 & 30.57 & 33.59 & 48.99 & 42.86 & 22.58 & 39.46 & 38.16 & 35.58 & 38.20 \\
+% Kimi-VL-Thinking\citep{kimivl}   & 16B & 64 & 30.70 & 40.00 & 13.33 & 27.03 & 33.33 & & & 32.43 & 29.77 &  26.28& 29.60 \\
+Qwen3-VL-Thinking ~\cite{qwen3} & 30B & 64 & 39.13 & 36.04 & 26.94 & 25.78 & 46.31 & 38.10 & 32.26 & 35.65 & 37.06 & 32.69 & 35.68 \\
+Qwen3-VL-Thinking ~\cite{qwen3} & 235B & 64 & 38.87 & 41.12 & 30.57 & 33.59 & 48.99 & 42.86 & 22.58 & 39.46 & 38.16 & 35.58 & 38.20 \\
 
+% Mimo-VL-SFT & 7B & 64 & 31.5 & 60.0 & 20.0 & 21.6 & 53.3 & - & - & 32.6 & 30.4 & 27.7 & 30.6 \\
+% \rowcolor{highlightgreen} Mimo-VL-RL & 7B & 64 & 31.2 & 60.0 & 20.0 & 37.8 & 26.7 & - & - & 35.1 & 32.6 & 29.2 & 32.4 \\
+% \rowcolor{highlightgreen} Video-R1 & 7B & 64 & 26.3 & 40.0 & 33.3 & 25.7 & 26.7 & - & - & 23.0 & 27.0 & 29.9 & 26.6 \\
+% \rowcolor{highlightred} Qwen3-VL-Thinking & 8B & 64 & 34.0 & 40.0 & 40.0 & 27.0 & 53.3 & - & - & 35.1 & 34.4 & 31.4 & 33.8 \\
+% \rowcolor{highlightgreen} Qwen3-VL-Thinking & 30B & 64 & 39.1 & 36.0 & 26.9 & 25.8 & 46.3 & 38.1 & 32.3 & 35.7 & 37.1 & 32.7 & 35.7 \\
+% \rowcolor{highlightgreen} Qwen3-VL-Thinking & 235B & 64 & 38.9 & 41.1 & 30.6 & 33.6 & 49.0 & 42.9 & 22.6 & 39.5 & 38.2 & 35.6 & 38.2 \\
 
 \bottomrule
 \end{tabular}
 \end{adjustbox}
-\label{tab:overall_results_final}
 \end{table*}

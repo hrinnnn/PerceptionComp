@@ -9201,7 +9201,7 @@
   {
     "key": "658",
     "video_id": "shopping4",
-    "question": "①There are two items placed right next to each other.\n②Their price difference is 200.\n③The item on the right has a lighter color.\nWhat is the color of their price tags?",
+    "question": "①There are two items placed right next to each other.\n②Their price difference is 200.\n③The item on the right has a lighter color. And they are not bread. \nWhat is the color of their price tags?",
     "answer_choice_0": "White",
     "answer_choice_1": "Yellow",
     "answer_choice_2": "Red",
@@ -9243,7 +9243,7 @@
   {
     "key": "661",
     "video_id": "shopping5",
-    "question": "①The color of the shopping cart in the video is A.\n②There is a scene with 4 bottled products that look the same but have different colors.\n③The first letter on their label is A (the color name).\nWhat is the color of the leftmost bottle among these four?",
+    "question": "①The color of the shopping cart in the video is A.\n②There is a scene with 4 bottled products that look the same but have different colors.\n③The rightest one among them has a color A too.\nWhat is the color of the leftmost bottle among these four?",
     "answer_choice_0": "Blue",
     "answer_choice_1": "Red",
     "answer_choice_2": "Pink",
@@ -9831,7 +9831,7 @@
   {
     "key": "703",
     "video_id": "ht9",
-    "question": "①There is a lamp at the entrance to the house; the color of its main body is A.\nThere is also a table satisfying:\n②The table legs are also color A.\n③There are plants on the table.\nHow many legs does this table have?",
+    "question": "①There is a lamp at the entrance to the house; the color of its main body is A.\nThere is also a table satisfying:\n②The table legs are also color A.\n③There are plants on the table. ④ The table is not made of wood.\nHow many legs does this table have?",
     "answer_choice_0": "4",
     "answer_choice_1": "2",
     "answer_choice_2": "3",

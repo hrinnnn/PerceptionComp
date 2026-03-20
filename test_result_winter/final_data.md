@@ -2,7 +2,7 @@
 
 Generated from `compute_accuracy.py` | Master bank: 1114 questions
 
-Back-calculation applied to: o3, GPT-4o, GPT-4.1, Qwen2.5-VL-72B (summer 1-500 results from table values)
+Back-calculation applied to: o3, GPT-4o, GPT-4.1, Qwen2.5-VL-72B (summer 1-500 results estimated from table values in current_table.txt)
 
 ## Overall Accuracy
 
@@ -13,6 +13,7 @@ Back-calculation applied to: o3, GPT-4o, GPT-4.1, Qwen2.5-VL-72B (summer 1-500 r
 | Gemini-3-Flash | 1114 | 512 | 45.96 |
 | Gemini-3-Pro | 1114 | 495 | 44.43 |
 | Gemini-3.1-Pro | 1114 | 487 | 43.72 |
+| Doubao-Seed-2.0-Pro | 1114 | 494 | 44.34 |
 | Qwen2.5-VL-7B | 1113 | 253 | 22.73 |
 | Qwen2.5-VL-72B | 1114 | 349 | 31.33 |
 | GPT-5 | 1114 | 406 | 36.45 |
@@ -35,6 +36,7 @@ Back-calculation applied to: o3, GPT-4o, GPT-4.1, Qwen2.5-VL-72B (summer 1-500 r
 | Gemini-3-Flash | 45.27 | 45.18 | 38.34 | 42.97 | 59.73 | 52.00 | 48.39 |
 | Gemini-3-Pro | 42.20 | 42.13 | 40.41 | 37.50 | 60.40 | 48.00 | 61.29 |
 | Gemini-3.1-Pro | 39.90 | 44.16 | 39.90 | 42.97 | 56.38 | 48.00 | 51.61 |
+| Doubao-Seed-2.0-Pro | 43.73 | 47.72 | 30.57 | 47.66 | 51.68 | 40.00 | 70.97 |
 | Qwen2.5-VL-7B | 26.34 | 24.87 | 13.54 | 17.97 | 26.85 | 20.00 | 22.58 |
 | Qwen2.5-VL-72B | 32.99 | 35.53 | 19.69 | 23.44 | 44.97 | 20.00 | 41.94 |
 | GPT-5 | 26.60 | 47.21 | 29.53 | 40.62 | 49.66 | 56.00 | 38.71 |
@@ -57,6 +59,7 @@ Back-calculation applied to: o3, GPT-4o, GPT-4.1, Qwen2.5-VL-72B (summer 1-500 r
 | Gemini-3-Flash | 43.75 | 47.26 | 47.85 |
 | Gemini-3-Pro | 45.09 | 45.51 | 40.67 |
 | Gemini-3.1-Pro | 45.76 | 45.08 | 36.36 |
+| Doubao-Seed-2.0-Pro | 48.21 | 45.51 | 33.49 |
 | Qwen2.5-VL-7B | 24.11 | 21.44 | 22.60 |
 | Qwen2.5-VL-72B | 34.82 | 29.10 | 28.71 |
 | GPT-5 | 40.18 | 36.32 | 28.71 |
@@ -70,15 +73,16 @@ Back-calculation applied to: o3, GPT-4o, GPT-4.1, Qwen2.5-VL-72B (summer 1-500 r
 | Qwen3-VL-235B-Instruct | 35.57 | 33.99 | 30.77 |
 | Qwen3-VL-235B-Thinking | 39.46 | 38.16 | 35.58 |
 
-## Notes on Data Sources
+## Data Sources
 
 | Model | Summer (1-500) | Winter (501-1000) | Winter-2 (1001-1114) |
 |-------|---------------|-------------------|---------------------|
 | Gemini-2.5-Flash | real file | real file (+500) | real file (+1000) |
 | Gemini-2.5-Pro | real file | real file (+500) | real file (+1000) |
-| Gemini-3-Flash | real file | real file (+500) | real file (+1000) |
-| Gemini-3-Pro | real file | real file (+500) | real file (+1000) |
-| Gemini-3.1-Pro | real file | real file (+500) | real file (+1000) |
+| Gemini-3-Flash | real file (new run) | real file (+500) | real file (+1000) |
+| Gemini-3-Pro | real file (new run) | real file (+500) | real file (+1000) |
+| Gemini-3.1-Pro | real file (new run) | real file (+500) | real file (+1000) |
+| Doubao-Seed-2.0-Pro | real file | real file (+500) | — |
 | Qwen2.5-VL-7B | real file | real file (global) | (incl. in winter) |
 | Qwen2.5-VL-72B | **back-calc** (table values) | real file (global) | (incl. in winter) |
 | GPT-5 | real file | real file (global) | (incl. in winter) |
