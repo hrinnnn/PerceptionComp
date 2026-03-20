@@ -1,0 +1,31 @@
+{
+  "total_questions": 1116,
+  "total_steps": 4395,
+  "total_ability_assignments": 13598,
+  "abilities": {
+    "Semantic understanding": {
+      "count": 3606,
+      "percentage": 82.05
+    },
+    "Spatial understanding": {
+      "count": 3141,
+      "percentage": 71.47
+    },
+    "Temporal understanding": {
+      "count": 4331,
+      "percentage": 98.54
+    },
+    "Correspondence": {
+      "count": 1259,
+      "percentage": 28.65
+    },
+    "Visual knowledge": {
+      "count": 899,
+      "percentage": 20.46
+    },
+    "World modeling": {
+      "count": 362,
+      "percentage": 8.24
+    }
+  }
+}
