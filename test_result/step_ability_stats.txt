@@ -1,0 +1,14 @@
+Step Ability Statistics
+====================================
+Total questions: 1114
+Total steps: 4386
+Total ability assignments: 13572
+
+Ability                        Count   Percent
+----------------------------------------------
+Semantic understanding          3598    26.51%
+Spatial understanding           3136    23.11%
+Temporal understanding          4322    31.84%
+Correspondence                  1256     9.25%
+Visual knowledge                 898     6.62%
+World modeling                   362     2.67%
