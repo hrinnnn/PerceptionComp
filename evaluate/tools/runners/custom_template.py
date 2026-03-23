@@ -24,11 +24,174 @@ import json
 import os
 import re
 from collections import defaultdict
+from pathlib import Path
+
+
+def load_custom_config(custom_config):
+    if custom_config is None:
+        return {}
+    if isinstance(custom_config, dict):
+        return custom_config
+    path = Path(custom_config)
+    if path.exists():
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    raise FileNotFoundError(f"Custom config file not found: {custom_config}")
+
+
+def sample_video_frames(video_path: str, num_frames: int = 8, resize_short_side: int = 720):
+    try:
+        import cv2
+    except ImportError as e:
+        raise ImportError(
+            "OpenCV is required for the default transformers example. "
+            "Install it with `pip install opencv-python`."
+        ) from e
+
+    try:
+        from PIL import Image
+    except ImportError as e:
+        raise ImportError(
+            "Pillow is required for the default transformers example. "
+            "Install it with `pip install pillow`."
+        ) from e
+
+    cap = cv2.VideoCapture(video_path)
+    if not cap.isOpened():
+        raise FileNotFoundError(f"Cannot open video: {video_path}")
+
+    frame_count = int(cap.get(cv2.CAP_PROP_FRAME_COUNT)) or 0
+    if frame_count <= 0:
+        cap.release()
+        raise RuntimeError(f"No frames found in video: {video_path}")
+
+    import numpy as np
+
+    idxs = np.linspace(0, frame_count - 1, num=min(num_frames, frame_count), dtype=int)
+    frames = []
+    for idx in idxs:
+        cap.set(cv2.CAP_PROP_POS_FRAMES, int(idx))
+        ret, frame = cap.read()
+        if not ret or frame is None:
+            continue
+        h, w = frame.shape[:2]
+        short_side = min(h, w)
+        if resize_short_side and short_side > resize_short_side:
+            scale = resize_short_side / short_side
+            frame = cv2.resize(frame, (int(w * scale), int(h * scale)))
+        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        frames.append(Image.fromarray(frame))
+
+    cap.release()
+    if not frames:
+        raise RuntimeError(f"Failed to decode frames from: {video_path}")
+    return frames
+
+
+def run_with_transformers(video_path: str, prompt: str, model_name: str, custom_config=None):
+    config = load_custom_config(custom_config)
+
+    try:
+        import torch
+        from transformers import AutoModelForVision2Seq, AutoProcessor
+    except ImportError as e:
+        raise ImportError(
+            "The default custom template uses local Hugging Face transformers. "
+            "Install the required packages, for example: "
+            "`pip install transformers torch pillow`."
+        ) from e
+
+    model_path = config.get("model_path") or model_name
+    num_frames = int(config.get("num_frames", 8))
+    max_new_tokens = int(config.get("max_new_tokens", 128))
+    trust_remote_code = bool(config.get("trust_remote_code", True))
+    device = config.get("device") or ("cuda" if torch.cuda.is_available() else "cpu")
+    dtype_name = str(config.get("dtype", "auto")).lower()
+
+    torch_dtype = None
+    if dtype_name == "bfloat16":
+        torch_dtype = torch.bfloat16
+    elif dtype_name == "float16":
+        torch_dtype = torch.float16
+    elif dtype_name == "float32":
+        torch_dtype = torch.float32
+
+    frames = sample_video_frames(video_path, num_frames=num_frames)
+
+    processor = AutoProcessor.from_pretrained(
+        model_path, trust_remote_code=trust_remote_code
+    )
+    model = AutoModelForVision2Seq.from_pretrained(
+        model_path,
+        trust_remote_code=trust_remote_code,
+        torch_dtype=torch_dtype,
+    )
+    model.to(device)
+    model.eval()
+
+    messages = [
+        {
+            "role": "user",
+            "content": (
+                [{"type": "image", "image": image} for image in frames]
+                + [{"type": "text", "text": prompt}]
+            ),
+        }
+    ]
+
+    if hasattr(processor, "apply_chat_template"):
+        text = processor.apply_chat_template(
+            messages, tokenize=False, add_generation_prompt=True
+        )
+        inputs = processor(
+            text=[text],
+            images=frames,
+            padding=True,
+            return_tensors="pt",
+        )
+    else:
+        inputs = processor(
+            text=[prompt],
+            images=frames,
+            padding=True,
+            return_tensors="pt",
+        )
+
+    model_inputs = {}
+    for key, value in inputs.items():
+        if hasattr(value, "to"):
+            model_inputs[key] = value.to(device)
+        else:
+            model_inputs[key] = value
+
+    with torch.no_grad():
+        generated_ids = model.generate(
+            **model_inputs,
+            max_new_tokens=max_new_tokens,
+        )
+
+    if "input_ids" in model_inputs:
+        input_len = model_inputs["input_ids"].shape[-1]
+        generated_ids = generated_ids[:, input_len:]
+
+    text = processor.batch_decode(
+        generated_ids,
+        skip_special_tokens=True,
+        clean_up_tokenization_spaces=True,
+    )[0]
+    return text.strip()
 
 
 def run_your_model(video_path: str, prompt: str, model_name: str, custom_config=None):
     """
-    Replace this function with your own inference code.
+    Default behavior:
+    - treat the runner as a local Hugging Face transformers example
+    - sample frames from the input video
+    - pass them to a vision-language model
+    - return the raw generated text
+
+    If this does not match your stack, replace this function with your own
+    inference code and keep the rest of the benchmark protocol unchanged.
 
     Expected return:
     - a raw string response from the model
@@ -40,8 +203,11 @@ def run_your_model(video_path: str, prompt: str, model_name: str, custom_config=
     - a custom SDK
     - a shell wrapper around your own evaluation code
     """
-    raise NotImplementedError(
-        "Implement `run_your_model` with your own local model, server, or SDK call."
+    return run_with_transformers(
+        video_path=video_path,
+        prompt=prompt,
+        model_name=model_name,
+        custom_config=custom_config,
     )
 
 

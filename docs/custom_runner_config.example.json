@@ -1,0 +1,9 @@
+{
+  "backend": "transformers",
+  "model_path": "YOUR_HF_MODEL_PATH_OR_LOCAL_CHECKPOINT",
+  "device": "cuda",
+  "dtype": "auto",
+  "num_frames": 8,
+  "max_new_tokens": 128,
+  "trust_remote_code": true
+}

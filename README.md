@@ -90,6 +90,26 @@ Expected local layout after download:
 benchmark/videos/<video_id>.mp4
 ```
 
+## Data Release
+
+PerceptionComp is released in two parts:
+
+1. GitHub repository:
+   contains benchmark annotations, evaluation code, runner templates, analysis utilities, and documentation.
+2. Hugging Face dataset:
+   stores the benchmark videos referenced by `video_id`.
+
+Current release structure:
+
+- benchmark annotations:
+  [1-1114.json](/Users/zhaozhixuan/Desktop/tsinghua_learning/大二暑/暑研/PerceptionComp/benchmark/annotations/official/1-1114.json)
+- video host:
+  <https://huggingface.co/datasets/hrinnnn/PerceptionComp/tree/main>
+- local video target directory:
+  [benchmark/videos](/Users/zhaozhixuan/Desktop/tsinghua_learning/大二暑/暑研/PerceptionComp/benchmark/videos)
+
+This split release strategy is standard for video benchmarks because the benchmark code should stay lightweight while the video assets are distributed through a data host.
+
 ### Step 4. Run Evaluation with a Built-in Backend
 
 PerceptionComp currently supports three evaluation modes:
@@ -261,6 +281,8 @@ Only change the model-side inference path. That is what keeps your results compa
 
 For a more explicit implementation guide, see [bring_your_own_model.md](/Users/zhaozhixuan/Desktop/tsinghua_learning/大二暑/暑研/PerceptionComp/docs/bring_your_own_model.md).
 
+The default custom runner template is now a near-runnable local `transformers` scaffold. If your model follows a Hugging Face VLM workflow, you can often start from the template directly instead of writing a runner from scratch.
+
 ## Supported Models
 
 The unified entry point currently supports two built-in backend families plus a custom adapter path:
@@ -346,6 +368,8 @@ See [schema.md](/Users/zhaozhixuan/Desktop/tsinghua_learning/大二暑/暑研/Pe
 
 ## Evaluation Design
 
+## Evaluation Protocol
+
 The benchmark side should own:
 
 - dataset loading,
@@ -361,6 +385,52 @@ The model side should only own:
 - how to return a raw text response.
 
 This separation is what makes a benchmark portable across proprietary APIs, local checkpoints, and future evaluation frameworks. It is also the main thing you should preserve as PerceptionComp grows.
+
+In the current repository snapshot, the evaluation protocol is:
+
+1. Load the official annotation file.
+2. Map each `video_id` to a local video file under `benchmark/videos/`.
+3. Build a standardized multiple-choice prompt.
+4. Run inference through one of the supported backends.
+5. Parse the model output into one final answer among `A/B/C/D/E`.
+6. Compute exact-match accuracy.
+7. Save per-question outputs and aggregate metrics.
+
+To keep results comparable, external model integrations should not modify:
+
+- the annotation file,
+- the prompt structure,
+- the answer parser,
+- the metric definition,
+- the output schema.
+
+Only the model-side inference path should change.
+
+## FAQ
+
+### Why are videos hosted on Hugging Face instead of in the Git repository?
+
+Because video benchmarks are large. A standard public benchmark setup keeps code and annotations in Git, while large video assets are hosted on a dataset platform.
+
+### Can I run PerceptionComp on my own model?
+
+Yes. If your model supports an OpenAI-compatible API, use `--provider api`. If it is a Gemini model, use `--provider gemini`. Otherwise, use `--provider custom` and implement a model adapter with the provided template.
+
+### What if my model is local and not exposed as an API?
+
+Use the custom runner path. The default template now includes a near-runnable local `transformers` example based on frame sampling plus Hugging Face VLM inference.
+
+### Do I need to change the benchmark code to evaluate my own model?
+
+Usually no. You should only change the model adapter. The benchmark-side protocol should remain fixed.
+
+### Why do some leaderboard entries have different numbers of answered questions?
+
+Because the current repository stores historical result files from different evaluation stages. The README leaderboard is a repository snapshot, not yet a fully standardized official leaderboard.
+
+### Can I evaluate on a different split or a custom annotation file?
+
+Yes. Pass `--annotations PATH_TO_JSON` to `evaluate/evaluate.py`.
 
 ## Contact
 

@@ -76,6 +76,15 @@ The function should:
 - run your model
 - return a raw string response
 
+The default template is now a near-runnable local `transformers` scaffold:
+
+- it samples frames from the input video,
+- loads a Hugging Face VLM with `AutoProcessor` and `AutoModelForVision2Seq`,
+- feeds sampled frames plus the benchmark prompt into the model,
+- decodes the generated text back into the benchmark pipeline.
+
+If your model already fits this pattern, you may only need to edit the config file rather than rewrite the whole runner.
+
 Recommended output formats:
 
 ```text
@@ -104,6 +113,25 @@ def run_your_model(video_path: str, prompt: str, model_name: str, custom_config=
     # 3. return the raw text response
     return "Answer: A"
 ```
+
+## Transformers Example Config
+
+An example config file is provided at:
+
+- [custom_runner_config.example.json](/Users/zhaozhixuan/Desktop/tsinghua_learning/大二暑/暑研/PerceptionComp/docs/custom_runner_config.example.json)
+
+Typical usage:
+
+```bash
+python evaluate/evaluate.py \
+  --model YOUR_HF_MODEL_PATH_OR_LOCAL_CHECKPOINT \
+  --provider custom \
+  --custom-runner evaluate/tools/runners/custom_template.py \
+  --custom-config docs/custom_runner_config.example.json \
+  --video-dir benchmark/videos
+```
+
+The template currently assumes a frame-based local VLM workflow. For architectures with a different processor or model class, adapt only the model-side inference section and keep the benchmark-side logic fixed.
 
 ## Run the Custom Evaluation
 
