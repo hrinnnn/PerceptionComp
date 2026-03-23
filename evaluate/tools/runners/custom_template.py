@@ -2,14 +2,22 @@
 """
 Template runner for plugging your own model into PerceptionComp.
 
-Usage example:
+Recommended workflow:
 
-python evaluate/evaluate.py \
-  --model my-model \
-  --provider custom \
-  --custom-runner evaluate/tools/runners/custom_template.py \
-  --video-dir benchmark/videos \
-  --annotations benchmark/annotations/official/1-1114.json
+1. Copy this file to a new filename, for example:
+
+   cp evaluate/tools/runners/custom_template.py evaluate/tools/runners/my_model.py
+
+2. Implement `run_your_model(...)`.
+
+3. Run:
+
+   python evaluate/evaluate.py \
+     --model my-model \
+     --provider custom \
+     --custom-runner evaluate/tools/runners/my_model.py \
+     --video-dir benchmark/videos \
+     --annotations benchmark/annotations/official/1-1114.json
 """
 
 import json
@@ -25,6 +33,12 @@ def run_your_model(video_path: str, prompt: str, model_name: str, custom_config=
     Expected return:
     - a raw string response from the model
     - ideally ending with `Answer: X` where X is one of A/B/C/D/E
+
+    You can implement this with:
+    - a local Transformers model
+    - a private inference server
+    - a custom SDK
+    - a shell wrapper around your own evaluation code
     """
     raise NotImplementedError(
         "Implement `run_your_model` with your own local model, server, or SDK call."
