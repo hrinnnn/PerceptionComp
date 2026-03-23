@@ -4,3 +4,5 @@
 /new_videos/
 new_videos.zip
 /demo/
+__pycache__/
+*.pyc
