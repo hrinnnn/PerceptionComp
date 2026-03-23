@@ -1,28 +1,27 @@
 # PerceptionComp
 
-PerceptionComp is a benchmark for complex perception-centric video reasoning. It is designed for questions that cannot be solved from a single frame, a single moment, or a short caption: models must revisit visually complex videos, gather evidence from temporally separated segments, and combine multiple perceptual constraints before answering.
+PerceptionComp is a benchmark for complex perception-centric video reasoning. It targets questions that cannot be solved from a single frame, a single moment, or a short caption: models must revisit visually complex videos, gather evidence from temporally separated segments, and combine multiple perceptual constraints before answering.
 
-This repository is the benchmark-and-evaluation workspace for PerceptionComp: A Video Benchmark for Complex Perception-Centric Reasoning.
+Dataset: <https://huggingface.co/datasets/hrinnnn/PerceptionComp/tree/main>
 
-## Overview
+## Highlights
 
-PerceptionComp focuses on a harder form of video understanding than standard short-video QA. The benchmark is built around:
+- Complex perception-centric reasoning instead of caption-level shortcut solving.
+- 1,114 manually annotated five-choice questions.
+- 273 unique `video_id` instances in the current official release file.
+- Seven categories spanning outdoor tour, shopping, sport, variety show, home tour, game, and movie.
+- Unified workflow for download -> local video storage -> evaluation.
+- Extensible evaluation entry point that supports OpenAI-compatible APIs, Gemini, and custom model runners.
 
-- perception-heavy questions grounded in real video content,
-- temporally distributed evidence,
-- compositional constraints across multiple sub-conditions, and
-- five-choice evaluation for stable automatic scoring.
+## News
 
-From the current paper draft:
-
-- the benchmark contains 1,114 manually annotated multiple-choice questions,
-- each question is designed to require repeated perception rather than single-pass viewing,
-- single-view human performance drops sharply, while unrestricted rewatching remains much easier for experts,
-- frontier multimodal models still lag well behind careful human reasoning.
+- Added a unified `evaluate/evaluate.py` entry point.
+- Added `scripts/download_data.py` for downloading videos from Hugging Face.
+- Added a custom runner template for plugging in your own model.
 
 ## Quick Start
 
-Clone the repository, install dependencies, download benchmark videos from Hugging Face, and run evaluation.
+Clone the repository, install dependencies, download the videos, and run evaluation:
 
 ```bash
 git clone YOUR_REPO_URL
@@ -37,7 +36,7 @@ python evaluate/evaluate.py \
   --video-dir benchmark/videos
 ```
 
-If the Hugging Face dataset requires authentication, you can additionally pass:
+If the Hugging Face dataset requires authentication:
 
 ```bash
 python scripts/download_data.py \
@@ -45,7 +44,7 @@ python scripts/download_data.py \
   --hf-token YOUR_HF_TOKEN
 ```
 
-For Gemini models:
+Gemini example:
 
 ```bash
 python evaluate/evaluate.py \
@@ -55,9 +54,95 @@ python evaluate/evaluate.py \
   --video-dir benchmark/videos
 ```
 
-## Current Repository Snapshot
+## Run Your Own Model
 
-The current repository snapshot contains:
+Yes, a public benchmark should ideally let other people run their own models on the same data and protocol. In practice, this is usually implemented in one of three ways:
+
+1. Support a standard API format.
+2. Integrate into a common evaluation framework.
+3. Expose a small adapter interface for custom models.
+
+PerceptionComp currently supports the first and third options directly:
+
+| Mode | How it works | Best for |
+| --- | --- | --- |
+| `--provider api` | Routes evaluation to an OpenAI-compatible API runner. | GPT-style endpoints, Qwen API deployments, GLM-compatible services, Doubao-style services, and similar endpoints. |
+| `--provider gemini` | Routes evaluation to the Gemini video-upload runner. | Gemini-family models. |
+| `--provider custom` | Loads a user-specified Python runner file. | Your own local model, internal server, or any model that needs custom inference logic. |
+
+### Custom Model Example
+
+Copy and modify the template runner:
+
+```bash
+cp evaluate/tools/runners/custom_template.py evaluate/tools/runners/my_model.py
+```
+
+Then implement `run_your_model(...)` in that file, and run:
+
+```bash
+python evaluate/evaluate.py \
+  --model my-model \
+  --provider custom \
+  --custom-runner evaluate/tools/runners/my_model.py \
+  --video-dir benchmark/videos
+```
+
+This is the key idea behind benchmark support for external models:
+
+- the benchmark owns the dataset, prompt format, parsing rules, and metrics,
+- the model adapter only needs to turn `(video, prompt)` into a raw text response,
+- the benchmark then parses the answer and computes accuracy in a standardized way.
+
+That is how repositories like LongVideoBench and Video-Holmes make external evaluation possible: they either provide a dataset loader / evaluation wrapper or ask users to implement a small model-specific hook. LongVideoBench exposes a dataset loader and recommends integration with a general evaluation framework, while Video-Holmes documents model-specific prepare / generate hooks inside its evaluation code. Source: [LongVideoBench README](https://github.com/longvideobench/LongVideoBench), [Video-Holmes README](https://github.com/TencentARC/Video-Holmes).
+
+## Supported Models
+
+The unified entry point currently supports two built-in backend families plus a custom adapter path:
+
+| Backend | Usage | Notes |
+| --- | --- | --- |
+| OpenAI-compatible API | `--provider api` | Works for GPT-style APIs, Qwen API deployments, GLM-compatible endpoints, Doubao-style endpoints, and other OpenAI-compatible services. |
+| Gemini | `--provider gemini` | Uses the Gemini video upload workflow for Gemini-family models. |
+| Custom runner | `--provider custom` | Loads a Python file that implements your own inference logic. |
+
+Models already represented in the repository's archived results include:
+
+- GPT-4.1, GPT-4o, GPT-5, GPT-5.2, o3
+- Gemini-2.5-Flash, Gemini-2.5-Pro, Gemini-3-Pro, Gemini-3.1-Pro
+- Qwen2.5-VL-7B, Qwen2.5-VL-72B
+- Qwen3-VL-235B-A22B-Instruct, Qwen3-VL-235B-A22B-Thinking
+- Qwen3-VL-30B-A3B-Instruct, Qwen3-VL-30B-A3B-Thinking
+- GLM-4.5V
+- Doubao-Seed variants
+
+## Leaderboard
+
+The table below is a lightweight snapshot of result files currently stored in `evaluate/results/`. These runs do not all cover the same number of answered questions, so this should be read as a repository snapshot rather than a strict official leaderboard.
+
+| Model | Backend | Answered Questions | Accuracy |
+| --- | --- | ---: | ---: |
+| Gemini-2.5-Pro | Gemini | 500 | 98.80% |
+| Gemini-3-Pro-Preview | Gemini | 500 | 99.00% |
+| Gemini-3.1-Pro-Preview | Gemini | 500 | 97.40% |
+| Gemini-2.5-Flash | Gemini | 500 | 85.00% |
+| Doubao-Seed-2.0-Pro | API | 614 | 80.46% |
+| GPT-o3 | API | 614 | 44.14% |
+| GPT-5 | API | 614 | 42.83% |
+| GPT-5.2 | API | 1114 | 40.75% |
+| GPT-4.1 | API | 614 | 40.55% |
+| Qwen3-VL-235B-A22B-Thinking | API | 1110 | 38.20% |
+| GLM-4.5V | API | 1101 | 36.69% |
+| Qwen3-VL-30B-A3B-Thinking | API | 1110 | 35.68% |
+| Qwen3-VL-30B-A3B-Instruct | API | 1111 | 34.38% |
+| GPT-4o | API | 614 | 34.36% |
+| Qwen3-VL-235B-A22B-Instruct | API | 1111 | 34.02% |
+| Qwen2.5-VL-72B-Instruct | API | 614 | 31.76% |
+| Qwen2.5-VL-7B-Instruct | API | 614 | 21.01% |
+
+Note: some historical result files in this repository are partial, experimental, or otherwise not directly comparable. A stricter official leaderboard can be added later after evaluation settings are fully standardized.
+
+## Benchmark Snapshot
 
 | Item | Value |
 | --- | --- |
@@ -103,40 +188,24 @@ Current category counts in the official annotation file:
 
 ### `benchmark/`
 
-This folder contains the benchmark itself.
-
-- `benchmark/annotations/official/`
-  Official released benchmark annotation files.
-- `benchmark/annotations/splits/`
-  Split files and working partition files used during dataset construction and evaluation.
-- `benchmark/annotations/legacy/`
-  Legacy or contributor-level question files preserved for reference.
-- `benchmark/annotations/archive/`
-  Archived question assets that are no longer part of the main release path.
-- `benchmark/assets/`
-  Benchmark plots and dataset-related visual assets.
-- `benchmark/videos/`
-  Local storage directory for benchmark videos downloaded from Hugging Face.
+- `benchmark/annotations/official/`: official released benchmark annotation files.
+- `benchmark/annotations/splits/`: split files and construction-time partition files.
+- `benchmark/annotations/legacy/`: legacy or contributor-level question files.
+- `benchmark/annotations/archive/`: older assets no longer in the main release path.
+- `benchmark/assets/`: benchmark plots and visual assets.
+- `benchmark/videos/`: local storage directory for benchmark videos downloaded from Hugging Face.
 
 ### `evaluate/`
 
-This folder contains evaluation code and archived results.
-
-- `evaluate/evaluate.py`
-  Unified evaluation entry point.
-- `evaluate/results/`
-  Main result files plus archived seasonal or round-based evaluation dumps.
-- `evaluate/tools/runners/`
-  Lightweight model-facing evaluation entry scripts.
-- `evaluate/tools/analysis/`
-  Analysis, formatting, cleanup, and statistics scripts.
-- `evaluate/tools/download/`
-  Video download and related data-preparation utilities.
+- `evaluate/evaluate.py`: unified evaluation entry point.
+- `evaluate/results/`: main result files and archived experiments.
+- `evaluate/tools/runners/`: built-in runner implementations.
+- `evaluate/tools/analysis/`: analysis and formatting scripts.
+- `evaluate/tools/download/`: older helper utilities related to data preparation.
 
 ### `scripts/`
 
-- `scripts/download_data.py`
-  Downloads benchmark videos from Hugging Face into `benchmark/videos/`.
+- `scripts/download_data.py`: downloads benchmark videos from Hugging Face into `benchmark/videos/`.
 
 ## Annotation Format
 
@@ -153,11 +222,11 @@ Core fields:
 - `category`: semantic category
 - `difficulty`: difficulty label
 
-See [schema.md](/Users/zhaozhixuan/Desktop/tsinghua_learning/大二暑/暑研/PerceptionComp/benchmark/annotations/schema.md) for a compact schema reference.
+See [schema.md](/Users/zhaozhixuan/Desktop/tsinghua_learning/大二暑/暑研/PerceptionComp/benchmark/annotations/schema.md) for the compact schema reference.
 
 ## Data Access
 
-Benchmark videos are hosted on Hugging Face at:
+Benchmark videos are hosted on Hugging Face:
 
 - <https://huggingface.co/datasets/hrinnnn/PerceptionComp/tree/main>
 
@@ -167,51 +236,37 @@ The expected local layout after download is:
 benchmark/videos/<video_id>.mp4
 ```
 
-## Evaluation
+## Evaluation Design
 
-There is now a unified evaluation entry point at `evaluate/evaluate.py`.
+The benchmark side should own:
 
-Example usage with an OpenAI-compatible API:
+- dataset loading,
+- prompt construction,
+- answer parsing,
+- metric computation,
+- result serialization.
 
-```bash
-python evaluate/evaluate.py \
-  --model gpt-5.2 \
-  --provider api \
-  --api-key YOUR_API_KEY \
-  --base-url YOUR_BASE_URL \
-  --video-dir benchmark/videos
-```
+The model side should only own:
 
-Example usage with Gemini:
+- how to prepare the video input,
+- how to call the model,
+- how to return a raw text response.
 
-```bash
-python evaluate/evaluate.py \
-  --model gemini-2.5-flash \
-  --provider gemini \
-  --api-key YOUR_GEMINI_API_KEY \
-  --video-dir benchmark/videos
-```
+This separation is what makes a benchmark portable across proprietary APIs, local checkpoints, and future evaluation frameworks. It is also the main thing you should preserve as PerceptionComp grows.
 
-If `--provider auto` is used, models starting with `gemini` are routed to the Gemini runner and all others are routed to the OpenAI-compatible API runner.
+## Related Repositories
 
-## Evaluation Assets
+Two good public references are:
 
-This repository already includes a substantial amount of evaluation history. The current structure separates:
-
-- main result files in `evaluate/results/`,
-- archived seasonal or round-based experiment folders in `evaluate/results/archive/`, and
-- analysis or runner scripts in `evaluate/tools/`.
-
-These result files are useful as working records and internal baselines. They should be treated as archived experiment artifacts rather than a finalized public leaderboard.
+- LongVideoBench: emphasizes dataset loading and integration with a general evaluation framework. [GitHub](https://github.com/longvideobench/LongVideoBench)
+- Video-Holmes: emphasizes a polished README, download script, leaderboard presentation, and model hooks in the evaluation pipeline. [GitHub](https://github.com/TencentARC/Video-Holmes)
 
 ## Recommended Next Steps
 
-The repository is now organized around `benchmark/` and `evaluate/`, but the next cleanup steps are still important:
-
 1. Add a license and data usage statement before public release.
 2. Add a small sample split for smoke testing.
-3. Gradually merge duplicated legacy evaluation scripts into the unified entry point.
-4. Optionally publish a lightweight leaderboard table in the README.
+3. Add a stricter public leaderboard after standardizing evaluation coverage and settings.
+4. Optionally expose a dataset loader package, similar in spirit to LongVideoBench.
 
 ## Citation
 

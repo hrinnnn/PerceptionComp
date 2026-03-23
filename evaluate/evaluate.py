@@ -55,7 +55,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--model", required=True, help="Model name to evaluate.")
     parser.add_argument(
         "--provider",
-        choices=["api", "gemini", "auto"],
+        choices=["api", "gemini", "custom", "auto"],
         default="auto",
         help="Model backend. Defaults to auto-inference from model name.",
     )
@@ -100,6 +100,22 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Gemini-only flag to retry when <think> tags are missing.",
     )
+    parser.add_argument(
+        "--custom-runner",
+        default=None,
+        help=(
+            "Path to a custom runner Python file. "
+            "Used when --provider custom."
+        ),
+    )
+    parser.add_argument(
+        "--custom-config",
+        default=None,
+        help=(
+            "Optional path to a JSON/YAML/text config consumed by a custom runner. "
+            "The file path is passed through as-is."
+        ),
+    )
     return parser
 
 
@@ -108,7 +124,7 @@ def main():
     args = parser.parse_args()
 
     provider = infer_provider(args.model) if args.provider == "auto" else args.provider
-    api_key = resolve_api_key(provider, args.api_key)
+    api_key = None if provider == "custom" else resolve_api_key(provider, args.api_key)
 
     annotations = Path(args.annotations).resolve()
     video_dir = Path(args.video_dir).resolve()
@@ -122,6 +138,41 @@ def main():
             "Download the videos first, then point --video-dir to the local folder."
         )
     output_dir.mkdir(parents=True, exist_ok=True)
+
+    if provider == "custom":
+        if not args.custom_runner:
+            raise ValueError(
+                "--provider custom requires --custom-runner to point to a Python file."
+            )
+
+        custom_runner_path = Path(args.custom_runner).resolve()
+        if not custom_runner_path.exists():
+            raise FileNotFoundError(f"Custom runner not found: {custom_runner_path}")
+
+        runner = _load_module(custom_runner_path, "custom_runner")
+
+        if hasattr(runner, "evaluate_with_args"):
+            runner.evaluate_with_args(args)
+            return
+
+        if hasattr(runner, "evaluate"):
+            runner.evaluate(
+                str(video_dir),
+                str(annotations),
+                str(output_dir),
+                args.model,
+                api_key=args.api_key,
+                base_url=args.base_url,
+                proxy=args.proxy,
+                frames=args.frames,
+                custom_config=args.custom_config,
+            )
+            return
+
+        raise AttributeError(
+            "Custom runner must implement either `evaluate_with_args(args)` "
+            "or `evaluate(video_path, json_file_path, output_path, model_name, ...)`."
+        )
 
     if provider == "gemini":
         runner = _load_module(RUNNERS_DIR / "gemini_evaluate.py", "gemini_runner")
