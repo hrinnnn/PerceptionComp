@@ -1,0 +1,6 @@
+tqdm
+numpy
+opencv-python
+openai
+google-generativeai
+huggingface_hub

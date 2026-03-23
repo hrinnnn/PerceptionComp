@@ -2,7 +2,7 @@
 
 PerceptionComp is a benchmark for complex perception-centric video reasoning. It is designed for questions that cannot be solved from a single frame, a single moment, or a short caption: models must revisit visually complex videos, gather evidence from temporally separated segments, and combine multiple perceptual constraints before answering.
 
-This repository is the benchmark-and-evaluation workspace accompanying our ECCV 2026 submission, "PerceptionComp: A Video Benchmark for Complex Perception-Centric Reasoning".
+This repository is the benchmark-and-evaluation workspace for PerceptionComp: A Video Benchmark for Complex Perception-Centric Reasoning.
 
 ## Overview
 
@@ -19,6 +19,41 @@ From the current paper draft:
 - each question is designed to require repeated perception rather than single-pass viewing,
 - single-view human performance drops sharply, while unrestricted rewatching remains much easier for experts,
 - frontier multimodal models still lag well behind careful human reasoning.
+
+## Quick Start
+
+Clone the repository, install dependencies, download benchmark videos from Hugging Face, and run evaluation.
+
+```bash
+git clone YOUR_REPO_URL
+cd PerceptionComp
+pip install -r requirements.txt
+python scripts/download_data.py --repo-id hrinnnn/PerceptionComp
+python evaluate/evaluate.py \
+  --model gpt-5.2 \
+  --provider api \
+  --api-key YOUR_API_KEY \
+  --base-url YOUR_BASE_URL \
+  --video-dir benchmark/videos
+```
+
+If the Hugging Face dataset requires authentication, you can additionally pass:
+
+```bash
+python scripts/download_data.py \
+  --repo-id hrinnnn/PerceptionComp \
+  --hf-token YOUR_HF_TOKEN
+```
+
+For Gemini models:
+
+```bash
+python evaluate/evaluate.py \
+  --model gemini-2.5-flash \
+  --provider gemini \
+  --api-key YOUR_GEMINI_API_KEY \
+  --video-dir benchmark/videos
+```
 
 ## Current Repository Snapshot
 
@@ -57,8 +92,12 @@ Current category counts in the official annotation file:
 │   ├── assets/
 │   └── videos/
 ├── evaluate/
+│   ├── evaluate.py
 │   ├── results/
 │   └── tools/
+├── scripts/
+│   └── download_data.py
+├── requirements.txt
 └── README.md
 ```
 
@@ -77,12 +116,14 @@ This folder contains the benchmark itself.
 - `benchmark/assets/`
   Benchmark plots and dataset-related visual assets.
 - `benchmark/videos/`
-  Placeholder location for benchmark videos. The current repository does not yet bundle the video files themselves.
+  Local storage directory for benchmark videos downloaded from Hugging Face.
 
 ### `evaluate/`
 
 This folder contains evaluation code and archived results.
 
+- `evaluate/evaluate.py`
+  Unified evaluation entry point.
 - `evaluate/results/`
   Main result files plus archived seasonal or round-based evaluation dumps.
 - `evaluate/tools/runners/`
@@ -91,6 +132,11 @@ This folder contains evaluation code and archived results.
   Analysis, formatting, cleanup, and statistics scripts.
 - `evaluate/tools/download/`
   Video download and related data-preparation utilities.
+
+### `scripts/`
+
+- `scripts/download_data.py`
+  Downloads benchmark videos from Hugging Face into `benchmark/videos/`.
 
 ## Annotation Format
 
@@ -109,24 +155,44 @@ Core fields:
 
 See [schema.md](/Users/zhaozhixuan/Desktop/tsinghua_learning/大二暑/暑研/PerceptionComp/benchmark/annotations/schema.md) for a compact schema reference.
 
-Example:
+## Data Access
 
-```json
-{
-  "key": "1",
-  "video_id": "Tokyo_6-8",
-  "question": "At the beginning of the video, the cameraman is walking on a step ... In what direction is the small landscape located relative to you?",
-  "answer_choice_0": "Directly in front",
-  "answer_choice_1": "Directly to the right",
-  "answer_choice_2": "Directly to the left",
-  "answer_choice_3": "Directly behind",
-  "answer_choice_4": "Rear-left",
-  "answer_id": 1,
-  "answer": "Directly to the right",
-  "category": "outdoor tour",
-  "difficulty": 1
-}
+Benchmark videos are hosted on Hugging Face at:
+
+- <https://huggingface.co/datasets/hrinnnn/PerceptionComp/tree/main>
+
+The expected local layout after download is:
+
+```text
+benchmark/videos/<video_id>.mp4
 ```
+
+## Evaluation
+
+There is now a unified evaluation entry point at `evaluate/evaluate.py`.
+
+Example usage with an OpenAI-compatible API:
+
+```bash
+python evaluate/evaluate.py \
+  --model gpt-5.2 \
+  --provider api \
+  --api-key YOUR_API_KEY \
+  --base-url YOUR_BASE_URL \
+  --video-dir benchmark/videos
+```
+
+Example usage with Gemini:
+
+```bash
+python evaluate/evaluate.py \
+  --model gemini-2.5-flash \
+  --provider gemini \
+  --api-key YOUR_GEMINI_API_KEY \
+  --video-dir benchmark/videos
+```
+
+If `--provider auto` is used, models starting with `gemini` are routed to the Gemini runner and all others are routed to the OpenAI-compatible API runner.
 
 ## Evaluation Assets
 
@@ -138,25 +204,14 @@ This repository already includes a substantial amount of evaluation history. The
 
 These result files are useful as working records and internal baselines. They should be treated as archived experiment artifacts rather than a finalized public leaderboard.
 
-## Video Release Status
-
-The repository currently does not include the benchmark video files. The intended location is `benchmark/videos/`, and `video_id` values in the annotations are expected to map to filenames of the form:
-
-```text
-benchmark/videos/<video_id>.mp4
-```
-
-When the public benchmark release is finalized, this folder can be populated directly or linked to an external download script / hosting source.
-
 ## Recommended Next Steps
 
 The repository is now organized around `benchmark/` and `evaluate/`, but the next cleanup steps are still important:
 
-1. Add a unified evaluation entry point, for example `evaluate/evaluate.py`.
-2. Add a dependency manifest such as `requirements.txt` or `pyproject.toml`.
-3. Decide how benchmark videos will be distributed.
-4. Add a license and data usage statement before public release.
-5. Add a small sample split for smoke testing.
+1. Add a license and data usage statement before public release.
+2. Add a small sample split for smoke testing.
+3. Gradually merge duplicated legacy evaluation scripts into the unified entry point.
+4. Optionally publish a lightweight leaderboard table in the README.
 
 ## Citation
 
@@ -165,7 +220,6 @@ If you use PerceptionComp, please cite the corresponding paper once the public v
 ```bibtex
 @misc{perceptioncomp2026,
   title={PerceptionComp: A Video Benchmark for Complex Perception-Centric Reasoning},
-  year={2026},
-  note={ECCV 2026 submission}
+  year={2026}
 }
 ```
