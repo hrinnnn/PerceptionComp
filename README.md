@@ -20,52 +20,52 @@ Dataset: <https://huggingface.co/datasets/hrinnnn/PerceptionComp/tree/main>
 
 ## Leaderboard
 
-The following leaderboard uses the paper-style breakdown by category and difficulty.
+The README homepage only shows the overall scores. More detailed per-category and per-difficulty analysis can live in the paper, supplementary materials, or a separate leaderboard page.
 
 ### Human Performance
 
-| Model | Size | Frame | Outdoor | Shopping | Sport | Home | Show | Movie | Game | Level 1 | Level 2 | Level 3 | Overall |
-| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Expert (unrestricted rewatch) | - | - | 100.00 | 100.00 | 100.00 | 100.00 | 100.00 | 100.00 | 100.00 | 100.00 | 100.00 | 100.00 | 100.00 |
-| Human | - | - | 81.33 | 86.80 | 87.56 | 86.72 | 87.25 | 88.00 | 87.10 | 90.18 | 86.00 | 72.25 | 85.10 |
-| Single-view Human (no rewatch) | - | - | 19.40 | 17.80 | 20.60 | 18.20 | 21.10 | 17.00 | 18.90 | 20.30 | 19.10 | 17.60 | 18.97 |
+| Model | Overall |
+| --- | ---: |
+| Expert (unrestricted rewatch) | 100.00 |
+| Human | 85.10 |
+| Single-view Human (no rewatch) | 18.97 |
 
 ### Proprietary Models
 
-| Model | Size | Frame | Outdoor | Shopping | Sport | Home | Show | Movie | Game | Level 1 | Level 2 | Level 3 | Overall |
-| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Gemini-3-Flash | - | - | 45.27 | 45.18 | 38.34 | 42.97 | 59.73 | 52.00 | 48.39 | 43.75 | 47.26 | 47.85 | 45.96 |
-| Gemini-3-Pro | - | - | 42.20 | 42.13 | 40.41 | 37.50 | 60.40 | 48.00 | 61.29 | 45.09 | 45.51 | 40.67 | 44.43 |
-| Gemini-2.5-Pro | - | - | 45.78 | 45.18 | 32.64 | 42.19 | 52.35 | 52.00 | 58.06 | 44.64 | 44.20 | 44.02 | 44.34 |
-| Seed-2.0-Pro | - | 64 | 43.73 | 47.72 | 30.57 | 47.66 | 51.68 | 40.00 | 70.97 | 48.21 | 45.51 | 33.49 | 44.34 |
-| GPT-o3 | - | 50 | 43.22 | 46.70 | 32.64 | 44.53 | 50.34 | 56.00 | 48.39 | 43.08 | 43.98 | 43.54 | 43.54 |
-| GPT-5.2 | - | 64 | 42.97 | 44.16 | 27.46 | 38.28 | 48.99 | 48.00 | 38.71 | 44.42 | 38.07 | 38.76 | 40.75 |
-| Gemini-2.5-Flash | - | - | 39.39 | 41.12 | 24.35 | 39.84 | 47.65 | 44.00 | 32.26 | 41.96 | 35.89 | 34.93 | 38.15 |
-| GPT-5 | - | 64 | 26.60 | 47.21 | 29.53 | 40.62 | 49.66 | 56.00 | 38.71 | 40.18 | 36.32 | 28.71 | 36.45 |
-| GPT-4.1 | - | 50 | 26.09 | 46.70 | 27.46 | 28.91 | 44.97 | 52.00 | 48.39 | 37.28 | 34.79 | 24.40 | 34.02 |
-| GPT-4o-latest | - | 50 | 30.18 | 36.04 | 25.39 | 32.81 | 40.94 | 48.00 | 29.03 | 35.04 | 30.63 | 29.67 | 32.50 |
+| Model | Overall |
+| --- | ---: |
+| Gemini-3-Flash | 45.96 |
+| Gemini-3-Pro | 44.43 |
+| Gemini-2.5-Pro | 44.34 |
+| Seed-2.0-Pro | 44.34 |
+| GPT-o3 | 43.54 |
+| GPT-5.2 | 40.75 |
+| Gemini-2.5-Flash | 38.15 |
+| GPT-5 | 36.45 |
+| GPT-4.1 | 34.02 |
+| GPT-4o-latest | 32.50 |
 
 ### Open-Source Instruct Models
 
-| Model | Size | Frame | Outdoor | Shopping | Sport | Home | Show | Movie | Game | Level 1 | Level 2 | Level 3 | Overall |
-| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Qwen2.5-VL | 7B | 64 | 26.34 | 24.87 | 13.54 | 17.97 | 26.85 | 20.00 | 22.58 | 24.11 | 21.44 | 22.60 | 22.73 |
-| InternVL-3.5 | 8B | 64 | 31.20 | 35.03 | 27.98 | 25.78 | 41.61 | 48.00 | 38.71 | 34.82 | 31.51 | 30.62 | 32.32 |
-| Qwen3-VL | 8B | 64 | 34.53 | 33.50 | 30.05 | 29.69 | 45.64 | 52.00 | 38.71 | 34.60 | 34.57 | 33.01 | 34.06 |
-| Qwen3-VL | 30B | 64 | 32.48 | 42.64 | 20.21 | 31.25 | 48.32 | 27.00 | 45.16 | 38.03 | 34.87 | 25.48 | 34.38 |
-| Qwen2.5-VL | 72B | 64 | 32.99 | 35.53 | 19.69 | 23.44 | 44.97 | 20.00 | 41.94 | 34.82 | 29.10 | 28.71 | 31.33 |
-| GLM-4.5V | 106B | 64 | 36.57 | 37.56 | 30.77 | 28.12 | 51.01 | 52.00 | 22.58 | 39.10 | 34.37 | 36.59 | 36.69 |
-| Qwen3-VL | 235B | 64 | 39.64 | 36.04 | 23.83 | 32.03 | 40.27 | 23.00 | 0.00 | 35.57 | 33.99 | 30.77 | 34.02 |
+| Model | Overall |
+| --- | ---: |
+| Qwen2.5-VL 7B | 22.73 |
+| InternVL-3.5 8B | 32.32 |
+| Qwen3-VL 8B | 34.06 |
+| Qwen3-VL 30B | 34.38 |
+| Qwen2.5-VL 72B | 31.33 |
+| GLM-4.5V 106B | 36.69 |
+| Qwen3-VL 235B | 34.02 |
 
 ### Open-Source Thinking Models
 
-| Model | Size | Frame | Outdoor | Shopping | Sport | Home | Show | Movie | Game | Level 1 | Level 2 | Level 3 | Overall |
-| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Video-R1 | 7B | 64 | 28.31 | 27.16 | 16.43 | 20.09 | 30.22 | 23.00 | 24.87 | 26.63 | 24.38 | 25.42 | 26.27 |
-| VideoChat-R1 | 7B | 64 | 31.42 | 29.68 | 19.17 | 22.94 | 33.11 | 26.00 | 27.46 | 29.39 | 27.02 | 28.21 | 28.63 |
-| Qwen3-VL-Thinking | 8B | 64 | 33.26 | 58.41 | 38.62 | 26.18 | 64.77 | 29.00 | 38.49 | 36.14 | 32.79 | 32.11 | 33.82 |
-| Qwen3-VL-Thinking | 30B | 64 | 39.13 | 36.04 | 26.94 | 25.78 | 46.31 | 38.00 | 32.26 | 35.65 | 37.06 | 32.69 | 35.68 |
-| Qwen3-VL-Thinking | 235B | 64 | 38.87 | 41.12 | 30.57 | 33.59 | 48.99 | 43.00 | 22.58 | 39.46 | 38.16 | 35.58 | 38.20 |
+| Model | Overall |
+| --- | ---: |
+| Video-R1 7B | 26.27 |
+| VideoChat-R1 7B | 28.63 |
+| Qwen3-VL-Thinking 8B | 33.82 |
+| Qwen3-VL-Thinking 30B | 35.68 |
+| Qwen3-VL-Thinking 235B | 38.20 |
 
 ## Quick Start
 
