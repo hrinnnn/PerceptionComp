@@ -109,7 +109,15 @@ pip install -r requirements.txt
 
 ##### Step 3. Download the Benchmark Videos
 
-Download all benchmark videos into `benchmark/videos/`:
+PerceptionComp evaluation expects all video files to live directly under `benchmark/videos/`, with filenames matching `video_id`:
+
+```text
+benchmark/
+  videos/
+    <video_id>.mp4
+```
+
+We recommend using the provided download script, because it automatically flattens the Hugging Face snapshot structure into this exact local layout:
 
 ```bash
 python scripts/download_data.py --repo-id hrinnnn/PerceptionComp
@@ -123,10 +131,32 @@ python scripts/download_data.py \
   --hf-token YOUR_HF_TOKEN
 ```
 
-Expected local layout after download:
+If you downloaded the dataset manually from the Hugging Face webpage instead of using the script, do not point the evaluator to the raw downloaded folder directly. Create the target directory first:
 
-```text
-benchmark/videos/<video_id>.mp4
+```bash
+mkdir -p benchmark/videos
+```
+
+Then normalize the downloaded folder into the benchmark layout:
+
+```bash
+python scripts/prepare_videos.py \
+  --src PATH_TO_YOUR_MANUALLY_DOWNLOADED_HF_FOLDER \
+  --dest benchmark/videos
+```
+
+After this step, the evaluator should always read from `benchmark/videos`, not from the original Hugging Face download directory.
+
+Practical rule:
+
+- the parent directory must be `benchmark/videos`
+- each video file must sit directly inside that folder, not in nested snapshot subdirectories
+- the filename stem must match the `video_id` used in the annotation files
+
+You can sanity-check the prepared directory like this:
+
+```bash
+ls benchmark/videos | head
 ```
 
 ##### Step 4. Run Evaluation with a Built-in Backend
@@ -302,6 +332,31 @@ Only change the model-side inference path. That is what keeps your results compa
 
 The default custom runner template is now a near-runnable local `transformers` scaffold. If your model follows a Hugging Face VLM workflow, you can often start from the template directly instead of writing a runner from scratch.
 
+## FAQ
+
+##### I downloaded the videos manually from Hugging Face, but the folder structure does not match the README. What should I do?
+
+Do not evaluate from the raw Hugging Face snapshot directory. Instead, create the benchmark video directory and normalize the files into it:
+
+```bash
+mkdir -p benchmark/videos
+python scripts/prepare_videos.py \
+  --src PATH_TO_YOUR_MANUALLY_DOWNLOADED_HF_FOLDER \
+  --dest benchmark/videos
+```
+
+After normalization, your local layout should be the one used by the evaluation code:
+
+```text
+benchmark/
+  videos/
+    <video_id>.mp4
+```
+
+##### Can I keep the downloaded videos in another location?
+
+Yes. If you want to store the prepared videos elsewhere, make sure the directory itself directly contains the video files and pass that directory through `--video-dir`. What matters is the layout, not the absolute path.
+
 ## Supported Models
 
 The unified entry point currently supports two built-in backend families plus a custom adapter path:
@@ -312,7 +367,7 @@ The unified entry point currently supports two built-in backend families plus a 
 | Gemini | `--provider gemini` | Uses the Gemini video upload workflow for Gemini-family models. |
 | Custom runner | `--provider custom` | Loads a Python file that implements your own inference logic. |
 
-Models already represented in the repository's archived results include:
+<!-- Models already represented in the repository's archived results include:
 
 - GPT-4.1, GPT-4o, GPT-5, GPT-5.2, GPT-o3
 - Gemini-2.5-Flash, Gemini-2.5-Pro, Gemini-3-Pro, Gemini-3.1-Pro
@@ -320,8 +375,8 @@ Models already represented in the repository's archived results include:
 - Qwen3-VL-235B-A22B-Instruct, Qwen3-VL-235B-A22B-Thinking
 - Qwen3-VL-30B-A3B-Instruct, Qwen3-VL-30B-A3B-Thinking
 - GLM-4.5V
-- Doubao-Seed variants
-
+- Doubao-Seed variants -->
+<!-- 
 ## Benchmark Snapshot
 
 ##### Benchmark Overview:
@@ -358,7 +413,7 @@ Core fields:
 - `answer_id`: zero-based correct option index
 - `answer`: text form of the correct answer
 - `category`: semantic category
-- `difficulty`: difficulty label
+- `difficulty`: difficulty label -->
 
 <!-- ## Citation
 
