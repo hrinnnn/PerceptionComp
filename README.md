@@ -97,7 +97,7 @@ PerceptionComp is released in two parts:
 ##### Step 1. Clone the Repository
 
 ```bash
-git clone YOUR_REPO_URL
+git clone https://github.com/hrinnnn/PerceptionComp.git
 cd PerceptionComp
 ```
 
