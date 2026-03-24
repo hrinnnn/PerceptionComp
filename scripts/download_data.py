@@ -40,7 +40,7 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         '--annotation-file',
-        default=str(repo_root / 'benchmark' / 'annotations' / 'official' / '1-1114.json'),
+        default=str(repo_root / 'benchmark' / 'annotations' / '1-1114.json'),
         help='Annotation file used to validate that all required videos were downloaded.',
     )
     parser.add_argument(

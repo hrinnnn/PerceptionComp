@@ -26,7 +26,7 @@ PerceptionComp is released in two parts:
 <!-- Current release structure:
 
 - benchmark annotations:
-  [1-1114.json](/Users/zhaozhixuan/Desktop/tsinghua_learning/大二暑/暑研/PerceptionComp/benchmark/annotations/official/1-1114.json)
+  [1-1114.json](/Users/zhaozhixuan/Desktop/tsinghua_learning/大二暑/暑研/PerceptionComp/benchmark/annotations/1-1114.json)
 - video host:
   <https://huggingface.co/datasets/hrinnnn/PerceptionComp/tree/main>
 - local video target directory:
@@ -156,7 +156,6 @@ python evaluate/evaluate.py \
 
 Optional arguments:
 
-- `--annotations`: use a different annotation file
 - `--output-dir`: change where results are written
 - `--frames`: control the number of sampled frames
 - `--proxy`: pass a proxy for API calls
@@ -174,7 +173,6 @@ python evaluate/evaluate.py \
 Optional arguments:
 
 - `--force-thinking`: retry when `<think>` tags are missing
-- `--annotations`: use a different annotation file
 - `--output-dir`: change where results are written
 
 ##### Step 5. Check the Outputs

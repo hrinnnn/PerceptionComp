@@ -16,8 +16,7 @@ Recommended workflow:
      --model my-model \
      --provider custom \
      --custom-runner evaluate/tools/runners/my_model.py \
-     --video-dir benchmark/videos \
-     --annotations benchmark/annotations/official/1-1114.json
+     --video-dir benchmark/videos
 """
 
 import json

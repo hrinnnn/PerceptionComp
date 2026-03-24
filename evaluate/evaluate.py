@@ -6,7 +6,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent.parent
-DEFAULT_JSON = ROOT / "benchmark" / "annotations" / "official" / "1-1114.json"
+DEFAULT_JSON = ROOT / "benchmark" / "annotations" / "1-1114.json"
 DEFAULT_VIDEO_DIR = ROOT / "benchmark" / "videos"
 DEFAULT_OUTPUT_DIR = ROOT / "evaluate" / "results"
 RUNNERS_DIR = ROOT / "evaluate" / "tools" / "runners"
@@ -75,11 +75,6 @@ def build_parser() -> argparse.ArgumentParser:
         help="Directory containing local benchmark videos.",
     )
     parser.add_argument(
-        "--annotations",
-        default=str(DEFAULT_JSON),
-        help="Path to the annotation JSON file.",
-    )
-    parser.add_argument(
         "--output-dir",
         default=str(DEFAULT_OUTPUT_DIR),
         help="Directory where result files will be written.",
@@ -126,7 +121,7 @@ def main():
     provider = infer_provider(args.model) if args.provider == "auto" else args.provider
     api_key = None if provider == "custom" else resolve_api_key(provider, args.api_key)
 
-    annotations = Path(args.annotations).resolve()
+    annotations = DEFAULT_JSON.resolve()
     video_dir = Path(args.video_dir).resolve()
     output_dir = Path(args.output_dir).resolve()
 
