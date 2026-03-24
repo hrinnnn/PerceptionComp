@@ -3,7 +3,7 @@
 **arXiv Paper:** [![Paper](https://img.shields.io/badge/PerceptionComp-Paper-blue)](https://arxiv.org/abs/)
 
 **Dataset**: [![Dataset](https://img.shields.io/badge/PerceptionComp-Data-Green)
-](https://huggingface.co/datasets/hrinnnn/PerceptionComp/tree/main) 
+](https://huggingface.co/datasets/hrinnnn/PerceptionComp) 
 
 ## Introduction
 
