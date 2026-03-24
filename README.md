@@ -1,27 +1,44 @@
 # PerceptionComp
 
-PerceptionComp is a benchmark for complex perception-centric video reasoning. It targets questions that cannot be solved from a single frame, a single moment, or a short caption: models must revisit visually complex videos, gather evidence from temporally separated segments, and combine multiple perceptual constraints before answering.
+## Introduction
 
-Dataset: <https://huggingface.co/datasets/hrinnnn/PerceptionComp/tree/main>
+![1774317977770](image/README/1774317977770.png)
+
+&emsp;&emsp;[PerceptionComp](https://huggingface.co/datasets/hrinnnn/PerceptionComp/tree/main) is a benchmark for complex perception-centric video reasoning. It targets questions that cannot be solved from a single frame, a single moment, or a short caption: models must revisit visually complex videos, gather evidence from temporally separated segments, and combine multiple perceptual constraints before answering.
 
 ## Highlights
 
 - Complex perception-centric reasoning instead of caption-level shortcut solving.
 - 1,114 manually annotated five-choice questions.
 - Seven categories spanning outdoor tour, shopping, sport, variety show, home tour, game, and movie.
-- Unified workflow for download -> local video storage -> evaluation.
+- Unified workflow for download, local video storage and evaluation.
 - Extensible evaluation entry point that supports OpenAI-compatible APIs, Gemini, and custom model runners.
 
-## News
+## Data Release
 
-- Added a unified `evaluate/evaluate.py` entry point.
-- Added `scripts/download_data.py` for downloading videos from Hugging Face.
-- Added a custom runner template for plugging in your own model.
+PerceptionComp is released in two parts:
 
-## Leaderboard
+1. [GitHub repository](https://github.com/hrinnnn/PerceptionComp):
+   contains benchmark annotations, evaluation code, runner templates, analysis utilities, and documentation.
+2. [Hugging Face dataset](https://huggingface.co/datasets/hrinnnn/PerceptionComp/tree/main):
+   stores the benchmark videos referenced by `video_id`.
 
-The README homepage only shows the overall scores. More detailed per-category and per-difficulty analysis can live in the paper, supplementary materials, or a separate leaderboard page.
+<!-- Current release structure:
 
+- benchmark annotations:
+  [1-1114.json](/Users/zhaozhixuan/Desktop/tsinghua_learning/大二暑/暑研/PerceptionComp/benchmark/annotations/official/1-1114.json)
+- video host:
+  <https://huggingface.co/datasets/hrinnnn/PerceptionComp/tree/main>
+- local video target directory:
+  [benchmark/videos](/Users/zhaozhixuan/Desktop/tsinghua_learning/大二暑/暑研/PerceptionComp/benchmark/videos) -->
+
+## Main Results
+
+<!-- This README only shows the overall scores. More detailed per-category and per-difficulty analysis can live in the paper, supplementary materials, or a separate leaderboard page. -->
+
+![1774317535991](image/README/1774317535991.png)
+
+<!-- 
 ### Human Performance
 
 | Model | Overall |
@@ -65,32 +82,32 @@ The README homepage only shows the overall scores. More detailed per-category an
 | VideoChat-R1 7B | 28.63 |
 | Qwen3-VL-Thinking 8B | 33.82 |
 | Qwen3-VL-Thinking 30B | 35.68 |
-| Qwen3-VL-Thinking 235B | 38.20 |
+| Qwen3-VL-Thinking 235B | 38.20 | -->
 
 ## Quick Start
 
-This section is intentionally step-by-step. The expected workflow is:
+<!-- The expected workflow is:
 
 1. Clone the repository.
 2. Install dependencies.
 3. Download the benchmark videos from Hugging Face.
 4. Run evaluation with a built-in backend or your own model adapter.
-5. Read the generated result files from `evaluate/results/`.
+5. Read the generated result files from `evaluate/results/`. -->
 
-### Step 1. Clone the Repository
+##### Step 1. Clone the Repository
 
 ```bash
 git clone YOUR_REPO_URL
 cd PerceptionComp
 ```
 
-### Step 2. Install Dependencies
+##### Step 2. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Step 3. Download the Benchmark Videos
+##### Step 3. Download the Benchmark Videos
 
 Download all benchmark videos into `benchmark/videos/`:
 
@@ -112,27 +129,7 @@ Expected local layout after download:
 benchmark/videos/<video_id>.mp4
 ```
 
-## Data Release
-
-PerceptionComp is released in two parts:
-
-1. GitHub repository:
-   contains benchmark annotations, evaluation code, runner templates, analysis utilities, and documentation.
-2. Hugging Face dataset:
-   stores the benchmark videos referenced by `video_id`.
-
-Current release structure:
-
-- benchmark annotations:
-  [1-1114.json](/Users/zhaozhixuan/Desktop/tsinghua_learning/大二暑/暑研/PerceptionComp/benchmark/annotations/official/1-1114.json)
-- video host:
-  <https://huggingface.co/datasets/hrinnnn/PerceptionComp/tree/main>
-- local video target directory:
-  [benchmark/videos](/Users/zhaozhixuan/Desktop/tsinghua_learning/大二暑/暑研/PerceptionComp/benchmark/videos)
-
-This split release strategy is standard for video benchmarks because the benchmark code should stay lightweight while the video assets are distributed through a data host.
-
-### Step 4. Run Evaluation with a Built-in Backend
+##### Step 4. Run Evaluation with a Built-in Backend
 
 PerceptionComp currently supports three evaluation modes:
 
@@ -140,7 +137,7 @@ PerceptionComp currently supports three evaluation modes:
 - `gemini`: Gemini video-upload workflow
 - `custom`: your own model runner
 
-#### Option A. OpenAI-Compatible API
+###### Option A. OpenAI-Compatible API
 
 Use this for GPT-style APIs, Qwen API deployments, GLM-compatible endpoints, Doubao-style endpoints, and similar services.
 
@@ -160,7 +157,7 @@ Optional arguments:
 - `--frames`: control the number of sampled frames
 - `--proxy`: pass a proxy for API calls
 
-#### Option B. Gemini
+###### Option B. Gemini
 
 ```bash
 python evaluate/evaluate.py \
@@ -176,7 +173,7 @@ Optional arguments:
 - `--annotations`: use a different annotation file
 - `--output-dir`: change where results are written
 
-### Step 5. Check the Outputs
+##### Step 5. Check the Outputs
 
 Evaluation outputs are written to:
 
@@ -189,7 +186,7 @@ The JSON file stores per-question predictions and raw responses. The CSV file st
 
 ## Evaluate Your Own Model
 
-Yes, a public benchmark should support evaluation on external models. This is standard practice for benchmark repositories, but different projects implement it differently:
+<!-- A public benchmark should support evaluation on external models. This is standard practice for benchmark repositories, but different projects implement it differently:
 
 - LongVideoBench provides a dataset loader and encourages integration into a general evaluation framework.
 - Video-Holmes exposes model-specific hooks inside the evaluation pipeline and documents where to modify the model code.
@@ -199,9 +196,9 @@ PerceptionComp follows the same general principle:
 - the benchmark owns the dataset, prompt construction, answer parsing, metrics, and output format;
 - your model adapter only needs to turn `(video, prompt)` into a raw text response.
 
-That separation is what makes a benchmark portable across proprietary APIs, local checkpoints, internal inference servers, and future evaluation frameworks. Source: [LongVideoBench README](https://github.com/longvideobench/LongVideoBench), [Video-Holmes README](https://github.com/TencentARC/Video-Holmes).
+That separation is what makes a benchmark portable across proprietary APIs, local checkpoints, internal inference servers, and future evaluation frameworks. Source: [LongVideoBench README](https://github.com/longvideobench/LongVideoBench), [Video-Holmes README](https://github.com/TencentARC/Video-Holmes). --> 
 
-### Option 1. Your Model Already Supports an OpenAI-Compatible API
+##### Option 1. Your Model Already Supports an OpenAI-Compatible API
 
 If your model is already exposed through an OpenAI-compatible endpoint, you do not need to write any adapter. Just use:
 
@@ -214,7 +211,7 @@ python evaluate/evaluate.py \
   --video-dir benchmark/videos
 ```
 
-### Option 2. Your Model Is a Gemini Model
+##### Option 2. Your Model Is a Gemini Model
 
 If your model is part of the Gemini family, use:
 
@@ -226,17 +223,17 @@ python evaluate/evaluate.py \
   --video-dir benchmark/videos
 ```
 
-### Option 3. Your Model Needs Custom Inference Logic
+##### Option 3. Your Model Needs Custom Inference Logic
 
-If your model is local, served by an internal API, or uses a different SDK / pipeline, implement a custom runner.
+If your model is local, served by an internal API, or uses a different SDK / pipeline, implement a custom runner. You can follow these steps: 
 
-#### Step 1. Copy the Template
+###### Step 1. Copy the Template
 
 ```bash
 cp evaluate/tools/runners/custom_template.py evaluate/tools/runners/my_model.py
 ```
 
-#### Step 2. Implement the Model Hook
+###### Step 2. Implement the Model Hook
 
 Open `evaluate/tools/runners/my_model.py` and replace `run_your_model(...)` with your own inference logic.
 
@@ -245,7 +242,7 @@ Your function should take:
 - `video_path`
 - `prompt`
 - `model_name`
-- optional `custom_config`
+- `custom_config` (optional)
 
 and return:
 
@@ -268,7 +265,7 @@ A
 </answer>
 ```
 
-#### Step 3. Run Evaluation with the Custom Runner
+###### Step 3. Run Evaluation with the Custom Runner
 
 ```bash
 python evaluate/evaluate.py \
@@ -289,7 +286,7 @@ python evaluate/evaluate.py \
   --video-dir benchmark/videos
 ```
 
-#### Step 4. Keep the Benchmark Protocol Fixed
+###### Step 4. Keep the Benchmark Protocol Fixed
 
 When adapting your own model, do not modify:
 
@@ -301,7 +298,7 @@ When adapting your own model, do not modify:
 
 Only change the model-side inference path. That is what keeps your results comparable to other models.
 
-For a more explicit implementation guide, see [bring_your_own_model.md](/Users/zhaozhixuan/Desktop/tsinghua_learning/大二暑/暑研/PerceptionComp/docs/bring_your_own_model.md).
+<!-- For a more explicit implementation guide, see [bring_your_own_model.md](/Users/zhaozhixuan/Desktop/tsinghua_learning/大二暑/暑研/PerceptionComp/docs/bring_your_own_model.md). -->
 
 The default custom runner template is now a near-runnable local `transformers` scaffold. If your model follows a Hugging Face VLM workflow, you can often start from the template directly instead of writing a runner from scratch.
 
@@ -317,7 +314,7 @@ The unified entry point currently supports two built-in backend families plus a 
 
 Models already represented in the repository's archived results include:
 
-- GPT-4.1, GPT-4o, GPT-5, GPT-5.2, o3
+- GPT-4.1, GPT-4o, GPT-5, GPT-5.2, GPT-o3
 - Gemini-2.5-Flash, Gemini-2.5-Pro, Gemini-3-Pro, Gemini-3.1-Pro
 - Qwen2.5-VL-7B, Qwen2.5-VL-72B
 - Qwen3-VL-235B-A22B-Instruct, Qwen3-VL-235B-A22B-Thinking
@@ -327,15 +324,16 @@ Models already represented in the repository's archived results include:
 
 ## Benchmark Snapshot
 
+##### Benchmark Overview:
+
 | Item | Value |
 | --- | --- |
-| Official annotation file | `benchmark/annotations/official/1-1114.json` |
-| Questions | 1,114 |
-| Unique `video_id` values in the official annotation file | 273 |
-| Question format | 5-choice multiple choice |
+| Question Number | 1,114 |
+| Video Number | 273 |
+| Question Format | 5-choice multiple choice |
 | Categories | 7 |
 
-Current category counts in the official annotation file:
+##### Question Categories:
 
 | Category | Questions |
 | --- | --- |
@@ -347,31 +345,7 @@ Current category counts in the official annotation file:
 | game | 31 |
 | movie | 25 |
 
-## Repository Layout
-
-```text
-.
-├── benchmark/
-│   ├── annotations/
-│   │   ├── official/
-│   │   ├── splits/
-│   │   ├── legacy/
-│   │   └── archive/
-│   ├── assets/
-│   └── videos/
-├── docs/
-│   └── bring_your_own_model.md
-├── evaluate/
-│   ├── evaluate.py
-│   ├── results/
-│   └── tools/
-├── scripts/
-│   └── download_data.py
-├── requirements.txt
-└── README.md
-```
-
-## Annotation Format
+##### Annotation Format
 
 Each item in the official benchmark file is a five-choice question tied to a `video_id`.
 
@@ -386,88 +360,7 @@ Core fields:
 - `category`: semantic category
 - `difficulty`: difficulty label
 
-See [schema.md](/Users/zhaozhixuan/Desktop/tsinghua_learning/大二暑/暑研/PerceptionComp/benchmark/annotations/schema.md) for the compact schema reference.
-
-## Evaluation Design
-
-## Evaluation Protocol
-
-The benchmark side should own:
-
-- dataset loading,
-- prompt construction,
-- answer parsing,
-- metric computation,
-- result serialization.
-
-The model side should only own:
-
-- how to prepare the video input,
-- how to call the model,
-- how to return a raw text response.
-
-This separation is what makes a benchmark portable across proprietary APIs, local checkpoints, and future evaluation frameworks. It is also the main thing you should preserve as PerceptionComp grows.
-
-In the current repository snapshot, the evaluation protocol is:
-
-1. Load the official annotation file.
-2. Map each `video_id` to a local video file under `benchmark/videos/`.
-3. Build a standardized multiple-choice prompt.
-4. Run inference through one of the supported backends.
-5. Parse the model output into one final answer among `A/B/C/D/E`.
-6. Compute exact-match accuracy.
-7. Save per-question outputs and aggregate metrics.
-
-To keep results comparable, external model integrations should not modify:
-
-- the annotation file,
-- the prompt structure,
-- the answer parser,
-- the metric definition,
-- the output schema.
-
-Only the model-side inference path should change.
-
-## FAQ
-
-### Why are videos hosted on Hugging Face instead of in the Git repository?
-
-Because video benchmarks are large. A standard public benchmark setup keeps code and annotations in Git, while large video assets are hosted on a dataset platform.
-
-### Can I run PerceptionComp on my own model?
-
-Yes. If your model supports an OpenAI-compatible API, use `--provider api`. If it is a Gemini model, use `--provider gemini`. Otherwise, use `--provider custom` and implement a model adapter with the provided template.
-
-### What if my model is local and not exposed as an API?
-
-Use the custom runner path. The default template now includes a near-runnable local `transformers` example based on frame sampling plus Hugging Face VLM inference.
-
-### Do I need to change the benchmark code to evaluate my own model?
-
-Usually no. You should only change the model adapter. The benchmark-side protocol should remain fixed.
-
-### Why do some leaderboard entries have different numbers of answered questions?
-
-Because the current repository stores historical result files from different evaluation stages. The README leaderboard is a repository snapshot, not yet a fully standardized official leaderboard.
-
-### Can I evaluate on a different split or a custom annotation file?
-
-Yes. Pass `--annotations PATH_TO_JSON` to `evaluate/evaluate.py`.
-
-## Contact
-
-If you want to report an issue, suggest improvements, or discuss evaluation of a new model family, please open an issue in this repository first.
-
-## License
-
-License and data usage terms should be added before broader public release. At minimum, the repository should clearly separate:
-
-- code license,
-- dataset usage policy,
-- video copyright statement,
-- contact path for takedown requests.
-
-## Citation
+<!-- ## Citation
 
 If you use PerceptionComp, please cite the corresponding paper once the public version is finalized.
 
@@ -476,4 +369,4 @@ If you use PerceptionComp, please cite the corresponding paper once the public v
   title={PerceptionComp: A Video Benchmark for Complex Perception-Centric Reasoning},
   year={2026}
 }
-```
+``` -->
