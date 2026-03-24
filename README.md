@@ -1,10 +1,14 @@
 # PerceptionComp
 
+**arXiv Paper:** [![Paper](https://img.shields.io/badge/PerceptionComp-Paper-blue)](https://arxiv.org/abs/)
+**Dataset**: [![Dataset](https://img.shields.io/badge/PerceptionComp-Data-Green)
+](https://huggingface.co/datasets/hrinnnn/PerceptionComp/tree/main) 
+
 ## Introduction
 
 ![1774317977770](image/README/1774317977770.png)
 
-&emsp;&emsp;[PerceptionComp](https://huggingface.co/datasets/hrinnnn/PerceptionComp/tree/main) is a benchmark for complex perception-centric video reasoning. It targets questions that cannot be solved from a single frame, a single moment, or a short caption: models must revisit visually complex videos, gather evidence from temporally separated segments, and combine multiple perceptual constraints before answering.
+&emsp;&emsp;**PerceptionComp** is a benchmark for complex perception-centric video reasoning. It targets questions that cannot be solved from a single frame, a single moment, or a short caption: models must revisit visually complex videos, gather evidence from temporally separated segments, and combine multiple perceptual constraints before answering.
 
 ## Highlights
 
@@ -18,9 +22,9 @@
 
 PerceptionComp is released in two parts:
 
-1. [GitHub repository](https://github.com/hrinnnn/PerceptionComp):
+1. GitHub repository:
    contains benchmark annotations, evaluation code, runner templates, analysis utilities, and documentation.
-2. [Hugging Face dataset](https://huggingface.co/datasets/hrinnnn/PerceptionComp/tree/main):
+2. Hugging Face dataset:
    stores the benchmark videos referenced by `video_id`.
 
 <!-- Current release structure:
