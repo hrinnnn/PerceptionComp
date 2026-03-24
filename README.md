@@ -1,15 +1,24 @@
-# PerceptionComp
-
-**arXiv Paper:** [![Paper](https://img.shields.io/badge/PerceptionComp-Paper-blue)](https://arxiv.org/abs/)
-
-**Dataset**: [![Dataset](https://img.shields.io/badge/PerceptionComp-Data-Green)
-](https://huggingface.co/datasets/hrinnnn/PerceptionComp) 
+<div align="center">
+  <h1>PerceptionComp</h1>
+  <p><strong>A Benchmark for Complex Perception-Centric Video Reasoning</strong></p>
+  <p>
+    <a href="https://huggingface.co/datasets/hrinnnn/PerceptionComp">
+      <img src="https://img.shields.io/badge/Dataset-Hugging%20Face-FFD21E?logo=huggingface&logoColor=black" alt="Dataset">
+    </a>
+    <a href="https://github.com/hrinnnn/PerceptionComp">
+      <img src="https://img.shields.io/badge/GitHub-Repository-181717?logo=github&logoColor=white" alt="GitHub Repository">
+    </a>
+    <img src="https://img.shields.io/badge/Paper-Coming%20Soon-4C72B0" alt="Paper Coming Soon">
+  </p>
+</div>
 
 ## Introduction
 
-![1774317977770](image/README/1774317977770.png)
+<p align="center">
+  <img src="image/README/1774317977770.png" alt="PerceptionComp teaser" width="100%">
+</p>
 
-&emsp;&emsp;**PerceptionComp** is a benchmark for complex perception-centric video reasoning. It targets questions that cannot be solved from a single frame, a single moment, or a short caption: models must revisit visually complex videos, gather evidence from temporally separated segments, and combine multiple perceptual constraints before answering.
+**PerceptionComp** is a benchmark for complex perception-centric video reasoning. It targets questions that cannot be solved from a single frame, a single moment, or a short caption: models must revisit visually complex videos, gather evidence from temporally separated segments, and combine multiple perceptual constraints before answering.
 
 ## Highlights
 
@@ -41,7 +50,9 @@ PerceptionComp is released in two parts:
 
 <!-- This README only shows the overall scores. More detailed per-category and per-difficulty analysis can live in the paper, supplementary materials, or a separate leaderboard page. -->
 
-![1774317535991](image/README/1774317535991.png)
+<p align="center">
+  <img src="image/README/1774317535991.png" alt="PerceptionComp main results" width="100%">
+</p>
 
 <!-- 
 ### Human Performance
@@ -309,17 +320,7 @@ Only change the model-side inference path. That is what keeps your results compa
 
 The default custom runner template is now a near-runnable local `transformers` scaffold. If your model follows a Hugging Face VLM workflow, you can often start from the template directly instead of writing a runner from scratch.
 
-## FAQ
-
-##### Where should the videos be stored locally?
-
-Use `scripts/download_data.py`. It prepares the exact layout expected by the evaluation code under `benchmark/videos/`.
-
-##### How do I know the download finished correctly?
-
-The download script validates the downloaded files against the official annotation file at the end of the run. If the script exits successfully, the local video directory is ready for evaluation.
-
-## Supported Models
+<!-- ## Supported Models
 
 The unified entry point currently supports two built-in backend families plus a custom adapter path:
 
@@ -327,7 +328,7 @@ The unified entry point currently supports two built-in backend families plus a 
 | --- | --- | --- |
 | OpenAI-compatible API | `--provider api` | Works for GPT-style APIs, Qwen API deployments, GLM-compatible endpoints, Doubao-style endpoints, and other OpenAI-compatible services. |
 | Gemini | `--provider gemini` | Uses the Gemini video upload workflow for Gemini-family models. |
-| Custom runner | `--provider custom` | Loads a Python file that implements your own inference logic. |
+| Custom runner | `--provider custom` | Loads a Python file that implements your own inference logic. | -->
 
 <!-- Models already represented in the repository's archived results include:
 
