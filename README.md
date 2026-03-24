@@ -372,7 +372,7 @@ Core fields:
 - `category`: semantic category
 - `difficulty`: difficulty label -->
 
-<!-- ## Citation
+## Citation
 
 If you use PerceptionComp, please cite the corresponding paper once the public version is finalized.
 
@@ -381,4 +381,4 @@ If you use PerceptionComp, please cite the corresponding paper once the public v
   title={PerceptionComp: A Video Benchmark for Complex Perception-Centric Reasoning},
   year={2026}
 }
-``` -->
+```
