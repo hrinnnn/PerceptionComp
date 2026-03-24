@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import argparse
+import json
 import os
 import shutil
 import tempfile
@@ -12,6 +13,7 @@ DEFAULT_VIDEO_EXTENSIONS = {'.mp4', '.avi', '.mov', '.mkv', '.webm', '.m4v'}
 
 
 def build_parser() -> argparse.ArgumentParser:
+    repo_root = Path(__file__).resolve().parents[1]
     parser = argparse.ArgumentParser(
         description='Download PerceptionComp videos from Hugging Face into benchmark/videos.'
     )
@@ -33,8 +35,13 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         '--dest',
-        default=str(Path(__file__).resolve().parents[1] / 'benchmark' / 'videos'),
+        default=str(repo_root / 'benchmark' / 'videos'),
         help='Local destination directory for downloaded videos.',
+    )
+    parser.add_argument(
+        '--annotation-file',
+        default=str(repo_root / 'benchmark' / 'annotations' / 'official' / '1-1114.json'),
+        help='Annotation file used to validate that all required videos were downloaded.',
     )
     parser.add_argument(
         '--include-pattern',
@@ -85,6 +92,34 @@ def copy_video_files(snapshot_dir: Path, dest_dir: Path, dry_run: bool) -> tuple
     return copied, skipped
 
 
+def validate_download(dest_dir: Path, annotation_file: Path) -> None:
+    if not annotation_file.exists():
+        print(f'Validation skipped: annotation file not found at {annotation_file}')
+        return
+
+    with annotation_file.open('r', encoding='utf-8') as f:
+        annotations = json.load(f)
+
+    expected = {item['video_id'] for item in annotations if item.get('video_id')}
+    available = {
+        path.stem for path in dest_dir.iterdir()
+        if path.is_file() and path.suffix.lower() in DEFAULT_VIDEO_EXTENSIONS
+    }
+    missing = sorted(expected - available)
+
+    if missing:
+        preview = ', '.join(missing[:10])
+        raise RuntimeError(
+            'Downloaded videos do not fully match the annotation file. '
+            f'Missing {len(missing)} video(s), including: {preview}'
+        )
+
+    print(
+        'Validation passed: '
+        f'{len(expected)} annotated video ids are available in {dest_dir}.'
+    )
+
+
 def main():
     args = build_parser().parse_args()
     token = args.hf_token or os.getenv('HF_TOKEN') or os.getenv('HUGGINGFACE_HUB_TOKEN')
@@ -112,6 +147,8 @@ def main():
     print(f'Destination: {dest_dir}')
     print(f'Copied: {copied}')
     print(f'Skipped existing: {skipped}')
+    if not args.dry_run:
+        validate_download(dest_dir, Path(args.annotation_file).resolve())
 
 
 if __name__ == '__main__':

@@ -109,15 +109,7 @@ pip install -r requirements.txt
 
 ##### Step 3. Download the Benchmark Videos
 
-PerceptionComp evaluation expects all video files to live directly under `benchmark/videos/`, with filenames matching `video_id`:
-
-```text
-benchmark/
-  videos/
-    <video_id>.mp4
-```
-
-We recommend using the provided download script, because it automatically flattens the Hugging Face snapshot structure into this exact local layout:
+Run the official download script:
 
 ```bash
 python scripts/download_data.py --repo-id hrinnnn/PerceptionComp
@@ -131,32 +123,14 @@ python scripts/download_data.py \
   --hf-token YOUR_HF_TOKEN
 ```
 
-If you downloaded the dataset manually from the Hugging Face webpage instead of using the script, do not point the evaluator to the raw downloaded folder directly. Create the target directory first:
+This script downloads the videos from the Hugging Face `data/` directory, flattens the downloaded snapshot into the local layout expected by the evaluator, and validates the result against the official annotation file.
 
-```bash
-mkdir -p benchmark/videos
-```
+After the script finishes successfully, your local layout is ready for evaluation:
 
-Then normalize the downloaded folder into the benchmark layout:
-
-```bash
-python scripts/prepare_videos.py \
-  --src PATH_TO_YOUR_MANUALLY_DOWNLOADED_HF_FOLDER \
-  --dest benchmark/videos
-```
-
-After this step, the evaluator should always read from `benchmark/videos`, not from the original Hugging Face download directory.
-
-Practical rule:
-
-- the parent directory must be `benchmark/videos`
-- each video file must sit directly inside that folder, not in nested snapshot subdirectories
-- the filename stem must match the `video_id` used in the annotation files
-
-You can sanity-check the prepared directory like this:
-
-```bash
-ls benchmark/videos | head
+```text
+benchmark/
+  videos/
+    <video_id>.mp4
 ```
 
 ##### Step 4. Run Evaluation with a Built-in Backend
@@ -334,28 +308,13 @@ The default custom runner template is now a near-runnable local `transformers` s
 
 ## FAQ
 
-##### I downloaded the videos manually from Hugging Face, but the folder structure does not match the README. What should I do?
+##### Where should the videos be stored locally?
 
-Do not evaluate from the raw Hugging Face snapshot directory. Instead, create the benchmark video directory and normalize the files into it:
+Use `scripts/download_data.py`. It prepares the exact layout expected by the evaluation code under `benchmark/videos/`.
 
-```bash
-mkdir -p benchmark/videos
-python scripts/prepare_videos.py \
-  --src PATH_TO_YOUR_MANUALLY_DOWNLOADED_HF_FOLDER \
-  --dest benchmark/videos
-```
+##### How do I know the download finished correctly?
 
-After normalization, your local layout should be the one used by the evaluation code:
-
-```text
-benchmark/
-  videos/
-    <video_id>.mp4
-```
-
-##### Can I keep the downloaded videos in another location?
-
-Yes. If you want to store the prepared videos elsewhere, make sure the directory itself directly contains the video files and pass that directory through `--video-dir`. What matters is the layout, not the absolute path.
+The download script validates the downloaded files against the official annotation file at the end of the run. If the script exits successfully, the local video directory is ready for evaluation.
 
 ## Supported Models
 
