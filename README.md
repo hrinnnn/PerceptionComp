@@ -1,8 +1,9 @@
 <div align="center">
   <p>
     <img src="image/README/title.svg" alt="PerceptionComp" width="460">
+    <br>
+    <strong>A Benchmark for Complex Perception-Centric Video Reasoning</strong>
   </p>
-  <p><strong>A Benchmark for Complex Perception-Centric Video Reasoning</strong></p>
   <p>
     <a href="https://huggingface.co/datasets/hrinnnn/PerceptionComp">
       <img src="https://img.shields.io/badge/Dataset-Hugging%20Face-FFD21E?logo=huggingface&logoColor=black" alt="Dataset">
