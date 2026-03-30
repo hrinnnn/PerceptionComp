@@ -8,6 +8,9 @@
     <a href="https://arxiv.org/abs/2603.26653">
       <img src="https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white" alt="Paper">
     </a>
+    <a href="https://shaoxuanli.github.io/PerceptionComp.github.io/">
+      <img src="https://img.shields.io/badge/Website-Project%20Page-0A7F5A" alt="Website">
+    </a>
   </p>
 </div>
 
