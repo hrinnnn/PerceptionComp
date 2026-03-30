@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="160" viewBox="0 0 960 160" role="img" aria-labelledby="title">
+  <title>PerceptionComp</title>
+  <rect width="960" height="160" fill="none"/>
+  <text
+    x="480"
+    y="84"
+    text-anchor="middle"
+    font-family="Helvetica, Arial, sans-serif"
+    font-size="76"
+    font-weight="700"
+    letter-spacing="0.5"
+    fill="#111111"
+  >PerceptionComp</text>
+</svg>

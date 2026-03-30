@@ -1,5 +1,7 @@
 <div align="center">
-  <p><strong><font size="6">PerceptionComp</font></strong></p>
+  <p>
+    <img src="image/README/title.svg" alt="PerceptionComp" width="460">
+  </p>
   <p><strong>A Benchmark for Complex Perception-Centric Video Reasoning</strong></p>
   <p>
     <a href="https://huggingface.co/datasets/hrinnnn/PerceptionComp">
