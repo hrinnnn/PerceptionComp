@@ -1,14 +1,13 @@
 <div align="center">
-  <h1>PerceptionComp</h1>
+  <p><strong>PerceptionComp</strong></p>
   <p><strong>A Benchmark for Complex Perception-Centric Video Reasoning</strong></p>
   <p>
     <a href="https://huggingface.co/datasets/hrinnnn/PerceptionComp">
       <img src="https://img.shields.io/badge/Dataset-Hugging%20Face-FFD21E?logo=huggingface&logoColor=black" alt="Dataset">
     </a>
-    <a href="https://github.com/hrinnnn/PerceptionComp">
-      <img src="https://img.shields.io/badge/GitHub-Repository-181717?logo=github&logoColor=white" alt="GitHub Repository">
+    <a href="https://arxiv.org/abs/2603.26653">
+      <img src="https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white" alt="Paper">
     </a>
-    <img src="https://img.shields.io/badge/Paper-Coming%20Soon-4C72B0" alt="Paper Coming Soon">
   </p>
 </div>
 
