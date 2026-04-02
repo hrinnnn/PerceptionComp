@@ -126,7 +126,7 @@ pip install -r requirements.txt
 
 ##### Step 3. Download the Benchmark Videos
 
-Run the official download script:
+Download the benchmark videos from the Hugging Face dataset using the official helper script:
 
 ```bash
 python scripts/download_data.py --repo-id hrinnnn/PerceptionComp
