@@ -217,34 +217,7 @@ PerceptionComp follows the same general principle:
 
 That separation is what makes a benchmark portable across proprietary APIs, local checkpoints, internal inference servers, and future evaluation frameworks. Source: [LongVideoBench README](https://github.com/longvideobench/LongVideoBench), [Video-Holmes README](https://github.com/TencentARC/Video-Holmes). --> 
 
-##### Option 1. Your Model Already Supports an OpenAI-Compatible API
-
-If your model is already exposed through an OpenAI-compatible endpoint, you do not need to write any adapter. Just use:
-
-```bash
-python evaluate/evaluate.py \
-  --model YOUR_MODEL_NAME \
-  --provider api \
-  --api-key YOUR_API_KEY \
-  --base-url YOUR_BASE_URL \
-  --video-dir benchmark/videos
-```
-
-##### Option 2. Your Model Is a Gemini Model
-
-If your model is part of the Gemini family, use:
-
-```bash
-python evaluate/evaluate.py \
-  --model YOUR_GEMINI_MODEL_NAME \
-  --provider gemini \
-  --api-key YOUR_GEMINI_API_KEY \
-  --video-dir benchmark/videos
-```
-
-##### Option 3. Your Model Needs Custom Inference Logic
-
-If your model is local, served by an internal API, or uses a different SDK / pipeline, implement a custom runner. You can follow these steps: 
+If your model is local, implement a custom runner. You can follow these steps: 
 
 ###### Step 1. Copy the Template
 
