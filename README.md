@@ -1,6 +1,5 @@
 <div align="center">
   <h1><span class="pc-gradient-name">PerceptionComp</span>: A Video Benchmark for Complex Perception-Centric Reasoning</h1>
-  <p><strong>🎬 Video Reasoning &nbsp;•&nbsp; 🧠 Multi-Step Perception &nbsp;•&nbsp; 📊 Benchmark</strong></p>
   <p>
     <a href="https://huggingface.co/datasets/hrinnnn/PerceptionComp">
       <img src="https://img.shields.io/badge/Dataset-Hugging%20Face-FFD21E?logo=huggingface&logoColor=black" alt="Dataset">
@@ -22,7 +21,7 @@
 
 **PerceptionComp** is a benchmark for complex perception-centric video reasoning. It targets questions that cannot be solved from a single frame, a single moment, or a short caption: models must revisit visually complex videos, gather evidence from temporally separated segments, and combine multiple perceptual constraints before answering.
 
-## Highlights
+## ✨ Highlights
 
 - Complex perception-centric reasoning instead of caption-level shortcut solving.
 - 1,114 manually annotated five-choice questions.
@@ -30,7 +29,7 @@
 - Unified workflow for download, local video storage and evaluation.
 - Extensible evaluation entry point that supports OpenAI-compatible APIs, Gemini, and custom model runners.
 
-## Data Release
+## 📦 Data Release
 
 PerceptionComp is released in two parts:
 
@@ -48,7 +47,7 @@ PerceptionComp is released in two parts:
 - local video target directory:
   [benchmark/videos](/Users/zhaozhixuan/Desktop/tsinghua_learning/大二暑/暑研/PerceptionComp/benchmark/videos) -->
 
-## Main Results
+## 📊 Main Results
 
 <!-- This README only shows the overall scores. More detailed per-category and per-difficulty analysis can live in the paper, supplementary materials, or a separate leaderboard page. -->
 
@@ -102,7 +101,7 @@ PerceptionComp is released in two parts:
 | Qwen3-VL-Thinking 30B | 35.68 |
 | Qwen3-VL-Thinking 235B | 38.20 | -->
 
-## Quick Start
+## 🚀 Quick Start
 
 <!-- The expected workflow is:
 
@@ -204,7 +203,7 @@ evaluate/results/Results-<model>.csv
 
 The JSON file stores per-question predictions and raw responses. The CSV file stores aggregated scores.
 
-## Evaluate Your Own Model
+## 🛠️ Evaluate Your Own Model
 
 <!-- A public benchmark should support evaluation on external models. This is standard practice for benchmark repositories, but different projects implement it differently:
 
@@ -342,7 +341,7 @@ The unified entry point currently supports two built-in backend families plus a 
 - GLM-4.5V
 - Doubao-Seed variants -->
 <!-- 
-## Benchmark Snapshot
+## 📌 Benchmark Snapshot
 
 ##### Benchmark Overview:
 
@@ -380,7 +379,7 @@ Core fields:
 - `category`: semantic category
 - `difficulty`: difficulty label -->
 
-## Citation
+## 📚 Citation
 
 If you use PerceptionComp, please cite the corresponding paper once the public version is finalized.
 
