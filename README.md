@@ -152,10 +152,12 @@ benchmark/
 
 ##### Step 4. Run Evaluation with a Built-in Backend
 
-PerceptionComp currently supports three evaluation modes:
+PerceptionComp currently supports five evaluation modes:
 
 - `api`: OpenAI-compatible APIs
+- `agentic-api`: OpenAI-compatible APIs with LongVT-style multi-round clip inspection
 - `gemini`: Gemini video-upload workflow
+- `agentic-gemini`: Gemini API with LongVT-style multi-round clip inspection
 - `custom`: your own model runner
 
 ###### Option A. OpenAI-Compatible API
@@ -177,7 +179,43 @@ Optional arguments:
 - `--frames`: control the number of sampled frames
 - `--proxy`: pass a proxy for API calls
 
-###### Option B. Gemini
+###### Option B. Agentic OpenAI-Compatible API
+
+Use this to evaluate a LongVT-style loop through an OpenAI-compatible API. The evaluator first sends sparse whole-video frames and a `crop_video` tool schema. If the model calls the tool, the evaluator samples denser frames from the requested clip, appends the assistant tool call and tool result to the same `messages` conversation, and calls the model again with the full history. If an API rejects native tool calling, the runner falls back to the text `<inspect>{"start_time": ..., "end_time": ...}</inspect>` protocol while still preserving the multi-round message history.
+
+```bash
+python evaluate/evaluate.py \
+  --model YOUR_MODEL_NAME \
+  --provider agentic-api \
+  --api-key YOUR_API_KEY \
+  --base-url YOUR_BASE_URL \
+  --video-dir benchmark/videos \
+  --agentic-rounds 5 \
+  --agentic-global-frames 64 \
+  --agentic-crop-frames 128
+```
+
+Agentic outputs are written as `Results-<model>-agentic.json` and include each round's finish reason, tool/crop records, sampled timestamps, raw responses, message count, and final answer.
+
+###### Option C. Agentic Gemini API
+
+Use this for Gemini API experiments with LongVT-style multi-round temporal inspection. Unlike `agentic-api`, this backend does not use OpenAI-compatible tool messages. It keeps one Gemini chat session per question, sends sparse whole-video frames first, and sends cropped clip frames back into the same conversation whenever the model requests an `<inspect>{"start_time": ..., "end_time": ...}</inspect>` window.
+
+```bash
+python evaluate/evaluate.py \
+  --model gemini-2.5-flash \
+  --provider agentic-gemini \
+  --api-key YOUR_GEMINI_API_KEY \
+  --video-dir /Users/zhaozhixuan/Desktop/tsinghua_learning/大二暑/暑研/tests/winter_tests/benchmark/videos \
+  --agentic-rounds 5 \
+  --agentic-global-frames 64 \
+  --agentic-crop-frames 128 \
+  --max-samples 1
+```
+
+Agentic Gemini outputs are written as `Results-<model>-agentic-gemini.json`. The first turn samples 64 frames uniformly from the whole video by default. Each inspected crop samples at most 1 frame per second, capped by `--agentic-crop-frames` (default 128).
+
+###### Option D. Gemini
 
 ```bash
 python evaluate/evaluate.py \

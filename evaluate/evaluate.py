@@ -34,7 +34,9 @@ def resolve_api_key(provider: str, explicit_api_key: str | None) -> str:
 
     env_candidates = {
         "gemini": ["GEMINI_API_KEY", "GOOGLE_API_KEY", "API_KEY"],
+        "agentic-gemini": ["GEMINI_API_KEY", "GOOGLE_API_KEY", "API_KEY"],
         "api": ["ARK_API_KEY", "OPENAI_API_KEY", "API_KEY"],
+        "agentic-api": ["ARK_API_KEY", "OPENAI_API_KEY", "API_KEY"],
     }
     for env_name in env_candidates[provider]:
         value = os.getenv(env_name)
@@ -55,7 +57,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--model", required=True, help="Model name to evaluate.")
     parser.add_argument(
         "--provider",
-        choices=["api", "gemini", "custom", "auto"],
+        choices=["api", "agentic-api", "gemini", "agentic-gemini", "custom", "auto"],
         default="auto",
         help="Model backend. Defaults to auto-inference from model name.",
     )
@@ -91,9 +93,39 @@ def build_parser() -> argparse.ArgumentParser:
         help="Number of frames to sample for OpenAI-compatible models.",
     )
     parser.add_argument(
+        "--agentic-rounds",
+        type=int,
+        default=5,
+        help="Maximum crop/inspect rounds for --provider agentic-api or agentic-gemini.",
+    )
+    parser.add_argument(
+        "--agentic-global-frames",
+        type=int,
+        default=64,
+        help="Sparse whole-video frames for the first agentic round.",
+    )
+    parser.add_argument(
+        "--agentic-crop-frames",
+        type=int,
+        default=128,
+        help="Maximum frames sampled from each requested crop. agentic-gemini uses at most 1 fps under this cap.",
+    )
+    parser.add_argument(
+        "--agentic-min-window",
+        type=float,
+        default=2.0,
+        help="Minimum crop window length in seconds for agentic inspection.",
+    )
+    parser.add_argument(
         "--force-thinking",
         action="store_true",
         help="Gemini-only flag to retry when <think> tags are missing.",
+    )
+    parser.add_argument(
+        "--max-samples",
+        type=int,
+        default=None,
+        help="Optional cap on the number of questions to evaluate. Useful for smoke tests.",
     )
     parser.add_argument(
         "--custom-runner",
@@ -179,6 +211,40 @@ def main():
             api_key,
             args.proxy,
             force_thinking=args.force_thinking,
+        )
+        return
+
+    if provider == "agentic-gemini":
+        runner = _load_module(RUNNERS_DIR / "agentic_gemini_evaluate.py", "agentic_gemini_runner")
+        runner.evaluate(
+            str(video_dir),
+            str(annotations),
+            str(output_dir),
+            args.model,
+            api_key,
+            args.proxy,
+            rounds=args.agentic_rounds,
+            global_frames=args.agentic_global_frames,
+            crop_frames=args.agentic_crop_frames,
+            min_window_seconds=args.agentic_min_window,
+            max_samples=args.max_samples,
+        )
+        return
+
+    if provider == "agentic-api":
+        runner = _load_module(RUNNERS_DIR / "agentic_api_evaluate.py", "agentic_api_runner")
+        runner.evaluate(
+            str(video_dir),
+            str(annotations),
+            str(output_dir),
+            args.model,
+            api_key,
+            args.base_url,
+            args.proxy,
+            rounds=args.agentic_rounds,
+            global_frames=args.agentic_global_frames,
+            crop_frames=args.agentic_crop_frames,
+            min_window_seconds=args.agentic_min_window,
         )
         return
 
