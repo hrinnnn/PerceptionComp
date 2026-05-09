@@ -503,16 +503,8 @@ def evaluate(
             )
         except Exception as e:
             print(f"Error predicting for {key}: {e}")
-            prediction = {
-                "predicted": "WRONG",
-                "thinking": f"ERROR: {e}",
-                "raw_response": f"ERROR: {e}",
-                "rounds": [],
-                "inspected_windows": [],
-                "video_duration": None,
-                "message_count": None,
-                "initial_frame_timestamps": [],
-            }
+            print(f"Skipping {key} — will retry on next run (resume support).")
+            continue
 
         predicted_answer = prediction["predicted"]
         is_correct = predicted_answer == correct_answer
