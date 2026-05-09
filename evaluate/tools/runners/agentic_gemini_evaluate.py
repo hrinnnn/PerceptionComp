@@ -8,15 +8,18 @@ from collections import defaultdict
 from dataclasses import dataclass
 from typing import Any
 
+import google.genai as genai
+from google.genai import types
+
 
 LETTERS = "ABCDE"
 
-SAFETY_SETTINGS = {
-    "HATE": "BLOCK_NONE",
-    "HARASSMENT": "BLOCK_NONE",
-    "SEXUAL": "BLOCK_NONE",
-    "DANGEROUS": "BLOCK_NONE",
-}
+SAFETY_SETTINGS = [
+    types.SafetySetting(category="HARM_CATEGORY_HARASSMENT", threshold="BLOCK_NONE"),
+    types.SafetySetting(category="HARM_CATEGORY_HATE_SPEECH", threshold="BLOCK_NONE"),
+    types.SafetySetting(category="HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold="BLOCK_NONE"),
+    types.SafetySetting(category="HARM_CATEGORY_DANGEROUS_CONTENT", threshold="BLOCK_NONE"),
+]
 
 
 @dataclass
@@ -280,27 +283,20 @@ def normalize_inspect_request(
     }
 
 
-def configure_gemini(api_key: str, proxy: str | None = None):
-    import google.generativeai as genai
-
+def create_client(api_key: str, proxy: str | None = None) -> genai.Client:
     if proxy:
         os.environ["HTTPS_PROXY"] = proxy
         os.environ["HTTP_PROXY"] = proxy
         print(f"Using proxy for Gemini calls: {proxy}")
-
-    genai.configure(api_key=api_key)
-    return genai
+    return genai.Client(api_key=api_key)
 
 
-def send_chat_message_with_retry(chat: Any, parts: list[Any], max_retries: int = 2) -> Any:
+def send_chat_message_with_retry(chat: Any, parts: list[Any], max_retries: int = 2) -> str:
     last_error = None
     for attempt in range(max_retries + 1):
         try:
-            return chat.send_message(
-                parts,
-                request_options={"timeout": 600},
-                safety_settings=SAFETY_SETTINGS,
-            )
+            response = chat.send_message(parts)
+            return response.text or ""
         except Exception as e:
             last_error = e
             if attempt >= max_retries:
@@ -309,13 +305,6 @@ def send_chat_message_with_retry(chat: Any, parts: list[Any], max_retries: int =
             print(f"Gemini call failed, retrying in {sleep_for}s: {e}")
             time.sleep(sleep_for)
     raise last_error
-
-
-def response_text(response: Any) -> str:
-    try:
-        return response.text or ""
-    except Exception:
-        return str(response)
 
 
 def run_agentic_prediction(
@@ -329,9 +318,11 @@ def run_agentic_prediction(
     crop_frames: int,
     min_window_seconds: float,
 ) -> dict[str, Any]:
-    genai = configure_gemini(api_key, proxy)
-    model = genai.GenerativeModel(model_name=model_name)
-    chat = model.start_chat(history=[])
+    client = create_client(api_key, proxy)
+    chat = client.chats.create(
+        model=model_name,
+        config=types.GenerateContentConfig(safety_settings=SAFETY_SETTINGS),
+    )
 
     duration = get_video_duration(video_file)
     options_str = format_options(item)
@@ -349,8 +340,7 @@ def run_agentic_prediction(
         max_tool_rounds=max(0, rounds),
     )
 
-    response = send_chat_message_with_retry(chat, [*global_sampled.parts, initial_prompt])
-    final_response = response_text(response)
+    final_response = send_chat_message_with_retry(chat, [*global_sampled.parts, initial_prompt])
 
     for round_index in range(max(0, rounds) + 1):
         raw_inspect = extract_inspect_request(final_response)
@@ -398,14 +388,11 @@ def run_agentic_prediction(
         )
         round_records.append(round_record)
 
-        response = send_chat_message_with_retry(chat, [*sampled.parts, observation_prompt])
-        final_response = response_text(response)
+        final_response = send_chat_message_with_retry(chat, [*sampled.parts, observation_prompt])
 
     predicted, thinking = parse_prediction(final_response)
     if extract_inspect_request(final_response) is not None and not has_explicit_answer(final_response):
         predicted = "WRONG"
-    # If both inspect request and answer are present after budget exhausted,
-    # prioritize the answer (cannot inspect further).
 
     return {
         "predicted": predicted,
@@ -535,7 +522,7 @@ def evaluate(
                     "global_frames": global_frames,
                     "crop_frames": crop_frames,
                     "min_window_seconds": min_window_seconds,
-                    "conversation_backend": "google.generativeai chat",
+                    "conversation_backend": "google.genai chat",
                 },
             }
         )

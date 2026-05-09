@@ -2,5 +2,5 @@ tqdm
 numpy
 opencv-python
 openai
-google-generativeai
+google-genai
 huggingface_hub
