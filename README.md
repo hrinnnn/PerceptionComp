@@ -13,6 +13,8 @@
   </p>
 </div>
 
+> 🎉 **Our paper has been accepted to ECCV 2026!**
+
 ## Introduction
 
 <p align="center">
@@ -354,7 +356,7 @@ Core fields:
 
 ## 📚 Citation
 
-If you use PerceptionComp, please cite the corresponding paper once the public version is finalized.
+If you use PerceptionComp, please cite our paper:
 
 ```bibtex
 @misc{perceptioncomp2026,
