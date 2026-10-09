@@ -359,8 +359,13 @@ Core fields:
 If you use PerceptionComp, please cite our paper:
 
 ```bibtex
-@misc{perceptioncomp2026,
-  title={PerceptionComp: A Video Benchmark for Complex Perception-Centric Reasoning},
-  year={2026}
+@inproceedings{li2026perceptioncomp,
+  title     = {{PerceptionComp}: A Video Benchmark for Complex Perception-Centric Reasoning},
+  author    = {Li, Shaoxuan and Zhao, Zhixuan and Deng, Hanze and Ma, Zirun and
+               Tian, Shulin and Liu, Zuyan and Hu, Yushi and Wu, Haoning and
+               Dong, Yuhao and Liu, Benlin and Liu, Ziwei and Krishna, Ranjay},
+  booktitle = {European Conference on Computer Vision (ECCV)},
+  pages     = {241--257},
+  year      = {2026}
 }
 ```
